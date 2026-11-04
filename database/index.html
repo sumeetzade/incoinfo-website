@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <!-- @include head title="What a company report contains | IncoInfo" description="Every data field in an IncoInfo company report: entity profile, multi-year financials, capital and ownership, directors, charges and filings. Preview sample reports by sector." path="/database/" -->
+  </head>
+  <body>
+    <!-- @include nav -->
+    <main id="main">
+      <section class="page-hero page-hero-simple" aria-labelledby="page-title">
+        <div class="container-x">
+          <h1 id="page-title">Data and coverage</h1>
+          <p class="lede">
+            IncoInfo is a single layer over public regulatory registries, official company filings, statutory
+            documents and tax records. Here is exactly what each company report contains.
+          </p>
+          <div class="page-hero-ctas">
+            <a class="btn btn-primary" href="#samples">{{icon:file-text}} Preview sample reports</a>
+            <a class="btn btn-secondary" href="/data-standards/">How we source data</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="flow-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="flow-title">From official filings to your report</h2>
+          </div>
+          <div class="flow" data-reveal>
+            <div class="flow-sources">
+              <span class="form-chip">{{icon:landmark}} Official MCA and RoC filings</span>
+              <span class="form-chip">{{icon:receipt-indian-rupee}} Tax compliance and GST data</span>
+              <span class="form-chip">{{icon:scale}} Charge registry and judicial records</span> <!-- TODO: confirm judicial records -->
+            </div>
+            <span class="flow-arrow">{{icon:arrow-right}}</span>
+            <div class="flow-engine">
+              <h3>IncoInfo compilation</h3>
+              <p>Filings are fetched, checked and organised into the same standard sections for every company.</p>
+              <ul>
+                <li>{{icon:check}} Figures standardised across years</li>
+                <li>{{icon:check}} Directors and charges linked across companies</li>
+                <li>{{icon:check}} Re-run when the company files again</li>
+              </ul>
+            </div>
+            <span class="flow-arrow">{{icon:arrow-right}}</span>
+            <div class="flow-out">
+              <div class="card"><span class="icon-tile">{{icon:file-text}}</span><span><strong>Structured profile</strong><small>In your account dashboard</small></span></div>
+              <div class="card"><span class="icon-tile">{{icon:file-down}}</span><span><strong>PDF report</strong><small>For reading and sharing</small></span></div>
+              <div class="card"><span class="icon-tile">{{icon:file-spreadsheet}}</span><span><strong>Excel workbook</strong><small>For models and analysis</small></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="parameters" aria-labelledby="params-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="params-title">Data covered in each profile</h2>
+            <p class="lede">Some fields depend on what the company has filed. Reports cover data up to its latest filing on record.</p>
+          </div>
+          <div class="card table-scroll" data-reveal style="padding: 0.5rem 1.5rem">
+            <table class="fin-table param-table">
+              <caption class="sr-only">Data categories and the information included in each</caption>
+              <thead><tr><th scope="col">Data category</th><th scope="col">Information included</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">{{icon:building-2}}Basic entity profile</th><td>Legal name, CIN, incorporation date, state and RoC jurisdiction, company category (private, public or LLP), active or inactive status, registered office address.</td></tr>
+                <tr><th scope="row">{{icon:chart-column}}Financial performance</th><td>Three to five years of revenue, EBITDA, net profit, debtor and creditor balances, total assets, reserves and operating cash flows.</td></tr>
+                <tr><th scope="row">{{icon:layers}}Capital and ownership</th><td>Authorised capital, paid-up capital, shareholding pattern, promoter vs external shareholders, equity class splits.</td></tr>
+                <tr><th scope="row">{{icon:users}}Management and board</th><td>Current and past directors, Director Identification Numbers (DIN), appointment dates, other directorships held.</td></tr>
+                <tr><th scope="row">{{icon:landmark}}Charges and liabilities</th><td>Secured loans, lenders (banks and NBFCs), charge amounts, date of charge creation, charge status (open or satisfied).</td></tr>
+                <tr><th scope="row">{{icon:file-check-2}}Tax and filings</th><td>Active GST registrations, annual return filing dates, balance sheet filing compliance status.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="samples" aria-labelledby="samples-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="samples-title">Sample reports by sector</h2>
+            <p class="lede">Preview the structure, depth and layout of the report you receive when you place an order.</p>
+          </div>
+          <!-- TODO: link each card to its real sample PDF -->
+          <div class="samples" data-reveal-stagger>
+            <article class="sample card card-hover">
+              <p class="sample-sector">Manufacturing</p>
+              <h3>Mid-sized auto component manufacturer</h3>
+              <p class="sample-meta"><span class="badge badge-neutral">Private limited</span><span class="badge badge-neutral">Maharashtra</span></p>
+              <a class="btn btn-secondary btn-sm" href="#samples">{{icon:file-down}} PDF preview</a>
+            </article>
+            <article class="sample card card-hover">
+              <p class="sample-sector">Information technology and services</p>
+              <h3>B2B enterprise software provider</h3>
+              <p class="sample-meta"><span class="badge badge-neutral">Private limited</span><span class="badge badge-neutral">Karnataka</span></p>
+              <a class="btn btn-secondary btn-sm" href="#samples">{{icon:file-down}} PDF preview</a>
+            </article>
+            <article class="sample card card-hover">
+              <p class="sample-sector">Retail and consumer goods</p>
+              <h3>Regional apparel and logistics business</h3>
+              <p class="sample-meta"><span class="badge badge-neutral">Private limited</span><span class="badge badge-neutral">Tamil Nadu</span></p>
+              <a class="btn btn-secondary btn-sm" href="#samples">{{icon:file-down}} PDF preview</a>
+            </article>
+            <article class="sample card card-hover">
+              <p class="sample-sector">Healthcare and pharmaceuticals</p>
+              <h3>Active pharmaceutical ingredient (API) developer</h3>
+              <p class="sample-meta"><span class="badge badge-neutral">Public limited</span><span class="badge badge-neutral">Gujarat</span></p>
+              <a class="btn btn-secondary btn-sm" href="#samples">{{icon:file-down}} PDF preview</a>
+            </article>
+            <article class="sample card card-hover">
+              <p class="sample-sector">Real estate and infrastructure</p>
+              <h3>Commercial construction and engineering company</h3>
+              <p class="sample-meta"><span class="badge badge-neutral">Private limited</span><span class="badge badge-neutral">Telangana</span></p>
+              <a class="btn btn-secondary btn-sm" href="#samples">{{icon:file-down}} PDF preview</a>
+            </article>
+            <article class="sample card card-hover">
+              <p class="sample-sector">Transport and logistics</p>
+              <h3>Apex Logistics &amp; Freight Limited</h3>
+              <p class="sample-meta"><span class="badge badge-neutral">Public limited</span><span class="badge badge-neutral">Delhi</span></p>
+              <a class="btn btn-secondary btn-sm" href="/#report">{{icon:file-text}} View on homepage</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" aria-labelledby="landscape-title">
+        <div class="container-x">
+          <div class="callout" data-reveal>
+            {{icon:map}}
+            <p>
+              <strong id="landscape-title">Looking at a market rather than one company?</strong>
+              The <a class="link" href="/macro-view/">Indian corporate landscape</a> shows how registered companies are
+              spread across states, sectors and capital sizes.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @include final-cta -->
+    <!-- @include footer -->
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <!-- @include head title="Data sources and standards | IncoInfo" description="How IncoInfo compiles company reports from official MCA/RoC filings, tax registries and charge records, how filing delays affect reports, and how 12-month updates work." path="/data-standards/" -->
+  </head>
+  <body>
+    <!-- @include nav -->
+    <main id="main">
+      <section class="page-hero page-hero-simple" aria-labelledby="page-title">
+        <div class="container-x">
+          <h1 id="page-title">Our data integrity and filing protocol</h1>
+          <p class="lede">Where the data comes from, how a report is compiled, and what happens when a company files late.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sources-title">
+        <div class="container-x two-col">
+          <div data-reveal>
+            <h2 id="sources-title">Official source filings</h2>
+          </div>
+          <div class="prose" data-reveal>
+            <p>
+              IncoInfo processes, structures and compiles company financial profiles directly from official regulatory
+              filings with the Ministry of Corporate Affairs and the Registrar of Companies, tax registries and statutory
+              charge declarations.
+            </p>
+            <p>Figures are taken from filings on record, and ratios are calculated from those filed figures. Nothing is estimated.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" aria-labelledby="protocol-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="protocol-title">How orders are compiled</h2>
+          </div>
+          <div class="principles" data-reveal-stagger>
+            <article class="principle card">
+              <span class="icon-tile">{{icon:file-check-2}}</span>
+              <h3>Compiled when you order</h3>
+              <p>When you select and buy a company, our system compiles the latest statutory documents available in the public domain for that company.</p>
+            </article>
+            <article class="principle card">
+              <span class="icon-tile">{{icon:clock}}</span>
+              <h3>Dependent on regulatory filings</h3>
+              <p>Reports reflect data up to the most recent filing period the company has submitted. If it has delayed its filings, you receive the complete verified data up to its latest filing on record.</p>
+            </article>
+            <article class="principle card">
+              <span class="icon-tile">{{icon:refresh-cw}}</span>
+              <h3>12-month subscription included</h3>
+              <p>If the company files new financial statements or changes its board or charges within 12 months of your purchase, your report is refreshed at no extra credit cost.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="security-title">
+        <div class="container-x two-col">
+          <div data-reveal>
+            <h2 id="security-title">Data quality and privacy</h2>
+          </div>
+          <div class="prose" data-reveal>
+            <p>
+              We rely strictly on verified regulatory records, statutory filings and public corporate disclosures. All
+              data is processed in line with applicable data privacy regulations and security guidelines.
+            </p>
+            <!-- TODO: add specific security measures (hosting, encryption, access controls) once confirmed -->
+            <ul>
+              <li>Payments are handled by a PCI-compliant payment gateway. We do not store card details.</li>
+              <li>Reports and account data are encrypted in transit.</li>
+              <li>Personal information about directors is limited to what appears in public statutory filings.</li>
+            </ul>
+            <div class="callout" style="margin-top: 2rem">
+              {{icon:circle-alert}}
+              <p>Reports are for reference and due diligence. They are not investment, credit or legal advice. <a class="link" href="/legal/disclaimer/">Read the full data disclaimer</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @include final-cta -->
+    <!-- @include footer -->
+  </body>
+</html>

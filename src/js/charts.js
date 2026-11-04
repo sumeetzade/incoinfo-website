@@ -160,7 +160,7 @@ const builders = {
     data: { labels: landscape.registrations.map((d) => d.label), datasets: [{ label: 'New companies registered', data: landscape.registrations.map((d) => d.value), ...line(C1, true) }] },
     options: {
       interaction: { mode: 'index', intersect: false },
-      layout: { padding: { top: 20, right: 8 } },
+      layout: { padding: { top: 20, right: 30 } },
       scales: axes({ yFmt: (v) => (v >= 1000 ? `${Math.round(v / 1000)}K` : v) }),
       plugins: {
         legend: { display: false },

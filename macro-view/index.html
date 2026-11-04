@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <!-- @include head title="Indian corporate landscape | IncoInfo" description="A high-level view of registered Indian companies: distribution by state, industry sector and paid-up capital, and new registrations over time." path="/macro-view/" -->
+  </head>
+  <body>
+    <!-- @include nav -->
+    <main id="main">
+      <section class="page-hero page-hero-simple" aria-labelledby="page-title">
+        <div class="container-x">
+          <h1 id="page-title">A high-level view of registered Indian companies</h1>
+          <p class="lede">
+            Explore how companies are spread across states, industry sectors and capital sizes before choosing specific
+            companies to analyse.
+          </p>
+          <!-- TODO: figures below are illustrative; replace with MCA master-data aggregates -->
+          <p class="todo-note">Figures on this page are illustrative and will be replaced with live aggregates.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="charts-title">
+        <div class="container-x">
+          <h2 id="charts-title" class="sr-only">Distribution charts</h2>
+          <div class="chart-grid">
+            <article class="chart-card card" data-reveal>
+              <h3>Active companies by state</h3>
+              <p>Maharashtra, Delhi NCR, Tamil Nadu, Karnataka and Gujarat hold two-thirds of active companies.</p>
+              <div class="chart-box"><canvas data-chart="states" role="img" aria-label="Share of active companies by state: Maharashtra 21%, Delhi NCR 17%, Tamil Nadu 11%, Karnataka 10%, Gujarat 8%, others 33%"></canvas></div>
+              <details>
+                <summary>Show as table</summary>
+                <table class="fin-table"><thead><tr><th scope="col">State</th><th scope="col">Share</th></tr></thead>
+                  <tbody><tr><th scope="row">Maharashtra</th><td>21%</td></tr><tr><th scope="row">Delhi NCR</th><td>17%</td></tr><tr><th scope="row">Tamil Nadu</th><td>11%</td></tr><tr><th scope="row">Karnataka</th><td>10%</td></tr><tr><th scope="row">Gujarat</th><td>8%</td></tr><tr><th scope="row">Others</th><td>33%</td></tr></tbody>
+                </table>
+              </details>
+            </article>
+
+            <article class="chart-card card" data-reveal>
+              <h3>Companies by paid-up capital</h3>
+              <p>Most registered companies are small. Fewer than one in ten has paid-up capital above ₹1 crore.</p>
+              <div class="chart-box"><canvas data-chart="capital" role="img" aria-label="Share of companies by paid-up capital: under ₹10 lakh 71%, ₹10 lakh to ₹1 crore 21%, ₹1 to 10 crore 6%, above ₹10 crore 2%"></canvas></div>
+              <details>
+                <summary>Show as table</summary>
+                <table class="fin-table"><thead><tr><th scope="col">Paid-up capital</th><th scope="col">Share</th></tr></thead>
+                  <tbody><tr><th scope="row">Micro: under ₹10 lakh</th><td>71%</td></tr><tr><th scope="row">Small: ₹10 lakh to ₹1 crore</th><td>21%</td></tr><tr><th scope="row">Mid-market: ₹1 to 10 crore</th><td>6%</td></tr><tr><th scope="row">Large: above ₹10 crore</th><td>2%</td></tr></tbody>
+                </table>
+              </details>
+            </article>
+
+            <article class="chart-card card chart-wide" data-reveal>
+              <h3>New companies registered each year</h3>
+              <p>Track incorporation activity year by year to gauge economic activity across states and sectors.</p>
+              <div class="chart-box"><canvas data-chart="registrations" role="img" aria-label="New company registrations per year, rising from about 96,000 in FY16 to about 192,000 in FY25"></canvas></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" aria-labelledby="sectors-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="sectors-title">Companies by sector</h2>
+            <p class="lede">Company counts are grouped by National Industrial Classification (NIC) sector.</p>
+          </div>
+          <div class="sector-list" data-reveal-stagger>
+            <article class="sector card"><h3>{{icon:code-xml}} Services and IT</h3><p>Software, consulting, financial services, business support.</p></article>
+            <article class="sector card"><h3>{{icon:building-2}} Manufacturing and industry</h3><p>Chemicals, textiles, metals, heavy machinery, automotive.</p></article>
+            <article class="sector card"><h3>{{icon:shopping-basket}} Trading and distribution</h3><p>Wholesale trade, retail distribution, import and export.</p></article>
+            <article class="sector card"><h3>{{icon:landmark}} Infrastructure and real estate</h3><p>Residential and commercial developers, civil engineering, energy and power.</p></article>
+            <article class="sector card"><h3>{{icon:sparkles}} Agriculture and allied</h3><p>Processing units, agri-logistics, farm produce trading.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @include final-cta -->
+    <!-- @include footer -->
+  </body>
+</html>
