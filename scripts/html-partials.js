@@ -39,7 +39,7 @@ function render(html, env, depth = 0) {
     if (!fs.existsSync(file)) throw new Error(`[html-partials] missing partial "${name}"`)
     let body = fs.readFileSync(file, 'utf8')
     const vars = parseAttrs(attrs)
-    body = body.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in vars ? vars[k] : m))
+    body = body.replace(/\{\{(\w+)\}\}/g, (_m, k) => vars[k] ?? '')
     return render(body, env, depth + 1)
   })
   html = html.replace(/\{\{icon:([\w-]+)(?:\|([^}]*))?\}\}/g, (_, n, c) => icon(n, c || ''))

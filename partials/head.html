@@ -1,0 +1,31 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{title}}</title>
+<meta name="description" content="{{description}}" />
+<link rel="canonical" href="%SITE_URL%{{path}}" />
+<meta name="theme-color" content="#0A456D" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="IncoInfo" />
+<meta property="og:title" content="{{title}}" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:url" content="%SITE_URL%{{path}}" />
+<meta property="og:image" content="%SITE_URL%/og-image.png" />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{title}}" />
+<meta name="twitter:description" content="{{description}}" />
+<meta name="twitter:image" content="%SITE_URL%/og-image.png" />
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.add('js');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      d.classList.add('js-motion');
+      // Safety net: never leave content hidden if the motion script fails to load.
+      setTimeout(function () { if (!d.classList.contains('motion-ready')) d.classList.remove('js-motion'); }, 3500);
+    }
+  })();
+</script>
+<link rel="stylesheet" href="/src/styles/main.css" />
+<script type="module" src="/src/js/main.js"></script>
