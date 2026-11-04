@@ -11,7 +11,7 @@
   }
   @media (min-width: 768px) { .container-x { padding-inline: 32px; } }
 
-  .section { padding-block: clamp(36px, 4vw, 56px); position: relative; }
+  .section { padding-block: clamp(24px, 3vw, 30px); position: relative; }
   .section-tint { background: var(--color-surface-tint); }
   .section-head { max-width: 46rem; margin-bottom: clamp(20px, 2.2vw, 28px); }
   .section-head > p { margin-top: 1rem; }
