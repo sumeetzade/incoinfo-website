@@ -1,0 +1,67 @@
+<!-- TODO: all prices are placeholders; keep in sync with src/data/pricing.js -->
+<div class="packs" data-reveal-stagger>
+  <article class="pack" data-pack="starter">
+    <h3>Starter</h3>
+    <p class="pack-for">For one-off vendor checks or a single deal.</p>
+    <p class="pack-price"><span class="num">₹4,990</span><small>10 company credits</small></p>
+    <p class="pack-unit num">₹499 per company</p>
+    <a class="btn btn-secondary pack-cta" href="%PORTAL_URL%/checkout?pack=starter">Choose Starter</a>
+    <ul class="checklist">
+      <li>{{icon:check}}<span>Full multi-year company profile</span></li>
+      <li>{{icon:check}}<span>Charge and loan records</span></li>
+      <li>{{icon:check}}<span>Director network map</span></li>
+      <li>{{icon:check}}<span>PDF and Excel exports</span></li>
+      <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
+      <li>{{icon:check}}<span>Credits valid for 12 months</span></li>
+    </ul>
+  </article>
+
+  <article class="pack pack-featured" data-pack="growth">
+    <p class="pack-flag"><!-- @include facet --> Most popular</p>
+    <h3>Growth</h3>
+    <p class="pack-for">For active sales teams and advisory firms.</p>
+    <p class="pack-price"><span class="num">₹19,990</span><small>50 company credits</small></p>
+    <p class="pack-unit num">₹400 per company</p>
+    <a class="btn btn-primary pack-cta" href="%PORTAL_URL%/checkout?pack=growth" data-magnetic>Choose Growth</a>
+    <ul class="checklist">
+      <li>{{icon:check}}<span>Everything in Starter</span></li>
+      <li>{{icon:check}}<span>Priority compilation</span></li>
+      <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
+      <li>{{icon:check}}<span>Credits valid for 12 months</span></li>
+    </ul>
+  </article>
+
+  <article class="pack" data-pack="enterprise">
+    <h3>Enterprise</h3>
+    <p class="pack-for">For funds, banks and corporate strategy teams.</p>
+    <p class="pack-price"><span class="num">₹59,990</span><small>200 company credits</small></p>
+    <p class="pack-unit num">₹300 per company</p>
+    <a class="btn btn-secondary pack-cta" href="%PORTAL_URL%/checkout?pack=enterprise">Choose Enterprise</a>
+    <ul class="checklist">
+      <li>{{icon:check}}<span>Everything in Growth</span></li>
+      <li>{{icon:check}}<span>Bulk download manager</span></li>
+      <li>{{icon:check}}<span>API access on request</span></li> <!-- TODO: confirm -->
+      <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
+    </ul>
+  </article>
+</div>
+
+<div class="calc" data-calculator data-reveal>
+  <div class="calc-input">
+    <label for="calc-n">How many companies do you need to check this year?</label>
+    <div class="calc-row">
+      <input id="calc-n" type="range" min="1" max="300" step="1" value="40" aria-describedby="calc-out" />
+      <output class="calc-n num" for="calc-n" data-calc-n>40</output>
+    </div>
+  </div>
+  <div class="calc-result" id="calc-out" aria-live="polite">
+    <p class="calc-best">Best value: <strong data-calc-label>Starter pack × 4</strong></p>
+    <p class="calc-total">₹<span data-calc-total>19,960</span></p>
+    <p class="calc-detail num" data-calc-detail>₹499 per company</p>
+  </div>
+</div>
+
+<p class="packs-note">
+  Need only one company? Buy it on its own for <span class="num">₹599</span>. Prices exclude GST.
+  Payments are processed securely by our payment partner. <!-- TODO: name gateway -->
+</p>
