@@ -4,7 +4,7 @@ import { defineConfig, loadEnv } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import htmlPartials from './scripts/html-partials.js'
 
-const IGNORE = new Set(['node_modules', 'dist', 'partials', 'brand', 'public', 'scripts', 'src', '.git', '.claude', 'reports'])
+const IGNORE = new Set(['node_modules', 'dist', 'docs', 'partials', 'brand', 'public', 'scripts', 'src', '.git', '.claude', 'reports'])
 
 // Every .html page in the repo (outside the ignored folders) becomes a build entry.
 function findPages(dir = '.', out = {}) {

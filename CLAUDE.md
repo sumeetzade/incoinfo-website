@@ -63,3 +63,9 @@ A static marketing site for IncoInfo (company reports on Indian registered compa
 - `npm run dev`, then `npm run shots` (Playwright full-page screenshots at 1440/768/390, an overflow check and console errors, written to `reports/`).
 - `npm run build`, then `npm run lighthouse` (runs against `vite preview` using Playwright's Chromium, writes HTML and JSON reports to `reports/lighthouse/`, target 90+ in all categories). Add `--desktop` for the desktop profile.
 - Solution pages: edit `src/data/solutions.mjs`, then run `node scripts/gen-solutions.mjs`. This also rewrites `public/sitemap.xml` and `robots.txt`, so add new pages to its `pages` list.
+
+## Sharing a test build (GitHub Pages)
+- `npm run share` builds the site into `docs/` with relative links (via `scripts/make-relative.mjs`), so it works from a sub-path such as `https://<user>.github.io/<repo>/`.
+- Commit `docs/` and push. In the GitHub repo, go to Settings → Pages → Deploy from a branch → `main` / `/docs`.
+- Re-run `npm run share` before each push. `docs/` is a generated copy, so never edit it by hand.
+- The production build for AWS is still `npm run build` → `dist/` (root-relative links, with `VITE_SITE_URL` set to the real domain).

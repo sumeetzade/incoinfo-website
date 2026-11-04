@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "shots": "node scripts/shots.mjs",
     "lighthouse": "node scripts/lighthouse.mjs",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "share": "vite build --base ./ --outDir docs --emptyOutDir && node scripts/make-relative.mjs docs"
   },
   "dependencies": {
     "chart.js": "^4.6.1",
