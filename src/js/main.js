@@ -61,6 +61,7 @@ function initNav() {
     menu.hidden = !isOpen
     nav.classList.toggle('is-open', isOpen)
     document.body.style.overflow = isOpen ? 'hidden' : ''
+    if (isOpen) menu.querySelector('summary, a')?.focus()
   }
   burger?.addEventListener('click', () => setMobile(burger.getAttribute('aria-expanded') !== 'true'))
   menu?.addEventListener('click', (e) => { if (e.target.closest('a')) setMobile(false) })

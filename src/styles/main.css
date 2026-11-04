@@ -1,5 +1,4 @@
-@import "@fontsource-variable/inter";
-@import "@fontsource-variable/schibsted-grotesk";
+@import "./fonts.css";
 @import "tailwindcss";
 @import "./components.css";
 @import "./layout.css";
@@ -39,8 +38,8 @@
   --color-danger: #b42318;
   --color-danger-bg: #fdecea;
 
-  --font-display: "Schibsted Grotesk Variable", "Segoe UI", system-ui, sans-serif;
-  --font-sans: "Inter Variable", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "Schibsted Grotesk Variable", "Schibsted Fallback", system-ui, sans-serif;
+  --font-sans: "Inter Variable", "Inter Fallback", system-ui, -apple-system, sans-serif;
 
   --radius-ui: 10px;
   --radius-card: 14px;
