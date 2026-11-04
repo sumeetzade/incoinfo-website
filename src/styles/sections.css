@@ -10,7 +10,7 @@
   .usecase-list { display: grid; }
   .usecase {
     display: grid; grid-template-columns: 1fr; gap: 1rem;
-    padding-block: 1.75rem; border-top: 1px solid var(--color-line-strong);
+    padding-block: 1.25rem; border-top: 1px solid var(--color-line-strong);
   }
   @media (min-width: 640px) { .usecase { grid-template-columns: auto 1fr; gap: 1.25rem; } }
   .usecase:last-child { border-bottom: 1px solid var(--color-line-strong); }
@@ -129,7 +129,7 @@
   .case-meta { display: flex; flex-wrap: wrap; gap: 0.375rem; margin-top: auto; padding-top: 1.25rem; }
   .case-meta span { font-size: 0.78125rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 999px; background: var(--color-surface-tint); color: var(--color-ink-muted); }
 
-  .quotes { margin-top: clamp(48px, 6vw, 72px); }
+  .quotes { margin-top: clamp(28px, 3.5vw, 44px); }
   .marquee-slow .marquee-track { animation-duration: 70s; gap: 1rem; padding-right: 1rem; }
   .marquee-track li.quote {
     display: block; width: 340px; white-space: normal;
@@ -147,7 +147,7 @@
   .acc-item h3 { font-family: var(--font-sans); font-size: inherit; letter-spacing: 0; }
   .acc-trigger {
     width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-    padding: 1.25rem 0; min-height: 56px;
+    padding: 1rem 0; min-height: 52px;
     background: none; border: 0; cursor: pointer; text-align: left;
     font: inherit; font-size: 1.0625rem; font-weight: 600; color: var(--color-ink);
   }

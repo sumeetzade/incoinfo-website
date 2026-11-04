@@ -108,7 +108,7 @@
     position: relative; overflow: hidden; isolation: isolate;
     background: var(--gradient-brand);
     color: #fff; text-align: center;
-    padding-block: clamp(80px, 10vw, 136px);
+    padding-block: clamp(56px, 7vw, 88px);
   }
   .final-cta-grid {
     position: absolute; inset: 0; z-index: -1; opacity: 0.35;
@@ -118,10 +118,10 @@
   }
   .final-cta h2 { color: #fff; max-width: 20ch; margin-inline: auto; }
   .final-cta p { margin: 1.25rem auto 0; max-width: 52ch; font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); color: rgb(255 255 255 / 0.88); }
-  .final-cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 2.25rem; }
+  .final-cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1.75rem; }
 
   /* ---------- Footer ---------- */
-  .site-footer { background: var(--color-surface-tint); border-top: 1px solid var(--color-line); padding-top: clamp(56px, 7vw, 88px); font-size: 0.9375rem; }
+  .site-footer { background: var(--color-surface-tint); border-top: 1px solid var(--color-line); padding-top: clamp(40px, 5vw, 64px); font-size: 0.9375rem; }
   .footer-top { display: grid; gap: 2.5rem; }
   .footer-brand img { height: 36px; width: auto; }
   .footer-brand > p { margin-top: 1rem; max-width: 34ch; }
@@ -133,12 +133,12 @@
   .footer-cols ul { display: grid; gap: 0.25rem; }
   .footer-cols a { display: inline-block; padding: 0.25rem 0; color: var(--color-ink-muted); transition: color 0.2s; }
   .footer-cols a:hover { color: var(--color-brand-700); }
-  .footer-trust { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 3rem; }
+  .footer-trust { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
   .footer-trust .badge { background: #fff; border: 1px solid var(--color-line); }
   .footer-disclaimer { margin-top: 1.5rem; font-size: 0.8125rem; line-height: 1.6; color: var(--color-ink-muted); max-width: 110ch; }
   .footer-bottom {
     display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem;
-    margin-top: 2rem; padding-block: 1.5rem 2rem; border-top: 1px solid var(--color-line);
+    margin-top: 1.5rem; padding-block: 1.25rem 1.5rem; border-top: 1px solid var(--color-line);
     font-size: 0.8125rem; color: var(--color-ink-muted);
   }
   .footer-ids { display: flex; gap: 1.5rem; }

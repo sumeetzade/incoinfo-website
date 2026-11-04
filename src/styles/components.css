@@ -11,9 +11,9 @@
   }
   @media (min-width: 768px) { .container-x { padding-inline: 32px; } }
 
-  .section { padding-block: clamp(72px, 9vw, 128px); position: relative; }
+  .section { padding-block: clamp(48px, 5.5vw, 80px); position: relative; }
   .section-tint { background: var(--color-surface-tint); }
-  .section-head { max-width: 46rem; margin-bottom: clamp(40px, 5vw, 64px); }
+  .section-head { max-width: 46rem; margin-bottom: clamp(24px, 3vw, 40px); }
   .section-head > p { margin-top: 1rem; }
 
   .lede {
