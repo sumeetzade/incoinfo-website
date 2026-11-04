@@ -27,7 +27,7 @@ A static marketing site for IncoInfo (company reports on Indian registered compa
 | `line` | `#DCE6EF` | 1px borders |
 | success / warn / danger | `#1F7A4D` / `#A15C00` / `#B42318` | Status chips only |
 
-- Gradient: `120deg, #0A456D → #20659F 55% → #2798D3`. Use it only for the hero glow, primary CTA, chart strokes and the final CTA band.
+- **No gradients.** Use plain colours only: primary buttons are `brand-700` (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
 - **White base, accents from the logo.** No colours from outside the logo, apart from the status chips.
 
 ## Design conventions

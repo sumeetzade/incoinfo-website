@@ -35,12 +35,6 @@ function drawWires(root) {
 }
 
 export default function initHero(root) {
-  const hero = root.closest('.hero')
-  // pause ambient glow when off-screen
-  if (hero && 'IntersectionObserver' in window) {
-    new IntersectionObserver(([e]) => hero.classList.toggle('is-offscreen', !e.isIntersecting)).observe(hero)
-  }
-
   let wires = drawWires(root)
   let resizeRaf
   let firstObservation = true

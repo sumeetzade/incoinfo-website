@@ -36,7 +36,7 @@
   /* current section: a small facet bar from the logo palette */
   .nav-link.is-current::after {
     content: ""; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 2px; height: 2px; border-radius: 2px;
-    background: linear-gradient(90deg, #2798d3 0 33%, #20659f 33% 66%, #0a456d 66%);
+    background: var(--color-brand-700);
   }
 
   .nav-panel {
@@ -106,15 +106,9 @@
   /* ---------- Final CTA band ---------- */
   .final-cta {
     position: relative; overflow: hidden; isolation: isolate;
-    background: var(--gradient-brand);
+    background: var(--color-brand-900);
     color: #fff; text-align: center;
     padding-block: clamp(56px, 7vw, 88px);
-  }
-  .final-cta-grid {
-    position: absolute; inset: 0; z-index: -1; opacity: 0.35;
-    background-image: radial-gradient(rgb(255 255 255 / 0.5) 1px, transparent 1.2px);
-    background-size: 22px 22px;
-    mask-image: radial-gradient(ellipse 70% 80% at 50% 40%, #000 20%, transparent 75%);
   }
   .final-cta h2 { color: #fff; max-width: 20ch; margin-inline: auto; }
   .final-cta p { margin: 1.25rem auto 0; max-width: 52ch; font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); color: rgb(255 255 255 / 0.88); }

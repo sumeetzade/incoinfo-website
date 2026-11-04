@@ -50,20 +50,11 @@
 
   .btn-primary {
     color: #fff;
-    background: var(--gradient-brand);
-    background-size: 140% 100%;
-    box-shadow: 0 1px 0 rgb(255 255 255 / 0.18) inset, 0 6px 16px -6px rgb(10 69 109 / 0.55);
-    overflow: hidden;
+    background: var(--color-brand-700);
+    box-shadow: 0 6px 16px -8px rgb(10 69 109 / 0.5);
   }
-  .btn-primary:hover { box-shadow: 0 1px 0 rgb(255 255 255 / 0.18) inset, 0 12px 24px -8px rgb(10 69 109 / 0.6); }
+  .btn-primary:hover { background: var(--color-brand-800); box-shadow: 0 10px 22px -10px rgb(10 69 109 / 0.55); }
   .btn-primary:active { transform: translateY(1px) scale(0.99); }
-  /* shine sweep */
-  .btn-primary::after {
-    content: ""; position: absolute; inset: 0; z-index: -1;
-    background: linear-gradient(100deg, transparent 30%, rgb(255 255 255 / 0.28) 50%, transparent 70%);
-    transform: translateX(-120%);
-  }
-  .btn-primary:hover::after { transform: translateX(120%); transition: transform 0.8s var(--ease-out-soft); }
 
   .btn-secondary {
     color: var(--color-ink);

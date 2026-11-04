@@ -5,17 +5,8 @@
     position: relative; isolation: isolate; overflow: hidden;
     padding-top: calc(var(--nav-h) + clamp(24px, 3.5vw, 48px));
     padding-bottom: clamp(36px, 4.5vw, 56px);
-    background:
-      radial-gradient(ellipse 60% 80% at 85% 10%, rgb(39 152 211 / 0.12), transparent 70%),
-      linear-gradient(#fff, var(--color-surface-tint));
+    background: var(--color-surface-tint);
     border-bottom: 1px solid var(--color-line);
-  }
-  .page-hero::before {
-    content: ""; position: absolute; inset: 0; z-index: -1;
-    background-image: radial-gradient(rgb(32 101 159 / 0.18) 1px, transparent 1.3px);
-    background-size: 24px 24px;
-    mask-image: radial-gradient(ellipse 50% 70% at 85% 30%, #000, transparent 70%);
-    -webkit-mask-image: radial-gradient(ellipse 50% 70% at 85% 30%, #000, transparent 70%);
   }
   .page-hero h1 { font-size: clamp(2.125rem, 1.4rem + 2.8vw, 3.5rem); max-width: 20ch; }
   .page-hero .lede { margin-top: 1.25rem; }
@@ -115,7 +106,7 @@
   .flow-arrow { display: grid; place-items: center; color: var(--color-brand-400); }
   .flow-arrow .icon { width: 1.75rem; height: 1.75rem; }
   @media (max-width: 899px) { .flow-arrow { transform: rotate(90deg); } }
-  .flow-engine { padding: 1.75rem; text-align: left; background: var(--gradient-brand); color: #fff; border-radius: var(--radius-float); box-shadow: var(--shadow-float); }
+  .flow-engine { padding: 1.75rem; text-align: left; background: var(--color-brand-900); color: #fff; border-radius: var(--radius-float); box-shadow: var(--shadow-float); }
   .flow-engine h3 { color: #fff; }
   .flow-engine p { margin-top: 0.5rem; color: rgb(255 255 255 / 0.88); font-size: 0.9375rem; }
   .flow-engine ul { margin-top: 1rem; display: grid; gap: 0.375rem; font-size: 0.9375rem; }
