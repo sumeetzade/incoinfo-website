@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => {
     appType: 'mpa',
     plugins: [
       htmlPartials({
-        portal: env.VITE_PORTAL_URL || 'https://portal.incoinfo.com',
+        portal: env.VITE_PORTAL_URL || 'https://demodpd.incoinfo.com',
         site: env.VITE_SITE_URL || 'https://www.incoinfo.com',
       }),
       tailwindcss(),

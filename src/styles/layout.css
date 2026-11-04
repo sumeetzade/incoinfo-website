@@ -71,9 +71,6 @@
   .nav-rich small { display: block; font-size: 0.8125rem; color: var(--color-ink-muted); }
 
   .nav-actions { display: flex; align-items: center; gap: 0.25rem; margin-left: auto; }
-  .nav-search-label { display: none; }
-  .nav-signin { display: none; }
-  .nav-actions .btn-primary { display: none; }
   .nav-burger {
     width: 44px; height: 44px; border-radius: 10px; border: 0; background: none; cursor: pointer;
     display: grid; place-content: center; gap: 6px;
@@ -98,19 +95,12 @@
   .mobile-link { border-bottom: 1px solid var(--color-line); }
   .mobile-group { padding-bottom: 1rem; }
   .mobile-group .mega-title { margin: 0.875rem 0 0.25rem 0.5rem; }
-  .mobile-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.5rem; }
+  .mobile-actions { display: grid; margin-top: 1.5rem; }
 
-  @media (min-width: 640px) {
-    .nav-actions .btn-primary { display: inline-flex; }
-  }
   @media (min-width: 1080px) {
     .nav-links { display: block; }
-    .nav-signin { display: inline-flex; }
     .nav-burger, .mobile-menu { display: none !important; }
     .nav-actions { margin-left: 0; }
-  }
-  @media (min-width: 1240px) {
-    .nav-search-label { display: inline; }
   }
 
   /* ---------- Final CTA band ---------- */
