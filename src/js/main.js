@@ -130,28 +130,6 @@ function initTilt() {
   })
 }
 
-function initTypewriter() {
-  document.querySelectorAll('[data-typewriter]').forEach((input) => {
-    const phrases = JSON.parse(input.dataset.typewriter)
-    const base = input.getAttribute('placeholder')
-    if (reduced) return
-    let i = 0, j = 0, deleting = false, paused = false, timer
-    const step = () => {
-      if (paused) return
-      const word = phrases[i]
-      j += deleting ? -1 : 1
-      input.setAttribute('placeholder', word.slice(0, j) + (deleting && j === 0 ? '' : ''))
-      let delay = deleting ? 28 : 62
-      if (!deleting && j === word.length) { deleting = true; delay = 1700 }
-      else if (deleting && j === 0) { deleting = false; i = (i + 1) % phrases.length; delay = 350 }
-      timer = setTimeout(step, delay)
-    }
-    timer = setTimeout(step, 1400)
-    input.addEventListener('focus', () => { paused = true; clearTimeout(timer); input.setAttribute('placeholder', base) })
-    input.addEventListener('blur', () => { if (!input.value) { paused = false; j = 0; deleting = false; timer = setTimeout(step, 600) } })
-  })
-}
-
 function initCounters() {
   document.querySelectorAll('[data-count]').forEach((el) => onVisible(el, countUp))
 }
@@ -197,19 +175,6 @@ function initTabs() {
   })
 }
 
-/* ---------------- Portal search forms ---------------- */
-function initSearchForms() {
-  document.querySelectorAll('form[data-portal-search]').forEach((form) => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault()
-      const q = new FormData(form).get('q')?.toString().trim()
-      const url = new URL(form.action)
-      if (q) url.searchParams.set('q', q)
-      window.location.href = url.toString()
-    })
-  })
-}
-
 /* ---------------- Page modules (loaded on demand) ---------------- */
 function initModules() {
   const hero = document.querySelector('[data-hero-compiler]')
@@ -235,10 +200,8 @@ initNav()
 initReveals()
 initMagnetic()
 initTilt()
-initTypewriter()
 initCounters()
 initAccordions()
 initTabs()
-initSearchForms()
 initModules()
 initLenis()
