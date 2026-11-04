@@ -43,6 +43,9 @@ function render(html, env, depth = 0) {
     return render(body, env, depth + 1)
   })
   html = html.replace(/\{\{icon:([\w-]+)(?:\|([^}]*))?\}\}/g, (_, n, c) => icon(n, c || ''))
+  // Every link to the demo portal opens in a new tab
+  html = html.replace(/<a\b([^>]*?)href="%PORTAL_URL%([^"]*)"([^>]*)>/g, (m, pre, p, post) =>
+    /\btarget=/.test(m) ? m : `<a${pre}href="%PORTAL_URL%${p}" target="_blank" rel="noopener"${post}>`)
   html = html.replaceAll('%PORTAL_URL%', env.portal).replaceAll('%SITE_URL%', env.site)
   return html
 }

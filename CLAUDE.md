@@ -1,6 +1,6 @@
 # IncoInfo marketing site
 
-A static marketing site for IncoInfo (company reports on Indian registered companies). The product is a **separate demo portal** at `https://demodpd.incoinfo.com`. This site has no sign-in, checkout or account pages. Every product CTA is a plain link to the portal root through `%PORTAL_URL%` (`VITE_PORTAL_URL` in `.env`).
+A static marketing site for IncoInfo (company reports on Indian registered companies). The product is a **separate demo portal** at `https://demodpd.incoinfo.com`. This site has no sign-in, checkout or account pages. Every product CTA is a plain link to the portal root through `%PORTAL_URL%` (`VITE_PORTAL_URL` in `.env`). The build adds `target="_blank" rel="noopener"` to these links automatically, so they open in a new tab.
 
 ## Stack
 - Plain HTML pages, CSS and vanilla JS modules. Vite (multi-page) is used only as the build tool, and the output in `dist/` is fully static.
