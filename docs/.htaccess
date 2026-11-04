@@ -1,0 +1,50 @@
+# IncoInfo static site — Apache rules
+# Clean URLs: pages are served without ".html" (e.g. /pricing/ or /pricing),
+# and any request that includes ".html" is redirected to the clean URL.
+
+Options -MultiViews -Indexes
+DirectoryIndex index.html
+DirectorySlash On
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1) Strip "index.html" from the end: /pricing/index.html -> /pricing/
+  RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+  RewriteRule ^(.*/)?index\.html$ /%1 [R=301,L,NE]
+
+  # 2) Strip ".html" from any other page: /about.html -> /about
+  RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L,NE]
+
+  # 3) Serve extensionless requests from the matching file: /about -> about.html
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+
+  # 4) Folder pages requested without a trailing slash: /pricing -> /pricing/
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*[^/])$ /$1/ [R=301,L]
+</IfModule>
+
+# Custom 404 page (served at the requested URL, ".html" never shown)
+ErrorDocument 404 /404.html
+
+# Caching: hashed build assets and fonts can be cached for a year; HTML always revalidates
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(png|svg|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml application/xml text/plain
+</IfModule>
