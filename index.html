@@ -1,13 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>scaffold</title>
+    <!-- @include head title="IncoInfo — Financial data and company reports on Indian registered companies" description="Search Indian companies by name, CIN or director. Buy reports built from MCA/RoC filings: multi-year financials, directors, shareholding, charges and compliance, with 12 months of updates." path="/" -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IncoInfo",
+        "url": "%SITE_URL%/",
+        "logo": "%SITE_URL%/logo.png",
+        "description": "Company reports and financial data on Indian registered companies, compiled from official filings.",
+        "email": "support@incoinfo.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+        "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "email": "support@incoinfo.com", "areaServed": "IN", "availableLanguage": ["en"] }
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- @include nav -->
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-dots"></div>
+          <div class="hero-glow"></div>
+        </div>
+
+        <div class="container-x hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">Reliable data and financial intelligence on Indian registered companies</h1>
+            <p class="lede hero-lede">
+              Search millions of private and public entities, review verified government filings, and download
+              comprehensive financial profiles, on demand and with transparent pay-per-company packages.
+            </p>
+
+            <form class="hero-search" action="%PORTAL_URL%/search" method="get" role="search">
+              <label for="hero-q" class="sr-only">Search by company name, CIN or director name</label>
+              {{icon:search|hero-search-icon}}
+              <input
+                id="hero-q"
+                name="q"
+                type="search"
+                autocomplete="off"
+                placeholder="Company name, CIN or director name"
+                data-typewriter='["Apex Logistics & Freight Limited", "U72900MH2018PTC123456", "Radiant Chemicals India LLP", "Director name or DIN", "Enterprise Alpha Solutions"]'
+              />
+              <button class="btn btn-primary" type="submit" data-magnetic>Search</button>
+            </form>
+            <p class="hero-search-hint">Search is free. You pay only for the companies you choose to unlock.</p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-secondary" href="#report">{{icon:file-text}} View sample report</a>
+              <a class="link link-arrow" href="/pricing/">Explore credit packs {{icon:arrow-right}}</a>
+            </div>
+          </div>
+
+          <!-- Signature visual: filings compile into a company profile -->
+          <div class="compiler" data-hero-compiler aria-label="Illustration: official filings being compiled into a company report" role="img">
+            <svg class="compiler-wires" aria-hidden="true"></svg>
+            <ul class="compiler-forms" aria-hidden="true">
+              <li class="form-chip" data-form>{{icon:file-spreadsheet}} AOC-4 <small>Financials</small></li>
+              <li class="form-chip" data-form>{{icon:file-text}} MGT-7 <small>Annual return</small></li>
+              <li class="form-chip" data-form>{{icon:landmark}} CHG-1 <small>Charges</small></li>
+              <li class="form-chip" data-form>{{icon:users}} DIR-12 <small>Directors</small></li>
+              <li class="form-chip" data-form>{{icon:receipt-indian-rupee}} GST <small>Registration</small></li>
+            </ul>
+
+            <article class="profile card-float" aria-hidden="true">
+              <header class="profile-head" data-part>
+                <span class="profile-avatar">AL</span>
+                <div class="min-w-0">
+                  <p class="profile-name">Apex Logistics &amp; Freight Limited</p>
+                  <p class="profile-cin num">U60200DL2012PLC654321</p>
+                </div>
+                <span class="badge badge-success"><span class="dot"></span>Active</span>
+              </header>
+
+              <div class="profile-kpis" data-part>
+                <div><span class="kpi-label">Revenue FY25</span><span class="kpi-value num">₹<span data-ticker="262.8" data-decimals="1">262.8</span> Cr</span></div>
+                <div><span class="kpi-label">EBITDA margin</span><span class="kpi-value num"><span data-ticker="13.2" data-decimals="1">13.2</span>%</span></div>
+                <div><span class="kpi-label">Paid-up capital</span><span class="kpi-value num">₹12.0 Cr</span></div>
+              </div>
+
+              <div class="profile-chart" data-part>
+                <div class="profile-chart-head">
+                  <span>Revenue, ₹ Cr</span>
+                  <span class="badge badge-neutral num">FY21–FY25</span>
+                </div>
+                <svg viewBox="0 0 320 96" preserveAspectRatio="none" class="spark">
+                  <defs>
+                    <linearGradient id="spark-stroke" x1="0" x2="1">
+                      <stop offset="0" stop-color="#0A456D" />
+                      <stop offset=".55" stop-color="#20659F" />
+                      <stop offset="1" stop-color="#2798D3" />
+                    </linearGradient>
+                    <linearGradient id="spark-fill" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0" stop-color="#2798D3" stop-opacity=".22" />
+                      <stop offset="1" stop-color="#2798D3" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <g class="spark-grid"><line x1="0" x2="320" y1="24" y2="24" /><line x1="0" x2="320" y1="56" y2="56" /><line x1="0" x2="320" y1="88" y2="88" /></g>
+                  <path class="spark-area" d="M4 80 L82 68 L160 50 L238 36 L316 18 L316 96 L4 96 Z" fill="url(#spark-fill)" />
+                  <path class="spark-line" d="M4 80 L82 68 L160 50 L238 36 L316 18" fill="none" stroke="url(#spark-stroke)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1" />
+                  <g class="spark-dots"><circle cx="4" cy="80" r="3.5" /><circle cx="82" cy="68" r="3.5" /><circle cx="160" cy="50" r="3.5" /><circle cx="238" cy="36" r="3.5" /><circle cx="316" cy="18" r="4.5" /></g>
+                </svg>
+              </div>
+
+              <ul class="profile-rows">
+                <li data-part>{{icon:users}}<span>Directors</span><strong class="num">4 current, 2 past</strong></li>
+                <li data-part data-charge-row>{{icon:landmark}}<span>Open charges</span><strong class="num"><span data-charge-count>3</span> totalling ₹<span data-charge-amt>72.6</span> Cr</strong></li>
+                <li data-part>{{icon:file-check-2}}<span>Last annual filing</span><strong class="num">28 Oct 2025</strong></li>
+              </ul>
+
+              <footer class="profile-foot" data-part>
+                <span class="profile-status">{{icon:badge-check}} Compiled from 23 filings</span>
+                <span class="profile-status profile-status-update" data-update-flag>{{icon:refresh-cw}} Updates for 12 months</span>
+              </footer>
+            </article>
+
+            <div class="compiler-incoming form-chip" data-incoming aria-hidden="true">{{icon:landmark}} CHG-4 <small>Charge satisfied</small></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TRUST BAR ============ -->
+      <section class="trust" aria-label="Coverage and data sources">
+        <div class="container-x">
+          <dl class="trust-stats" data-reveal-stagger>
+            <!-- TODO: replace placeholder figures with real coverage numbers -->
+            <div><dt>Companies and LLPs in the search directory</dt><dd><span data-count="2.6" data-decimals="1">2.6</span>M+</dd></div>
+            <div><dt>Years of filing history available per company</dt><dd><span data-count="15">15</span></dd></div>
+            <div><dt>States and union territories covered</dt><dd><span data-count="36">36</span></dd></div>
+            <div><dt>Months of filing updates with every report</dt><dd><span data-count="12">12</span></dd></div>
+          </dl>
+        </div>
+        <div class="trust-sources">
+          <p class="container-x trust-sources-label">Every report is built from official records</p>
+          <div class="marquee" data-marquee>
+            <ul class="marquee-track">
+              <li>{{icon:landmark}} MCA / RoC company filings</li>
+              <li>{{icon:file-spreadsheet}} Financial statements (AOC-4)</li>
+              <li>{{icon:file-text}} Annual returns (MGT-7)</li>
+              <li>{{icon:scale}} Registered charges (CHG-1, CHG-4)</li>
+              <li>{{icon:users}} Director records (DIN, DIR-12)</li>
+              <li>{{icon:layers}} Share allotments (PAS-3, SH-7)</li>
+              <li>{{icon:receipt-indian-rupee}} GST registration status</li>
+              <li>{{icon:gavel}} Court and tribunal records</li><!-- TODO: confirm legal-case coverage before launch -->
+            </ul>
+            <ul class="marquee-track" aria-hidden="true">
+              <li>{{icon:landmark}} MCA / RoC company filings</li>
+              <li>{{icon:file-spreadsheet}} Financial statements (AOC-4)</li>
+              <li>{{icon:file-text}} Annual returns (MGT-7)</li>
+              <li>{{icon:scale}} Registered charges (CHG-1, CHG-4)</li>
+              <li>{{icon:users}} Director records (DIN, DIR-12)</li>
+              <li>{{icon:layers}} Share allotments (PAS-3, SH-7)</li>
+              <li>{{icon:receipt-indian-rupee}} GST registration status</li>
+              <li>{{icon:gavel}} Court and tribunal records</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@HOME_SECTIONS@@ -->
+    </main>
+
+    <!-- @include final-cta -->
+    <!-- @include footer -->
   </body>
 </html>
