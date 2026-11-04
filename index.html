@@ -100,7 +100,7 @@
                       <stop offset="1" stop-color="#2798D3" stop-opacity="0" />
                     </linearGradient>
                   </defs>
-                  <g class="spark-grid"><line x1="0" x2="320" y1="24" y2="24" /><line x1="0" x2="320" y1="56" y2="56" /><line x1="0" x2="320" y1="88" y2="88" /></g>
+                  <g class="spark-grid" fill="none"><line x1="0" x2="320" y1="24" y2="24" /><line x1="0" x2="320" y1="56" y2="56" /><line x1="0" x2="320" y1="88" y2="88" /></g>
                   <path class="spark-area" d="M4 80 L82 68 L160 50 L238 36 L316 18 L316 96 L4 96 Z" fill="url(#spark-fill)" />
                   <path class="spark-line" d="M4 80 L82 68 L160 50 L238 36 L316 18" fill="none" stroke="url(#spark-stroke)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1" />
                   <g class="spark-dots"><circle cx="4" cy="80" r="3.5" /><circle cx="82" cy="68" r="3.5" /><circle cx="160" cy="50" r="3.5" /><circle cx="238" cy="36" r="3.5" /><circle cx="316" cy="18" r="4.5" /></g>
@@ -159,6 +159,246 @@
               <li>{{icon:gavel}} Court and tribunal records</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <!-- ============ WHAT YOU GET ============ -->
+      <section class="section" id="features" aria-labelledby="features-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="features-title">What a company report contains</h2>
+            <p class="lede">
+              We process and index official documents filed with regulatory authorities to give you a clear, objective
+              view of any business operating in India. Every report follows the same eight sections, so companies are
+              easy to compare.
+            </p>
+          </div>
+
+          <div class="toc" data-reveal-stagger>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:file-spreadsheet}}</span>
+              <h3>Financial statements</h3>
+              <p>Audited balance sheets, profit-and-loss statements and cash flows, compiled from annual filings.</p>
+              <p class="toc-fields">AOC-4 filings, auditor’s notes, schedules</p>
+            </article>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:chart-column}}</span>
+              <h3>Balance sheet &amp; P&amp;L</h3>
+              <p>Three to five years laid side by side in one standard format, ready for Excel and valuation models.</p>
+              <p class="toc-fields">Revenue, EBITDA, net profit, assets, reserves</p>
+            </article>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:chart-line}}</span>
+              <h3>Ratios &amp; credit indicators</h3>
+              <p>The ratios lenders and analysts check first, calculated the same way for every company.</p>
+              <p class="toc-fields">Debt-to-equity, interest cover, margins, working capital days</p>
+            </article>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:users}}</span>
+              <h3>Directors &amp; shareholding</h3>
+              <p>Current and former directors, their other directorships, and who owns the company.</p>
+              <p class="toc-fields">DIN, appointment dates, promoter and external holdings</p>
+            </article>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:landmark}}</span>
+              <h3>Charges &amp; borrowings</h3>
+              <p>Registered charges, mortgages and bank loans, to assess what the company owes and to whom.</p>
+              <p class="toc-fields">Lender, amount, creation date, open or satisfied</p>
+            </article>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:file-check-2}}</span>
+              <h3>Compliance &amp; filings</h3>
+              <p>Whether annual filings are on time, and whether the GST registration is active.</p>
+              <p class="toc-fields">AOC-4 and MGT-7 dates, GST status, registered address</p>
+            </article>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:gavel}}</span>
+              <h3>Legal cases</h3>
+              <!-- TODO: confirm court/tribunal coverage and sources before launch -->
+              <p>Cases involving the company, where they appear in public court and tribunal records.</p>
+              <p class="toc-fields">Forum, case type, status, filing date</p>
+            </article>
+            <article class="toc-cell">
+              <span class="icon-tile">{{icon:network}}</span>
+              <h3>Group &amp; related companies</h3>
+              <p>Parent and subsidiary companies, and sister concerns linked through common directors.</p>
+              <p class="toc-fields">Holding structure, related-party disclosures</p>
+            </article>
+          </div>
+
+          <p class="toc-more" data-reveal>
+            <a class="link link-arrow" href="/database/">See every field in a report {{icon:arrow-right}}</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ SAMPLE REPORT ============ -->
+      <section class="section section-tint" id="report" aria-labelledby="report-title">
+        <div class="container-x report-grid">
+          <div class="report-intro" data-reveal>
+            <h2 id="report-title">See a sample report before you buy</h2>
+            <p class="lede">
+              This is a report for a sample company. The one you order is laid out the same way, with every figure taken
+              from the company’s own filings.
+            </p>
+            <ul class="checklist report-points">
+              <li>{{icon:check}}<span>Download as PDF for reading and Excel for analysis</span></li>
+              <li>{{icon:check}}<span>Figures standardised across years, so trends line up</span></li>
+              <li>{{icon:check}}<span>New filings are added automatically for 12 months</span></li>
+            </ul>
+            <div class="report-actions">
+              <!-- TODO: link to a real sample PDF -->
+              <a class="btn btn-primary" href="/database/#samples" data-magnetic>{{icon:file-down}} Browse sample reports</a>
+            </div>
+          </div>
+
+          <div class="report card-float" data-report>
+            <div class="report-top">
+              <div class="report-id">
+                <span class="profile-avatar">AL</span>
+                <div class="min-w-0">
+                  <p class="report-name">Apex Logistics &amp; Freight Limited</p>
+                  <p class="report-meta num"><span>CIN U60200DL2012PLC654321</span><span>Sample report</span></p>
+                </div>
+              </div>
+              <div class="report-tabs" role="tablist" aria-label="Report sections" data-tabs>
+                <button role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" tabindex="0">Overview</button>
+                <button role="tab" id="tab-financials" aria-controls="panel-financials" aria-selected="false" tabindex="-1">Financials</button>
+                <button role="tab" id="tab-people" aria-controls="panel-people" aria-selected="false" tabindex="-1">People</button>
+                <button role="tab" id="tab-risk" aria-controls="panel-risk" aria-selected="false" tabindex="-1">Risk</button>
+              </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="report-panel" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="0">
+              <dl class="facts">
+                <div data-build><dt>Status</dt><dd><span class="badge badge-success"><span class="dot"></span>Active</span></dd></div>
+                <div data-build><dt>Incorporated</dt><dd class="num">14 Mar 2012</dd></div>
+                <div data-build><dt>Category</dt><dd>Public limited (unlisted)</dd></div>
+                <div data-build><dt>Registrar</dt><dd>RoC Delhi</dd></div>
+                <div data-build><dt>Paid-up capital</dt><dd class="num">₹12.0 Cr</dd></div>
+                <div data-build><dt>Industry (NIC)</dt><dd><span class="num">49231</span> Freight transport by road</dd></div>
+              </dl>
+              <div class="report-chart" data-build>
+                <div class="report-chart-head">
+                  <h3>Revenue from operations, ₹ Cr</h3>
+                  <span class="report-chart-delta num">+16.5% CAGR FY21–FY25</span>
+                </div>
+                <div class="chart-box"><canvas data-chart="revenue" role="img" aria-label="Revenue from operations, FY21 ₹142.6 Cr rising each year to FY25 ₹262.8 Cr"></canvas></div>
+              </div>
+            </div>
+
+            <!-- Financials -->
+            <div class="report-panel" role="tabpanel" id="panel-financials" aria-labelledby="tab-financials" tabindex="0" hidden>
+              <div class="table-scroll" data-build>
+                <table class="fin-table">
+                  <caption class="sr-only">Standardised financial summary, ₹ crore</caption>
+                  <thead><tr><th scope="col">₹ Cr</th><th scope="col">FY21</th><th scope="col">FY22</th><th scope="col">FY23</th><th scope="col">FY24</th><th scope="col">FY25</th></tr></thead>
+                  <tbody>
+                    <tr data-build><th scope="row">Revenue</th><td>142.6</td><td>168.3</td><td>204.9</td><td>231.4</td><td>262.8</td></tr>
+                    <tr data-build><th scope="row">EBITDA</th><td>15.1</td><td>19.2</td><td>25.0</td><td>29.4</td><td>34.7</td></tr>
+                    <tr data-build><th scope="row">Net profit</th><td>4.2</td><td>6.1</td><td>9.3</td><td>11.0</td><td>13.6</td></tr>
+                    <tr data-build><th scope="row">Total assets</th><td>118.4</td><td>131.9</td><td>152.6</td><td>171.2</td><td>190.5</td></tr>
+                    <tr data-build><th scope="row">Net worth</th><td>48.7</td><td>54.8</td><td>64.1</td><td>75.1</td><td>88.7</td></tr>
+                    <tr data-build><th scope="row">Total borrowings</th><td>41.2</td><td>44.9</td><td>52.3</td><td>58.0</td><td>72.6</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="report-chart" data-build>
+                <div class="report-chart-head">
+                  <h3>Net worth and borrowings, ₹ Cr</h3>
+                  <ul class="legend"><li><i style="background:#20659F"></i>Net worth</li><li><i style="background:#5FB3E3"></i>Borrowings</li></ul>
+                </div>
+                <div class="chart-box"><canvas data-chart="networth" role="img" aria-label="Net worth grew from ₹48.7 Cr to ₹88.7 Cr; borrowings grew from ₹41.2 Cr to ₹72.6 Cr, FY21 to FY25"></canvas></div>
+              </div>
+            </div>
+
+            <!-- People -->
+            <div class="report-panel" role="tabpanel" id="panel-people" aria-labelledby="tab-people" tabindex="0" hidden>
+              <div class="table-scroll" data-build>
+                <table class="fin-table people-table">
+                  <caption class="sr-only">Current directors</caption>
+                  <thead><tr><th scope="col">Director</th><th scope="col">DIN</th><th scope="col">Appointed</th><th scope="col">Other boards</th></tr></thead>
+                  <tbody>
+                    <tr data-build><th scope="row">Rakesh Malhotra <small>Managing director</small></th><td>08••••45</td><td>14 Mar 2012</td><td>3</td></tr>
+                    <tr data-build><th scope="row">Anita Malhotra <small>Whole-time director</small></th><td>08••••46</td><td>14 Mar 2012</td><td>2</td></tr>
+                    <tr data-build><th scope="row">Suresh Iyer <small>Independent director</small></th><td>03••••20</td><td>02 Aug 2019</td><td>5</td></tr>
+                    <tr data-build><th scope="row">Farah Khan <small>Nominee director</small></th><td>09••••07</td><td>21 Jan 2023</td><td>4</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="report-chart" data-build>
+                <div class="report-chart-head"><h3>Shareholding pattern, March 2025</h3></div>
+                <div class="share-bar" role="img" aria-label="Promoters 68.4%, institutional investors 18.2%, other shareholders 13.4%">
+                  <span style="--w:68.4%;--c:#20659F"></span><span style="--w:18.2%;--c:#5FB3E3"></span><span style="--w:13.4%;--c:#AEBBC7"></span>
+                </div>
+                <ul class="legend legend-values">
+                  <li><i style="background:#20659F"></i>Promoters <strong class="num">68.4%</strong></li>
+                  <li><i style="background:#5FB3E3"></i>Institutional investors <strong class="num">18.2%</strong></li>
+                  <li><i style="background:#AEBBC7"></i>Other shareholders <strong class="num">13.4%</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Risk -->
+            <div class="report-panel" role="tabpanel" id="panel-risk" aria-labelledby="tab-risk" tabindex="0" hidden>
+              <div class="ratio-row">
+                <div data-build><span class="kpi-label">Debt to equity</span><span class="kpi-value num">0.82</span></div>
+                <div data-build><span class="kpi-label">Interest cover</span><span class="kpi-value num">4.1×</span></div>
+                <div data-build><span class="kpi-label">Receivable days</span><span class="kpi-value num">62</span></div>
+              </div>
+              <div class="table-scroll" data-build>
+                <table class="fin-table">
+                  <caption class="sr-only">Registered charges</caption>
+                  <thead><tr><th scope="col">Charge holder</th><th scope="col">Amount</th><th scope="col">Created</th><th scope="col">Status</th></tr></thead>
+                  <tbody>
+                    <tr data-build><th scope="row">Western Coast Bank</th><td>₹38.0 Cr</td><td>11 Jun 2021</td><td><span class="badge badge-warn">Open</span></td></tr>
+                    <tr data-build><th scope="row">Northline Finance Ltd</th><td>₹20.1 Cr</td><td>03 Feb 2023</td><td><span class="badge badge-warn">Open</span></td></tr>
+                    <tr data-build><th scope="row">Deccan Commercial Bank</th><td>₹14.5 Cr</td><td>19 Sep 2024</td><td><span class="badge badge-warn">Open</span></td></tr>
+                    <tr data-build><th scope="row">Western Coast Bank</th><td>₹9.0 Cr</td><td>27 Jul 2016</td><td><span class="badge badge-success">Satisfied</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <ul class="compliance" data-build>
+                <li>{{icon:file-check-2}}<span>Financial statements (AOC-4) for FY25 filed on <span class="num">28 Oct 2025</span></span><span class="badge badge-success">On time</span></li>
+                <li>{{icon:file-text}}<span>Annual return (MGT-7) for FY25 filed on <span class="num">24 Nov 2025</span></span><span class="badge badge-success">On time</span></li>
+                <li>{{icon:receipt-indian-rupee}}<span>GST registration in Delhi</span><span class="badge badge-success">Active</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="section" id="how-it-works" aria-labelledby="how-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="how-title">How ordering works</h2>
+            <p class="lede">Search is free. You choose the companies, pay with credits, and we compile each report from the latest filings on record.</p>
+          </div>
+
+          <ol class="steps" data-steps>
+            <li class="step">
+              <span class="step-marker"><span class="num">1</span></span>
+              <h3>Search and shortlist</h3>
+              <p>Find companies by name, CIN, director, location, sector or revenue band, and add the ones you want to your basket.</p>
+            </li>
+            <li class="step">
+              <span class="step-marker"><span class="num">2</span></span>
+              <h3>Pay with credits</h3>
+              <p>Use credits from a package you already hold, or buy a pack sized to the number of companies you need.</p>
+            </li>
+            <li class="step">
+              <span class="step-marker"><span class="num">3</span></span>
+              <h3>We compile the report</h3>
+              <p>Our system fetches, checks and formats the company’s latest filings into a structured report in your account.</p>
+            </li>
+            <li class="step">
+              <span class="step-marker"><span class="num">4</span></span>
+              <h3>Download and stay updated</h3>
+              <p>Download PDF and Excel files from your dashboard or pull them by API. New filings are added for 12 months.</p>
+            </li>
+          </ol>
         </div>
       </section>
 

@@ -204,3 +204,7 @@
   .checklist .icon { width: 1.125rem; height: 1.125rem; color: var(--color-brand-700); margin-top: 0.22rem; flex: none; }
 }
 
+
+@layer components {
+  h2 + .lede, h1 + .lede { margin-top: 1rem; }
+}
