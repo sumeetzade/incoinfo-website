@@ -253,7 +253,7 @@
   .trust-stats dd {
     font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em;
     font-variant-numeric: lining-nums proportional-nums; font-feature-settings: normal;
-    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.75rem); line-height: 1.1; color: var(--color-brand-900);
+    font-size: clamp(1.625rem, 1.25rem + 1.5vw, 2.375rem); line-height: 1.1; color: var(--color-brand-900);
   }
   .trust-stats dt { font-size: 0.9375rem; color: var(--color-ink-muted); max-width: 24ch; }
   @media (max-width: 767px) {
