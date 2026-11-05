@@ -199,3 +199,22 @@
 @layer components {
   h2 + .lede, h1 + .lede { margin-top: 1rem; }
 }
+
+/* ---------- Logo lockup: cube mark + lowercase wordmark ----------
+   Sized in em: set font-size on .logo (or its parent) to scale the whole lockup. */
+@layer components {
+  .logo { display: inline-flex; align-items: center; gap: 0.5em; line-height: 1; color: var(--color-brand-900); white-space: nowrap; }
+  .logo .logo-mark { width: 2.15em; height: 2.15em; }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-word {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: 1.6em; letter-spacing: -0.035em; line-height: 0.95;
+    color: var(--color-brand-900);
+  }
+  .logo-tag {
+    margin-top: 0.3em; padding-left: 0.08em;
+    font-family: var(--font-sans); font-weight: 500;
+    font-size: 0.66em; letter-spacing: 0.03em;
+    color: var(--color-ink-muted);
+  }
+}

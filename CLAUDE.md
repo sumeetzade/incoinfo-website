@@ -30,6 +30,10 @@ A static marketing site for IncoInfo (company reports on Indian registered compa
 - **No gradients.** Use plain colours only: primary buttons are `brand-700` (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
 - **White base, accents from the logo.** No colours from outside the logo, apart from the status chips.
 
+## Logo
+- The site logo is `partials/logo.html`: the cube mark (`partials/facet.html`) plus the lowercase wordmark **incoinfo** in Schibsted Grotesk and the tagline "Financial Insights" in Inter. It is HTML and SVG, not an image. Scale it with `font-size` on `.logo` (styles in `components.css`).
+- `public/logo.png` and `public/og-image.png` are rendered from the same lockup by `node scripts/render-logo.mjs`. `brand/logo.png` is the original capitalised artwork, kept only as the colour source.
+
 ## Design conventions
 - Text is left-aligned on a 12-column grid. Only the final CTA band is centred. Line length is ≤ 68ch.
 - No eyebrow labels, no all-caps labels, and no accenting a single word in a headline.
