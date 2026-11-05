@@ -266,8 +266,6 @@
     .trust-stats > div:first-child { padding-left: 0; border-left: 0; }
   }
 
-  .trust-sources { border-top: 1px solid var(--color-line); padding-block: 1.25rem 1.5rem; }
-  .trust-sources-label { font-size: 0.9375rem; font-weight: 600; color: var(--color-ink); margin-bottom: 1rem; }
   .marquee {
     display: flex; overflow: hidden; user-select: none;
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
