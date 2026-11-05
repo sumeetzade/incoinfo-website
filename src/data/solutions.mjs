@@ -143,7 +143,7 @@ export const solutions = [
     slug: 'nbfcs-private-credit',
     segment: 'lenders',
     name: 'NBFCs & private credit',
-    icon: 'indian-rupee',
+    icon: 'banknote',
     audience: 'Risk managers, structured credit analysts and venture debt investors',
     title: 'Risk data for NBFCs and private credit funds',
     subtitle: 'Structure secured lending with clear visibility into asset backing, promoter guarantees and debt priority.',
@@ -198,7 +198,7 @@ export const solutions = [
     icon: 'chart-column',
     audience: 'Strategy heads, corporate development directors and M&A analysts',
     title: 'Corporate development and competitive intelligence',
-    subtitle: 'Track market share, analyse competitor margins and identify acquisition targets across Indian industries.',
+    subtitle: 'Track market share, analyse competitor margins and identify acquisition targets across industries.',
     summary: 'Benchmark private competitors on filed numbers and size a market before you enter it.',
     pains: [
       ['Incomplete market sizing', 'Estimating a market is hard when the main competitors are private, unlisted companies.'],
