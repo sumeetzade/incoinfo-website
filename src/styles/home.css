@@ -258,10 +258,11 @@
   .trust-stats dt { font-size: 0.9375rem; color: var(--color-ink-muted); max-width: 24ch; }
   @media (max-width: 767px) {
     .trust-stats > div:nth-child(-n + 2) { border-bottom: 1px solid var(--color-line); }
-    .trust-stats > div:nth-child(2n) { padding-left: 1rem; border-left: 1px solid var(--color-line); }
+    .trust-stats > div:nth-child(2) { padding-left: 1rem; border-left: 1px solid var(--color-line); }
+    .trust-stats > div:nth-child(3) { grid-column: 1 / -1; }
   }
   @media (min-width: 768px) {
-    .trust-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .trust-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .trust-stats > div { padding: 1.5rem 1.5rem; border-left: 1px solid var(--color-line); }
     .trust-stats > div:first-child { padding-left: 0; border-left: 0; }
   }
