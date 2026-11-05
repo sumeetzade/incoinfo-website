@@ -109,11 +109,11 @@ const builders = {
     data: { labels: S.years, datasets: [{ label: 'Revenue', data: S.financials.revenue, ...bar(C1) }] },
     options: {
       layout: { padding: { top: 20, right: 22 } },
-      scales: axes({ yFmt: (v) => `₹${v}` }),
+      scales: axes({ yFmt: (v) => `${v}` }),
       plugins: {
         legend: { display: false },
-        tooltip: { ...tooltip, callbacks: { label: (c) => ` Revenue ₹${c.parsed.y} Cr` } },
-        endLabel: { index: -1, format: (v) => `₹${v} Cr` },
+        tooltip: { ...tooltip, callbacks: { label: (c) => ` Revenue ${c.parsed.y} m` } },
+        endLabel: { index: -1, format: (v) => `${v} m` },
       },
     },
   }),
@@ -128,8 +128,8 @@ const builders = {
     },
     options: {
       interaction: { mode: 'index', intersect: false },
-      scales: axes({ yFmt: (v) => `₹${v}` }),
-      plugins: { legend: { display: false }, tooltip: { ...tooltip, callbacks: { label: (c) => ` ${c.dataset.label} ₹${c.parsed.y} Cr` } } },
+      scales: axes({ yFmt: (v) => `${v}` }),
+      plugins: { legend: { display: false }, tooltip: { ...tooltip, callbacks: { label: (c) => ` ${c.dataset.label} ${c.parsed.y} m` } } },
     },
   }),
   states: () => ({

@@ -2,15 +2,14 @@
 // TODO: replace with a real sample report once the portal can export one.
 export const sampleCompany = {
   name: 'Apex Logistics & Freight Limited',
-  cin: 'U60200DL2012PLC654321',
+  regNo: '2012-654321',
   status: 'Active',
   incorporated: '14 Mar 2012',
-  roc: 'RoC Delhi',
+  registry: 'Companies registry',
   category: 'Public limited (unlisted)',
-  nic: '49231 · Freight transport by road',
-  office: 'New Delhi, Delhi',
-  paidUp: 12.0, // ₹ Cr
-  authorised: 15.0, // ₹ Cr
+  industry: 'Freight transport by road',
+  paidUp: 12.0, // millions (currency-neutral sample)
+  authorised: 15.0, // millions
   years: ['FY21', 'FY22', 'FY23', 'FY24', 'FY25'],
   financials: {
     revenue: [142.6, 168.3, 204.9, 231.4, 262.8],

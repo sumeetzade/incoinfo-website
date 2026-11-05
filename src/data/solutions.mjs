@@ -20,11 +20,11 @@ export const solutions = [
     summary: 'Screen unlisted targets on filed financials and verify cap tables before you sign an NDA.',
     pains: [
       ['Opaque unlisted financials', 'High-growth private companies have no public reporting obligations, so verifying their numbers before an NDA is difficult.'],
-      ['Cap table uncertainty', 'Pitch deck equity figures often differ from official share allotment filings (PAS-3 / SH-7), hiding dilution or undisclosed preference shares.'],
+      ['Cap table uncertainty', 'Pitch deck equity figures often differ from official share allotment filings, hiding dilution or undisclosed preference shares.'],
       ['High platform overhead', 'Per-seat licences for huge company databases are expensive when you only need deep diligence on 10 to 20 deals a year.'],
     ],
     steps: [
-      ['Source and filter', 'Filter companies by turnover, state, incorporation age and NIC sector code to build a shortlist of investment candidates.'],
+      ['Source and filter', 'Filter companies by turnover, region, incorporation age and industry code to build a shortlist of investment candidates.'],
       ['Order the shortlist', 'Unlock full profiles with your package credits to review audited filings, shareholding and open bank charges.'],
       ['Monitor through the deal', 'Every unlock includes 12 months of updates. If the target files new annual returns during negotiations, your report refreshes automatically.'],
     ],
@@ -35,7 +35,7 @@ export const solutions = [
     ],
     example: {
       who: 'Associate, growth-stage PE fund',
-      text: 'Needed 3-year financials and shareholding patterns for 12 D2C logistics companies. Searched by NIC sector and revenue band, ordered all 12 with package credits, and received one structured Excel and PDF package.',
+      text: 'Needed 3-year financials and shareholding patterns for 12 D2C logistics companies. Searched by industry and revenue band, ordered all 12 with package credits, and received one structured Excel and PDF package.',
     },
     compare: {
       head: ['', 'Generic market directories', 'IncoInfo'],
@@ -72,7 +72,7 @@ export const solutions = [
     ],
     example: {
       who: 'M&A advisor, industrial packaging mandate',
-      text: 'Needed side-by-side financial histories of 5 regional competitors for a valuation deck. Selected the 5 CINs, placed one order, and built the model from a unified Excel comparison.',
+      text: 'Needed side-by-side financial histories of 5 regional competitors for a valuation deck. Selected the 5 companies, placed one order, and built the model from a unified Excel comparison.',
     },
   },
   {
@@ -90,14 +90,14 @@ export const solutions = [
       ['Pledged asset exposure', 'You may invest in a company whose promoter shares or main assets are already pledged to lenders.'],
     ],
     steps: [
-      ['Check the promoters', 'Search founder DINs to map their active directorships, past resignations and group company holdings.'],
+      ['Check the promoters', 'Search founders’ director IDs to map their active directorships, past resignations and group company holdings.'],
       ['Check the assets', 'Review registered charges to confirm property and company assets are free of undisclosed mortgages.'],
       ['Keep watching', 'Unlocked reports stay active for 12 months, so you see annual filings and structural changes as they happen.'],
     ],
     deliverables: [
       ['Promoter directorship network', 'Full history of current and past board seats held by key founders.'],
       ['Asset encumbrance summary', 'Secured lenders, loan amounts and charge creation dates.'],
-      ['Compliance track record', 'Timeliness of AOC-4 and MGT-7 filings over a 5-year window.'],
+      ['Compliance track record', 'Timeliness of annual financial statements and annual returns over a 5-year window.'],
     ],
   },
 
@@ -117,24 +117,24 @@ export const solutions = [
       ['No view after disbursement', 'It is hard to track whether a borrower stays compliant once the loan is sanctioned.'],
     ],
     steps: [
-      ['Search by CIN', 'Enter the borrowing company’s CIN or name and add it to your basket.'],
+      ['Search by registration number', 'Enter the borrowing company’s registration number or name and add it to your basket.'],
       ['Review charges and ratios', 'See every open charge with the lender, plus 3 to 5 years of trade payables, debt-to-equity and interest cover.'],
       ['Use it for the annual review', 'The 12-month subscription adds new filings and charge changes automatically, ready for the annual credit review.'],
     ],
     deliverables: [
       ['Consolidated charge registry', 'Lender, charge amount, creation date, modifications and status (open or satisfied).'],
-      ['Filing compliance summary', 'Active GST status and annual filing completion dates.'],
+      ['Filing compliance summary', 'Active tax registration and annual filing completion dates.'],
       ['Financial performance ratios', 'Operating revenue, net margin, total assets vs total liabilities across several years.'],
     ],
     example: {
       who: 'Senior credit officer, commercial bank',
-      text: 'Evaluating a ₹10 Cr working capital loan. Searched the applicant’s CIN, used 1 credit, and reviewed the full charge history alongside three years of receivables and payables to finish the credit note.',
+      text: 'Evaluating a working capital loan application. Searched the applicant’s registration number, used 1 credit, and reviewed the full charge history alongside three years of receivables and payables to finish the credit note.',
     },
     compare: {
       head: ['', 'Manual diligence', 'IncoInfo report'],
       rows: [
         ['Charge verification', 'Manual registry search per lender', 'Full charge history: lender, amount, date, status'],
-        ['Tax compliance', 'Collecting GST returns from the borrower', 'GST status and filing track record'],
+        ['Tax compliance', 'Collecting tax returns from the borrower', 'Tax registration status and filing track record'],
         ['Financial trends', 'Re-keying numbers from PDFs', 'Pre-formatted 3 to 5 year comparison'],
       ],
     },
@@ -142,10 +142,10 @@ export const solutions = [
   {
     slug: 'nbfcs-private-credit',
     segment: 'lenders',
-    name: 'NBFCs & private credit',
+    name: 'Non-bank lenders & private credit',
     icon: 'banknote',
     audience: 'Risk managers, structured credit analysts and venture debt investors',
-    title: 'Risk data for NBFCs and private credit funds',
+    title: 'Risk data for non-bank lenders and private credit funds',
     subtitle: 'Structure secured lending with clear visibility into asset backing, promoter guarantees and debt priority.',
     summary: 'Work out collateral cover and lender priority from filed schedules, not borrower claims.',
     pains: [
@@ -175,7 +175,7 @@ export const solutions = [
     summary: 'Rebuild a debtor’s full charge history and find linked companies under tight deadlines.',
     pains: [
       ['Finding diverted assets', 'Tracing transfers of company assets to related parties before the default.'],
-      ['Conflicting lender claims', 'Setting clear timelines for charge creation and satisfaction during liquidation or CIRP.'],
+      ['Conflicting lender claims', 'Setting clear timelines for charge creation and satisfaction during liquidation or insolvency proceedings.'],
       ['Tight statutory deadlines', 'Insolvency professionals need company data compiled quickly to meet legal timelines.'],
     ],
     steps: [
@@ -186,7 +186,7 @@ export const solutions = [
     deliverables: [
       ['Lifetime charge chronology', 'Every secured borrowing, charge holder and satisfaction on record.'],
       ['Promoter directorship history', 'All businesses owned or governed by the debtor’s management.'],
-      ['Historical filing archive', 'Past AOC-4 balance sheet filings and auditor notes.'],
+      ['Historical filing archive', 'Past balance sheet filings and auditor notes.'],
     ],
   },
 
@@ -206,7 +206,7 @@ export const solutions = [
       ['Regional expansion risk', 'Entering a new region without knowing the financial scale of the local leaders.'],
     ],
     steps: [
-      ['Filter the sector', 'Filter by NIC sector code, state and revenue range to find every operating competitor.'],
+      ['Filter the sector', 'Filter by industry code, region and revenue range to find every operating competitor.'],
       ['Benchmark side by side', 'Compare gross margin, profit after tax and debt against your own numbers.'],
       ['Shortlist targets', 'Pick mid-market companies that fit your criteria and follow their filings for 12 months.'],
     ],
@@ -225,20 +225,20 @@ export const solutions = [
     audience: 'Chief procurement officers, supply chain managers and vendor onboarding leads',
     title: 'Vendor risk and supply chain due diligence',
     subtitle: 'Reduce supply chain disruption by checking a vendor’s financial health, paid-up capital and compliance status.',
-    summary: 'Check a supplier’s debt, cash flow and GST status before the contract, and re-check during it.',
+    summary: 'Check a supplier’s debt, cash flow and tax registration before the contract, and re-check during it.',
     pains: [
       ['Vendor insolvency risk', 'Onboarding critical suppliers who are in financial distress or close to insolvency.'],
-      ['Regulatory non-compliance', 'Contracting with vendors whose GST is inactive or whose filings are overdue.'],
+      ['Regulatory non-compliance', 'Contracting with vendors whose tax registration is inactive or whose filings are overdue.'],
       ['Single-source dependency', 'No quick way to assess the financial capacity of backup suppliers.'],
     ],
     steps: [
-      ['Look up the vendor', 'Search the prospective supplier by name or CIN.'],
+      ['Look up the vendor', 'Search the prospective supplier by name or registration number.'],
       ['Check financial health', 'Review net worth, debt-to-equity, turnover and filing regularity before the award.'],
       ['Monitor the contract year', 'Re-check the vendor any time in the next 12 months at no extra credit cost.'],
     ],
     deliverables: [
       ['Vendor health scorecard', 'Paid-up capital, net worth, operating cash flow and total debt.'],
-      ['Compliance status', 'Last annual return date, GST status and company status (active or in liquidation).'],
+      ['Compliance status', 'Last annual return date, tax registration status and company status (active or in liquidation).'],
       ['Management and address check', 'Registered address, company email and current directors.'],
     ],
     example: {
@@ -261,14 +261,14 @@ export const solutions = [
       ['Territory planning', 'No way to map prospects by verified revenue band within a state.'],
     ],
     steps: [
-      ['Define your ideal customer', 'Filter by minimum turnover (for example above ₹25 Cr), active status, sector and state.'],
+      ['Define your ideal customer', 'Filter by minimum turnover, active status, sector and region.'],
       ['Learn who decides', 'Review current board members and key appointments to reach the right people.'],
       ['Unlock only real targets', 'Use credits on the companies your team will actually pursue.'],
     ],
     deliverables: [
-      ['Prospect directory', 'Legal name, CIN, incorporation date and registered address.'],
+      ['Prospect directory', 'Legal name, registration number, incorporation date and registered address.'],
       ['Financial capacity', 'Turnover range, paid-up capital and profit status.'],
-      ['Board directory', 'Active directors and their DINs.'],
+      ['Board directory', 'Active directors and their director IDs.'],
     ],
   },
 
@@ -289,7 +289,7 @@ export const solutions = [
     ],
     steps: [
       ['Build the company timeline', 'Get every name change, registered office move and capital increase in one timeline.'],
-      ['Map director links', 'Search director DINs to find past and present board overlaps across companies.'],
+      ['Map director links', 'Search director IDs to find past and present board overlaps across companies.'],
       ['Cover the whole matter', 'Keep client and counterparty profiles active for 12 months through the transaction or litigation.'],
     ],
     deliverables: [
@@ -338,8 +338,8 @@ export const solutions = [
       ['Sponsor reporting', 'Government and institutional sponsors want verified growth and survival figures.'],
     ],
     steps: [
-      ['Add the cohort', 'Add alumni startup CINs to your basket to track their official status.'],
-      ['Confirm funding rounds', 'Follow capital increases (PAS-3 / SH-7) and paid-up capital changes after each round.'],
+      ['Add the cohort', 'Add alumni startups to your basket to track their official status.'],
+      ['Confirm funding rounds', 'Follow share allotment filings and paid-up capital changes after each round.'],
       ['Watch all year', 'Track annual filing compliance and active status across the cohort for 12 months.'],
     ],
     deliverables: [

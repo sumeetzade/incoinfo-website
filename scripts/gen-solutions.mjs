@@ -60,15 +60,15 @@ ${s.compare.rows.map((r) => `                  <tr><th scope="row">${esc(r[0])}<
     ? `
           <div class="compare" data-reveal>
             <h3>Example peer benchmark</h3>
-            <p class="muted">Illustrative figures from three sample companies in one sector, FY25.</p>
+            <p class="muted">Illustrative figures from three sample companies in one sector, FY25, in millions.</p>
             <div class="table-scroll">
               <table class="fin-table">
                 <thead><tr><th scope="col">Metric</th><th scope="col">Your company</th><th scope="col">Competitor A</th><th scope="col">Competitor B</th></tr></thead>
                 <tbody>
-                  <tr><th scope="row">Annual revenue</th><td>₹150.0 Cr</td><td>₹210.5 Cr</td><td>₹88.2 Cr</td></tr>
+                  <tr><th scope="row">Annual revenue</th><td>150.0 m</td><td>210.5 m</td><td>88.2 m</td></tr>
                   <tr><th scope="row">EBITDA margin</th><td>18.4%</td><td>14.2%</td><td>21.0%</td></tr>
                   <tr><th scope="row">Debt to equity</th><td>0.35</td><td>1.12</td><td>0.08</td></tr>
-                  <tr><th scope="row">Open charges</th><td>₹12.5 Cr</td><td>₹68.0 Cr</td><td>₹2.1 Cr</td></tr>
+                  <tr><th scope="row">Open charges</th><td>12.5 m</td><td>68.0 m</td><td>2.1 m</td></tr>
                   <tr><th scope="row">Filing status</th><td><span class="badge badge-success">Up to date</span></td><td><span class="badge badge-success">Up to date</span></td><td><span class="badge badge-warn">30 days late</span></td></tr>
                 </tbody>
               </table>
