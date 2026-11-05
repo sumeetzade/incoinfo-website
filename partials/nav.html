@@ -8,9 +8,10 @@
     <nav class="nav-links" aria-label="Primary">
       <ul>
         <li class="nav-item nav-item-wide" data-menu>
-          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-solutions" data-section="/solutions/">
-            Solutions {{icon:chevron-down|nav-caret}}
-          </button>
+          <span class="nav-split">
+            <a class="nav-link nav-split-link" href="/solutions/">Solutions</a>
+            <button class="nav-split-caret" type="button" aria-expanded="false" aria-controls="menu-solutions" aria-label="Show solutions by team">{{icon:chevron-down|nav-caret}}</button>
+          </span>
           <div class="nav-panel nav-panel-wide" id="menu-solutions" hidden>
             <div class="mega">
               <div class="mega-col">
@@ -38,7 +39,6 @@
                 <a href="/solutions/incubators-accelerators/">Incubators &amp; accelerators</a>
               </div>
             </div>
-            <a class="mega-foot" href="/solutions/">See how each team uses IncoInfo {{icon:arrow-right}}</a>
           </div>
         </li>
         <li class="nav-item" data-menu>

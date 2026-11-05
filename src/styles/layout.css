@@ -33,6 +33,18 @@
   .nav-link:hover, .nav-link[aria-expanded="true"] { color: var(--color-brand-700); background: var(--color-brand-50); }
   .nav-caret { width: 1rem; height: 1rem; transition: transform 0.25s var(--ease-out-soft); }
   .nav-link[aria-expanded="true"] .nav-caret { transform: rotate(180deg); }
+  /* Solutions: the label is a link to /solutions/, the arrow opens the dropdown */
+  .nav-split { display: inline-flex; align-items: center; border-radius: 8px; transition: background-color 0.2s; }
+  .nav-split .nav-split-link { padding-right: 0.25rem; }
+  .nav-split .nav-split-link:hover { background: none; }
+  .nav-split:hover, .nav-split:has([aria-expanded="true"]) { background: var(--color-brand-50); }
+  .nav-split:hover .nav-split-link, .nav-split:has([aria-expanded="true"]) .nav-split-link { color: var(--color-brand-700); }
+  .nav-split-caret {
+    display: inline-grid; place-items: center; width: 28px; height: 40px; margin-left: -0.125rem; padding-right: 0.25rem;
+    background: none; border: 0; border-radius: 0 8px 8px 0; cursor: pointer; color: var(--color-ink);
+  }
+  .nav-split-caret:hover, .nav-split-caret[aria-expanded="true"] { color: var(--color-brand-700); }
+  .nav-split-caret[aria-expanded="true"] .nav-caret { transform: rotate(180deg); }
   /* current section: a small facet bar from the logo palette */
   .nav-link.is-current::after {
     content: ""; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 2px; height: 2px; border-radius: 2px;
@@ -52,7 +64,7 @@
     top: calc(var(--nav-h) - 6px);
     left: max(16px, calc(50% - 480px));
     width: min(960px, calc(100% - 32px));
-    padding: 1.25rem 1.25rem 0.75rem;
+    padding: 1.25rem;
     transform-origin: top center;
   }
   .nav-panel[data-state="open"] { animation: panel-in 0.22s var(--ease-out-soft); }
@@ -73,13 +85,6 @@
   }
   .mega-col a:hover, .mobile-group a:hover { color: var(--color-brand-700); }
   .mega-col a:hover { background: var(--color-brand-50); color: var(--color-brand-700); }
-  .mega-foot {
-    display: flex; align-items: center; gap: 0.375rem;
-    margin-top: 0.875rem; padding: 0.875rem 0.5rem 0.25rem;
-    border-top: 1px solid var(--color-line);
-    font-size: 0.9375rem; font-weight: 600; color: var(--color-brand-700);
-  }
-  .mega-foot .icon { width: 1rem; height: 1rem; }
   .nav-rich { display: flex; gap: 0.875rem; align-items: center; padding: 0.625rem; border-radius: 10px; }
   .nav-rich:hover { background: var(--color-surface-tint); }
   .nav-rich .icon-tile { width: 40px; height: 40px; border-radius: 10px; }
