@@ -142,3 +142,11 @@
   .acc-item:not(.is-open) .acc-inner { visibility: hidden; transition: visibility 0s 0.4s; }
   .acc-item.is-open .acc-inner { visibility: visible; }
 }
+
+@layer components {
+  /* pricing sits on a tinted section: lift the calculator panel onto white */
+  .section-tint .calc { background: #fff; }
+  .section-tint .calc-result { background: var(--color-surface-tint); }
+  /* use cases on white: tag chips get the tint */
+  .usecase .icon-tile { background: var(--color-brand-50); }
+}
