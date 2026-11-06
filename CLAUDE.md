@@ -46,6 +46,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 - Radii vary by role: 20px for floating and report cards, 14px for content cards, 10px for buttons and inputs.
 - Shadows are tinted navy in two layers. Numbers use `.num` (tabular figures).
 - The facet mark (the open cube from the logo, `partials/facet.html`) is used only with meaning: the active nav item, the Most Popular pack and step markers.
+- Menu bar and dropdown labels (desktop and mobile) use **title case**, for example "Data & Coverage" or "Venture Capital & Private Equity", with small words like "and" kept lowercase. Their one-line descriptions stay in sentence case.
 - Copy is plain, specific and in sentence case, with no hype. Follow the content source (the Gemini "Incoinfo Website Structure Proposal"). The "fresh compilation" message lives only on `/data-standards`.
 
 ## Charts
