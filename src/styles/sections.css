@@ -47,12 +47,12 @@
     position: absolute; top: -0.875rem; left: 1.75rem;
     display: inline-flex; align-items: center; gap: 0.4rem;
     padding: 0.25rem 0.75rem 0.25rem 0.5rem; border-radius: 999px;
-    background: #fff; border: 1px solid var(--color-brand-700);
-    font-size: 0.8125rem; font-weight: 650; color: var(--color-brand-700);
+    background: var(--color-accent); border: 1px solid var(--color-accent);
+    font-size: 0.8125rem; font-weight: 700; color: var(--color-brand-900);
   }
   .pack-flag .facet { width: 1rem; height: 1rem; }
   .pack.is-recommended { transform: translateY(-4px); }
-  .pack.is-recommended:not(.pack-featured) { border-color: var(--color-brand-400); box-shadow: var(--shadow-lift); }
+  .pack.is-recommended { border-color: var(--color-accent); box-shadow: var(--shadow-lift), 0 0 0 1px var(--color-accent); }
 
   .calc {
     display: grid; gap: 1.5rem; margin-top: 1.5rem;
@@ -79,7 +79,7 @@
   }
   .calc input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: #fff; border: 2px solid var(--color-brand-700); }
   .calc input[type="range"]:focus-visible { outline: none; }
-  .calc input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgb(39 152 211 / 0.35); }
+  .calc input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgb(32 101 159 / 0.4); }
   .calc-result { padding: 1.25rem; border-radius: 14px; background: #fff; border: 1px solid var(--color-line); }
   .calc-best { font-size: 0.9375rem; color: var(--color-ink-muted); }
   .calc-best strong { color: var(--color-ink); }
@@ -111,11 +111,11 @@
     font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
     font-size: 0.8125rem; line-height: 1.7; color: #e8f2f9;
   }
-  .code-card pre:focus-visible { outline: 2px solid #5fb3e3; outline-offset: -4px; }
-  .c-cmd { color: #8fd0f5; font-weight: 600; }
-  .c-str { color: #ffd59a; }
-  .c-key { color: #9fd3f0; }
-  .c-num { color: #b8e0a8; }
+  .code-card pre:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -4px; }
+  .c-cmd { color: var(--color-accent); font-weight: 600; }
+  .c-str { color: #e8f2f9; }
+  .c-key { color: var(--color-accent); }
+  .c-num { color: #ffffff; }
   .c-com { color: #8fb0c7; }
 
   /* ================= FAQ ================= */

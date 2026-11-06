@@ -20,7 +20,9 @@ A static marketing site for incoinfo (company reports on registered companies). 
 |---|---|---|
 | `brand-900` | `#0A456D` | Navy. Key figures, gradient start (the footer is light: `surface-tint`) |
 | `brand-700` | `#20659F` | **Primary**: CTAs, links, key numbers, focus rings (6.1:1 on white) |
-| `brand-400` | `#2798D3` | **Accent only**: chart strokes, highlights, motion. Never body text (3.2:1) |
+| `accent` | `#ffad00` | **Orange from the logo's i-dots.** Marks what is new, current or chosen (see rules below) |
+| `accent-soft` | `#fff4da` | Orange tint: text selection, the hero's updated-row flash and incoming filing |
+| `accent-data` | `#E59A00` | Charts only: deeper step of the orange that passes the chart legibility check |
 | `ink` | `#0F1E2E` | Body text (no pure black) |
 | `ink-muted` | `#4A5866` | Secondary text |
 | `surface-tint` | `#F2F7FB` | Section breaks |
@@ -28,7 +30,16 @@ A static marketing site for incoinfo (company reports on registered companies). 
 | success / warn / danger | `#1F7A4D` / `#A15C00` / `#B42318` | Status chips only |
 
 - **No gradients.** Use plain colours only: primary buttons are `brand-700` (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
-- **White base, accents from the logo.** No colours from outside the logo, apart from the status chips and the orange `#ffad00` dots in the logo.
+- **White base, blue and orange from the logo.** No colours from outside the logo, apart from the status chips. The light blue `#2798D3` appears only inside the logo cube.
+- **Orange means "new, current or chosen"**, and nothing else. Its uses:
+  - hero animation: wires, dots, the latest revenue point, the incoming filing;
+  - charts: the latest-year bar and the second series;
+  - nav: current-section underline;
+  - "How ordering works": progress line and active-step ring;
+  - pricing: "Most popular" flag and the calculator's recommended pack;
+  - the orange "Open the Demo" button on the navy closing band (`.btn-accent`, used only there);
+  - link hover underline, text selection, data-flow arrows, API code highlights.
+- **Never use orange for** text, icons or focus rings on white (1.9:1). Navy or ink text **on** orange is fine (5.4:1 and 9:1), and so is orange on navy (5.4:1). Keep orange rare: if a new use doesn't mean new, current or chosen, use blue.
 
 ## Brand name
 - Always write the brand as **incoinfo**, all lowercase, in copy, titles, meta tags and structured data, including at the start of a sentence. Only code identifiers (for example `INCOINFO_API_KEY`) and the source document title "Incoinfo Website Structure Proposal" keep other casing.
@@ -52,7 +63,8 @@ A static marketing site for incoinfo (company reports on registered companies). 
 ## Charts
 - Chart.js, configured in `src/js/charts.js` and lazy-loaded. Palettes were checked with the dataviz validator:
   - single series: `#20659F`;
-  - two series: `#20659F` + `#5FB3E3`;
+  - two series: `#20659F` + `#E59A00` (blue and the orange data step);
+  - highlighting the latest value: `#E59A00` on that one bar only;
   - a neutral "other" category: `#AEBBC7`.
 - Navy fails the chart lightness and chroma checks, so it is never used for data marks.
 - One y-axis only, solid hairline grid, a label on one data point at most, and a table view (`<details>`) next to each chart.

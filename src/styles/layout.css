@@ -46,8 +46,8 @@
   .nav-split-caret[aria-expanded="true"] .nav-caret { transform: rotate(180deg); }
   /* current section: a small facet bar from the logo palette */
   .nav-link.is-current::after {
-    content: ""; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 2px; height: 2px; border-radius: 2px;
-    background: var(--color-brand-700);
+    content: ""; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 2px; height: 3px; border-radius: 3px;
+    background: var(--color-accent);
   }
 
   .nav-panel {

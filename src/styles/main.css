@@ -19,7 +19,11 @@
   --color-brand-900: #0a456d;
   --color-brand-800: #155586;
   --color-brand-700: #20659f;
-  --color-brand-400: #2798d3;
+  /* orange from the logo's i-dots: marks what is new, current or chosen (never text on white: 1.9:1) */
+  --color-accent: #ffad00;
+  --color-accent-hover: #ffbe3d;
+  --color-accent-soft: #fff4da;
+  --color-accent-data: #e59a00; /* charts only: deeper step that passes the chart legibility check */
   --color-brand-100: #dcecf8;
   --color-brand-50: #eef5fb;
 
@@ -86,7 +90,7 @@
   h4 { font-size: 1.0625rem; line-height: 1.35; font-weight: 650; }
   p { text-wrap: pretty; }
   a { color: inherit; text-decoration: none; }
-  ::selection { background: var(--color-brand-100); color: var(--color-brand-900); }
+  ::selection { background: var(--color-accent-soft); color: var(--color-ink); }
 
   :focus-visible {
     outline: 2px solid var(--color-brand-700);

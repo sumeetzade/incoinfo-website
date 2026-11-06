@@ -1,7 +1,8 @@
 // Chart.js charts, loaded only when a [data-chart] element approaches the viewport.
 // Palette (validated with the dataviz checker against white):
 //   single series  #20659F
-//   two series     #20659F, #5FB3E3   (ΔE 24, CVD-safe)
+//   two series     #20659F, #E59A00   (blue + logo orange, ΔE 35, CVD-safe; legend + table provide relief)
+//   latest-value highlight  #E59A00 on one bar only
 // Rules: one y-axis, hairline solid grid, 2px lines, ≤24px bars with 4px rounded ends,
 // tooltips on hover, text in ink tokens (never series colour).
 import {
@@ -15,7 +16,7 @@ import { landscape } from '../data/landscape.js'
 Chart.register(BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip, Filler)
 
 const C1 = '#20659F'
-const C2 = '#5FB3E3'
+const C2 = '#E59A00' // charts-only step of the logo orange #ffad00
 const INK = '#0F1E2E'
 const MUTED = '#4A5866'
 const GRID = '#E6EDF3'
@@ -106,7 +107,8 @@ const S = sampleCompany
 const builders = {
   revenue: () => ({
     type: 'bar',
-    data: { labels: S.years, datasets: [{ label: 'Revenue', data: S.financials.revenue, ...bar(C1) }] },
+    // the latest year is highlighted in orange (the same 'latest' meaning as in the hero)
+    data: { labels: S.years, datasets: [{ label: 'Revenue', data: S.financials.revenue, ...bar(C1), backgroundColor: S.years.map((_, i) => (i === S.years.length - 1 ? C2 : C1)) }] },
     options: {
       layout: { padding: { top: 20, right: 22 } },
       scales: axes({ yFmt: (v) => `${v}` }),
