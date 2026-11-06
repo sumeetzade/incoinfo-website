@@ -54,6 +54,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 ## Design conventions
 - Text is left-aligned on a 12-column grid. Only the final CTA band is centred. Line length is ≤ 68ch.
 - No eyebrow labels, no all-caps labels, and no accenting a single word in a headline.
+- Every page title (h1), homepage included, uses the same size (`h1` in `main.css`: 38px desktop, 27px phones). Don't give one page a bigger title.
 - Radii vary by role: 20px for floating and report cards, 14px for content cards, 10px for buttons and inputs.
 - Shadows are tinted navy in two layers. Numbers use `.num` (tabular figures).
 - The facet mark (the open cube from the logo, `partials/facet.html`) is used only with meaning: the active nav item, the Most Popular pack and step markers.
