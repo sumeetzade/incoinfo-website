@@ -1,4 +1,4 @@
-# IncoInfo static site — Apache rules
+# incoinfo static site — Apache rules
 # Clean URLs: pages are served without ".html" (e.g. /pricing/ or /pricing),
 # and any request that includes ".html" is redirected to the clean URL.
 

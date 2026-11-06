@@ -90,7 +90,7 @@ ${s.compare.rows.map((r) => `                  <tr><th scope="row">${esc(r[0])}<
     : ''
 
   return `${head({
-    title: `${s.title} | IncoInfo`,
+    title: `${s.title} | incoinfo`,
     description: s.subtitle,
     path: url,
     ld: crumbsLd([['Home', '/'], ['Solutions', '/solutions/'], [s.name, url]]),
@@ -137,7 +137,7 @@ ${s.pains.map(([t, d]) => `            <article class="pain">
       <section class="section section-tint" aria-labelledby="flow-title">
         <div class="container-x">
           <div class="section-head" data-reveal>
-            <h2 id="flow-title">How IncoInfo fits your workflow</h2>
+            <h2 id="flow-title">How incoinfo fits your workflow</h2>
           </div>
           <ol class="steps steps-3" data-steps>
 ${s.steps.map(([t, d], i) => `            <li class="step">
@@ -181,8 +181,8 @@ ${foot}`
 
 function hubPage() {
   return `${head({
-    title: 'Solutions by team | IncoInfo',
-    description: 'How lenders, investors, corporate teams and professional firms use IncoInfo company reports built from official filings.',
+    title: 'Solutions by team | incoinfo',
+    description: 'How lenders, investors, corporate teams and professional firms use incoinfo company reports built from official filings.',
     path: '/solutions/',
     ld: crumbsLd([['Home', '/'], ['Solutions', '/solutions/']]),
   })}

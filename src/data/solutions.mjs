@@ -38,7 +38,7 @@ export const solutions = [
       text: 'Needed 3-year financials and shareholding patterns for 12 D2C logistics companies. Searched by industry and revenue band, ordered all 12 with package credits, and received one structured Excel and PDF package.',
     },
     compare: {
-      head: ['', 'Generic market directories', 'IncoInfo'],
+      head: ['', 'Generic market directories', 'incoinfo'],
       rows: [
         ['Financial statements', 'Basic summary metrics', 'Standardised multi-year balance sheet and P&L'],
         ['Shareholding', 'Static news snippets', 'Official share allotment and equity filings'],
@@ -131,7 +131,7 @@ export const solutions = [
       text: 'Evaluating a working capital loan application. Searched the applicant’s registration number, used 1 credit, and reviewed the full charge history alongside three years of receivables and payables to finish the credit note.',
     },
     compare: {
-      head: ['', 'Manual diligence', 'IncoInfo report'],
+      head: ['', 'Manual diligence', 'incoinfo report'],
       rows: [
         ['Charge verification', 'Manual registry search per lender', 'Full charge history: lender, amount, date, status'],
         ['Tax compliance', 'Collecting tax returns from the borrower', 'Tax registration status and filing track record'],

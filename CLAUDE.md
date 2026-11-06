@@ -1,6 +1,6 @@
-# IncoInfo marketing site
+# incoinfo marketing site
 
-A static marketing site for IncoInfo (company reports on registered companies). Data coverage is India today, with more countries planned: keep general copy country-neutral and mention India only where it describes current data (sources, the Indian corporate landscape, sample reports, the office address, ₹ pricing). The product is a **separate demo portal** at `https://demodpd.incoinfo.com`. This site has no sign-in, checkout or account pages. Every product CTA is a plain link to the portal root through `%PORTAL_URL%` (`VITE_PORTAL_URL` in `.env`). The build adds `target="_blank" rel="noopener"` to these links automatically, so they open in a new tab.
+A static marketing site for incoinfo (company reports on registered companies). Data coverage is India today, with more countries planned: keep general copy country-neutral and mention India only where it describes current data (sources, the Indian corporate landscape, sample reports, the office address, ₹ pricing). The product is a **separate demo portal** at `https://demodpd.incoinfo.com`. This site has no sign-in, checkout or account pages. Every product CTA is a plain link to the portal root through `%PORTAL_URL%` (`VITE_PORTAL_URL` in `.env`). The build adds `target="_blank" rel="noopener"` to these links automatically, so they open in a new tab.
 
 ## Stack
 - Plain HTML pages, CSS and vanilla JS modules. Vite (multi-page) is used only as the build tool, and the output in `dist/` is fully static.
@@ -29,6 +29,9 @@ A static marketing site for IncoInfo (company reports on registered companies). 
 
 - **No gradients.** Use plain colours only: primary buttons are `brand-700` (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
 - **White base, accents from the logo.** No colours from outside the logo, apart from the status chips.
+
+## Brand name
+- Always write the brand as **incoinfo**, all lowercase, in copy, titles, meta tags and structured data, including at the start of a sentence. Only code identifiers (for example `INCOINFO_API_KEY`) and the source document title "Incoinfo Website Structure Proposal" keep other casing.
 
 ## Logo
 - The site logo is `partials/logo.html`: the cube mark (`partials/facet.html`) plus the lowercase wordmark **incoinfo** in Schibsted Grotesk and the tagline "Financial Insights" in Inter. It is HTML and SVG, not an image. Scale it with `font-size` on `.logo` (styles in `components.css`).
