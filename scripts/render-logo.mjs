@@ -6,8 +6,9 @@ const css = `@font-face{font-family:S;src:url(data:font/woff2;base64,${f1})}@fon
 .logo{display:inline-flex;align-items:center;gap:.5em;line-height:1;white-space:nowrap}
 .mark{width:2.15em;height:2.15em}.t{display:flex;flex-direction:column}
 .w{font-family:S;font-weight:700;font-size:1.6em;letter-spacing:-.035em;line-height:.95;color:#0A456D}
+.i{position:relative;display:inline-block}.i::after{content:"i";position:absolute;left:0;top:0;color:#ffad00;clip-path:inset(0 0 70% 0)}
 .g{margin-top:.3em;padding-left:.08em;font-family:I;font-weight:500;font-size:.66em;letter-spacing:.03em;color:#4A5866}`
-const lockup = (px) => `<span class="logo" style="font-size:${px}px">${facet}<span class="t"><span class="w">incoinfo</span><span class="g">Financial Insights</span></span></span>`
+const lockup = (px) => `<span class="logo" style="font-size:${px}px">${facet}<span class="t"><span class="w"><span class="i">i</span>nco<span class="i">i</span>nfo</span><span class="g">Financial Insights</span></span></span>`
 const b = await chromium.launch()
 // 1) transparent logo.png (for schema.org / anywhere an image is needed)
 let p = await b.newPage({ deviceScaleFactor: 2 })

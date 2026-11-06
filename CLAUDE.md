@@ -28,13 +28,14 @@ A static marketing site for incoinfo (company reports on registered companies). 
 | success / warn / danger | `#1F7A4D` / `#A15C00` / `#B42318` | Status chips only |
 
 - **No gradients.** Use plain colours only: primary buttons are `brand-700` (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
-- **White base, accents from the logo.** No colours from outside the logo, apart from the status chips.
+- **White base, accents from the logo.** No colours from outside the logo, apart from the status chips and the orange `#ffad00` logo dots.
 
 ## Brand name
 - Always write the brand as **incoinfo**, all lowercase, in copy, titles, meta tags and structured data, including at the start of a sentence. Only code identifiers (for example `INCOINFO_API_KEY`) and the source document title "Incoinfo Website Structure Proposal" keep other casing.
 
 ## Logo
 - The site logo is `partials/logo.html`: the cube mark (`partials/facet.html`) plus the lowercase wordmark **incoinfo** in Schibsted Grotesk and the tagline "Financial Insights" in Inter. It is HTML and SVG, not an image. Scale it with `font-size` on `.logo` (styles in `components.css`).
+- The dots on both i's of the wordmark are orange `#ffad00` (`.logo-i` in `components.css`: an orange copy of the letter clipped to show only the dot). This orange is used only for these dots, nowhere else on the site.
 - `public/logo.png` and `public/og-image.png` are rendered from the same lockup by `node scripts/render-logo.mjs`. `brand/logo.png` is the original capitalised artwork, kept only as the colour source.
 
 ## Design conventions

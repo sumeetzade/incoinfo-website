@@ -218,3 +218,15 @@
     color: var(--color-ink-muted);
   }
 }
+
+/* Orange dot on the i's of the wordmark: an orange copy of the letter is laid over it
+   and clipped so only the dot (tittle) shows. Tune --dot-clip if the font changes. */
+@layer components {
+  .logo-i { position: relative; display: inline-block; }
+  .logo-i::after {
+    content: "i"; position: absolute; left: 0; top: 0;
+    color: #ffad00;
+    clip-path: inset(0 0 var(--dot-clip, 70%) 0);
+    pointer-events: none;
+  }
+}
