@@ -69,7 +69,7 @@
 
   /* ---------- Related ---------- */
   .related { padding-top: 0; }
-  .section-tint + .related, .related:first-child { padding-top: clamp(24px, 3vw, 30px); }
+  .section-tint + .related, .related:first-child { padding-top: clamp(16px, 2vw, 20px); }
   .related-title { font-size: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem); margin-bottom: 1.5rem; }
   .related-grid { display: grid; gap: 1rem; }
   @media (min-width: 768px) { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

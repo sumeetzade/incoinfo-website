@@ -11,10 +11,10 @@
   }
   @media (min-width: 768px) { .container-x { padding-inline: 32px; } }
 
-  .section { padding-block: clamp(24px, 3vw, 30px); position: relative; }
+  .section { padding-block: clamp(16px, 2vw, 20px); position: relative; }
   .section-tint { background: var(--color-surface-tint); }
-  .section-head { max-width: 46rem; margin-bottom: clamp(20px, 2.2vw, 28px); }
-  .section-head > p { margin-top: 1rem; }
+  .section-head { max-width: 46rem; margin-bottom: clamp(14px, 1.6vw, 20px); }
+  .section-head > p { margin-top: 0.625rem; }
 
   .lede {
     font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
