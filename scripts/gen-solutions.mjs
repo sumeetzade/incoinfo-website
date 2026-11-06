@@ -105,8 +105,8 @@ ${s.compare.rows.map((r) => `                  <tr><th scope="row">${esc(r[0])}<
             <p class="lede">${esc(s.subtitle)}</p>
             <p class="audience">{{icon:users}}<span>For ${esc(s.audience.charAt(0).toLowerCase() + s.audience.slice(1))}</span></p>
             <div class="page-hero-ctas">
-              <a class="btn btn-primary btn-lg" href="%PORTAL_URL%/" data-magnetic>Open the demo {{icon:arrow-right}}</a>
-              <a class="btn btn-secondary btn-lg" href="/pricing/">See pricing</a>
+              <a class="btn btn-primary btn-lg" href="%PORTAL_URL%/" data-magnetic>Open the Demo {{icon:arrow-right}}</a>
+              <a class="btn btn-secondary btn-lg" href="/pricing/">See Pricing</a>
             </div>
           </div>
           <aside class="hero-aside card-float" aria-label="What your report includes">
