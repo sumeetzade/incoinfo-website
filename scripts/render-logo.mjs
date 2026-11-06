@@ -27,7 +27,7 @@ h1{font-family:S;font-weight:750;font-size:54px;line-height:1.08;letter-spacing:
 p{font-size:28px;color:#4A5866;margin:28px 0 0;max-width:760px;line-height:1.4}
 .bar{position:absolute;left:0;right:0;bottom:0;height:14px;background:#20659F}
 .m{position:absolute;right:90px;bottom:90px;width:150px;height:150px}.m svg{width:150px;height:150px}</style>
-<div class="c">${sized(68)}<h1>Reliable data and financial intelligence for investors, lenders, enterprises and professional firms</h1><p>Reports built from official filings, with 12 months of updates.</p></div><div class="m">${facet}</div><div class="bar"></div>`)
+<div class="c">${sized(68)}<h1>Financial intelligence for investors, lenders, enterprises and professional firms</h1><p>Reports built from official filings, with 12 months of updates.</p></div><div class="m">${facet}</div><div class="bar"></div>`)
 await p.waitForTimeout(200)
 await p.screenshot({ path: 'public/og-image.png' })
 await b.close()
