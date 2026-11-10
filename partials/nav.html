@@ -56,7 +56,17 @@
             </a>
           </div>
         </li>
-        <li><a class="nav-link" href="/macro-view/">Landscape</a></li>
+        <li class="nav-item" data-menu>
+          <button class="nav-link" type="button" aria-expanded="false" aria-controls="menu-landscape" data-section="/macro-view/">
+            Landscape {{icon:chevron-down|nav-caret}}
+          </button>
+          <div class="nav-panel" id="menu-landscape" hidden>
+            <a class="nav-rich" href="/macro-view/">
+              <span class="icon-tile">{{icon:map}}</span>
+              <span><strong>India</strong><small>Companies by state, sector and capital</small></span>
+            </a>
+          </div>
+        </li>
         <li><a class="nav-link" href="/pricing/">Pricing</a></li>
         <li><a class="nav-link" href="/company/">About</a></li>
       </ul>
@@ -101,7 +111,12 @@
           <a href="/data-standards/">Data Sources &amp; Standards</a>
         </div>
       </details>
-      <a class="mobile-link" href="/macro-view/">Landscape</a>
+      <details>
+        <summary>Landscape {{icon:chevron-down}}</summary>
+        <div class="mobile-group">
+          <a href="/macro-view/">India</a>
+        </div>
+      </details>
       <a class="mobile-link" href="/pricing/">Pricing</a>
       <a class="mobile-link" href="/company/">About</a>
       <div class="mobile-actions">
