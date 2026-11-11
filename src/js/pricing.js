@@ -34,11 +34,14 @@ export default function initCalculator(root) {
     const r = recommend(n)
     nOut.textContent = String(n)
     input.style.setProperty('--fill', `${((n - input.min) / (input.max - input.min)) * 100}%`)
-    label.textContent = r.qty > 1 && r.id !== 'single' ? `${r.label} × ${r.qty}` : r.label
+    label.textContent = r.items
+      .map(({ pack, qty }) =>
+        pack.id === 'single' ? `${qty} single compan${qty === 1 ? 'y' : 'ies'}` : qty > 1 ? `${pack.name} × ${qty}` : pack.name)
+      .join(' + ')
     tween(r.total)
     const spare = r.spare > 0 ? `, ${r.spare} credit${r.spare === 1 ? '' : 's'} to spare` : ''
     detail.textContent = `₹${inr(r.perCompany)} per company${spare}`
-    cards.forEach((c) => c.classList.toggle('is-recommended', c.dataset.pack === r.id))
+    cards.forEach((c) => c.classList.toggle('is-recommended', c.dataset.pack === r.main))
   }
   input.addEventListener('input', update)
   update()

@@ -1,63 +1,94 @@
-<!-- TODO: all prices are placeholders; keep in sync with src/data/pricing.js -->
+<!-- Prices keep in sync with src/data/pricing.js. Prices exclude GST. -->
 <div class="packs" data-reveal-stagger>
   <article class="pack" data-pack="starter">
     <h3>Starter</h3>
-    <p class="pack-for">For one-off vendor checks or a single deal.</p>
-    <p class="pack-price"><span class="num">₹4,990</span><small>10 company credits</small></p>
-    <p class="pack-unit num">₹499 per company</p>
+    <p class="pack-for">For a one-off vendor check or a single deal.</p>
+    <p class="pack-price"><span class="num">₹5,500</span><small>10 company credits</small></p>
+    <p class="pack-unit num">₹550 per company</p>
     <a class="btn btn-secondary pack-cta" href="%PORTAL_URL%/">Try the Demo</a>
-    <ul class="checklist">
-      <li>{{icon:check}}<span>Full multi-year company profile</span></li>
-      <li>{{icon:check}}<span>Charge and loan records</span></li>
-      <li>{{icon:check}}<span>Director network map</span></li>
-      <li>{{icon:check}}<span>PDF and Excel exports</span></li>
-      <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
-      <li>{{icon:check}}<span>Credits valid for 12 months</span></li>
+  </article>
+
+  <article class="pack" data-pack="basic">
+    <h3>Basic</h3>
+    <p class="pack-for">For a few deals or supplier reviews a quarter.</p>
+    <p class="pack-price"><span class="num">₹12,500</span><small>25 company credits</small></p>
+    <p class="pack-unit num">₹500 per company</p>
+    <a class="btn btn-secondary pack-cta" href="%PORTAL_URL%/">Try the Demo</a>
+  </article>
+
+  <article class="pack pack-featured" data-pack="professional">
+    <p class="pack-flag"><!-- @include facet --> Most popular</p>
+    <h3>Professional</h3>
+    <p class="pack-for">For advisory firms and active sales teams.</p>
+    <p class="pack-price"><span class="num">₹45,000</span><small>100 company credits</small></p>
+    <p class="pack-unit num">₹450 per company</p>
+    <a class="btn btn-primary pack-cta" href="%PORTAL_URL%/" data-magnetic>Try the Demo</a>
+    <ul class="checklist pack-extras">
+      <li>{{icon:check}}<span>Priority compilation</span></li>
     </ul>
   </article>
 
-  <article class="pack pack-featured" data-pack="growth">
-    <p class="pack-flag"><!-- @include facet --> Most popular</p>
-    <h3>Growth</h3>
-    <p class="pack-for">For active sales teams and advisory firms.</p>
-    <p class="pack-price"><span class="num">₹19,990</span><small>50 company credits</small></p>
+  <article class="pack" data-pack="business">
+    <h3>Business</h3>
+    <p class="pack-for">For credit and procurement teams with steady volume.</p>
+    <p class="pack-price"><span class="num">₹1,00,000</span><small>250 company credits</small></p>
     <p class="pack-unit num">₹400 per company</p>
-    <a class="btn btn-primary pack-cta" href="%PORTAL_URL%/" data-magnetic>Try the Demo</a>
-    <ul class="checklist">
-      <li>{{icon:check}}<span>Everything in Starter</span></li>
+    <a class="btn btn-secondary pack-cta" href="%PORTAL_URL%/">Try the Demo</a>
+    <ul class="checklist pack-extras">
       <li>{{icon:check}}<span>Priority compilation</span></li>
-      <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
-      <li>{{icon:check}}<span>Credits valid for 12 months</span></li>
+      <li>{{icon:check}}<span>Bulk download manager</span></li>
+    </ul>
+  </article>
+
+  <article class="pack" data-pack="corporate">
+    <h3>Corporate</h3>
+    <p class="pack-for">For banks, funds and corporate strategy teams.</p>
+    <p class="pack-price"><span class="num">₹1,75,000</span><small>500 company credits</small></p>
+    <p class="pack-unit num">₹350 per company</p>
+    <a class="btn btn-secondary pack-cta" href="/company/#contact">Talk to Sales</a>
+    <ul class="checklist pack-extras">
+      <li>{{icon:check}}<span>Everything in Business</span></li>
+      <li>{{icon:check}}<span>Consolidated invoicing</span></li>
     </ul>
   </article>
 
   <article class="pack" data-pack="enterprise">
     <h3>Enterprise</h3>
-    <p class="pack-for">For funds, banks and corporate strategy teams.</p>
-    <p class="pack-price"><span class="num">₹59,990</span><small>200 company credits</small></p>
+    <p class="pack-for">For lenders and platforms checking companies at scale.</p>
+    <p class="pack-price"><span class="num">₹3,00,000</span><small>1,000 company credits</small></p>
     <p class="pack-unit num">₹300 per company</p>
     <a class="btn btn-secondary pack-cta" href="/company/#contact">Talk to Sales</a>
-    <ul class="checklist">
-      <li>{{icon:check}}<span>Everything in Growth</span></li>
-      <li>{{icon:check}}<span>Bulk download manager</span></li>
-      <li>{{icon:check}}<span>API access on request</span></li> <!-- TODO: confirm -->
-      <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
+    <ul class="checklist pack-extras">
+      <li>{{icon:check}}<span>Everything in Corporate</span></li>
+      <li>{{icon:check}}<span>API access on request</span></li> <!-- TODO: confirm (API decision on hold) -->
     </ul>
   </article>
+</div>
+
+<div class="pack-includes" data-reveal>
+  <p><strong>Every pack includes</strong></p>
+  <ul class="checklist">
+    <li>{{icon:check}}<span>Full multi-year company profile</span></li>
+    <li>{{icon:check}}<span>Charge and loan records</span></li>
+    <li>{{icon:check}}<span>Director network map</span></li>
+    <li>{{icon:check}}<span>PDF and Excel exports</span></li>
+    <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
+    <li>{{icon:check}}<span>Credits valid for 12 months</span></li>
+  </ul>
 </div>
 
 <div class="calc" data-calculator data-reveal>
   <div class="calc-input">
     <label for="calc-n">How many companies do you need to check this year?</label>
     <div class="calc-row">
-      <input id="calc-n" type="range" min="1" max="300" step="1" value="40" aria-describedby="calc-out" />
-      <output class="calc-n num" for="calc-n" data-calc-n>40</output>
+      <input id="calc-n" type="range" min="1" max="1200" step="1" value="100" aria-describedby="calc-out" />
+      <output class="calc-n num" for="calc-n" data-calc-n>100</output>
     </div>
   </div>
   <div class="calc-result" id="calc-out" aria-live="polite">
-    <p class="calc-best">Best value: <strong data-calc-label>Starter pack × 4</strong></p>
-    <p class="calc-total">₹<span data-calc-total>19,960</span></p>
-    <p class="calc-detail num" data-calc-detail>₹499 per company</p>
+    <p class="calc-best">Best value: <strong data-calc-label>Professional</strong></p>
+    <p class="calc-total">₹<span data-calc-total>45,000</span></p>
+    <p class="calc-detail num" data-calc-detail>₹450 per company</p>
   </div>
 </div>
 
