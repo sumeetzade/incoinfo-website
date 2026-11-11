@@ -30,7 +30,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 | success / warn / danger | `#1F7A4D` / `#A15C00` / `#B42318` | Status chips only |
 
 - **No gradients.** Use plain colours only: primary buttons are `brand-700` (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
-- **White base, blue and orange from the logo.** No colours from outside the logo, apart from the status chips. The light blue `#2798D3` appears only inside the logo cube.
+- **White base, blue and orange from the logo.** No colours from outside the logo, apart from the status chips. The logo cube's two light faces are orange `#ffad00` (they were light blue `#2798D3`; that version is kept in `brand/backup-light-blue/`). The facet mark in `partials/facet.html` still uses the light blue.
 - **Orange means "new, current or chosen"**, and nothing else. Its uses:
   - hero animation: wires, dots, the latest revenue point, the incoming filing;
   - charts: the latest-year bar and the second series;
@@ -45,7 +45,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 - Always write the brand as **incoinfo**, all lowercase, in copy, titles, meta tags and structured data, including at the start of a sentence. Only code identifiers (for example `INCOINFO_API_KEY`) and the source document title "Incoinfo Website Structure Proposal" keep other casing.
 
 ## Logo
-- The logo is a **vector SVG**, `public/logo.svg`: the cube mark, the lowercase wordmark **incoinfo** (Schibsted Grotesk Bold) and the tagline "Financial Insights" (Inter Medium). All text is converted to outlines, so it needs no fonts. The dots on both i's are separate orange `#ffad00` shapes. That orange is used only for these dots.
+- The logo is a **vector SVG**, `public/logo.svg`: the cube mark, the lowercase wordmark **incoinfo** (Schibsted Grotesk Bold) and the tagline "Financial Insights" (Inter Medium). All text is converted to outlines, so it needs no fonts. The dots on both i's and the two light faces of the cube are orange `#ffad00` (`build-logo-svg.mjs` sets both). `public/favicon.svg` uses the same cube colours.
 - `partials/logo.html` shows it with `<img class="logo-img">`, 36px tall in the nav and footer.
 - To change the logo, edit and run `node scripts/build-logo-svg.mjs`. It writes `public/logo.svg` and `brand/logo-incoinfo.svg`, using the static font files from `@fontsource/schibsted-grotesk` and `@fontsource/inter` (dev dependencies) and `opentype.js`.
 - Then run `node scripts/render-logo.mjs` to re-render `public/logo.png` (structured data) and `public/og-image.png` (share preview) from the SVG.
