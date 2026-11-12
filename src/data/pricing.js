@@ -1,5 +1,5 @@
 // Credit packs. 1 credit = 1 company unlock (full report + PDF/Excel + 12 months of filing updates).
-// Prices in ₹, excluding GST. TODO: confirm single-company price before launch.
+// Prices in ₹, excluding GST (confirmed 2026-11-12, single company ₹599).
 export const singlePrice = 599 // pay-as-you-go, one company
 
 export const packs = [
