@@ -8,6 +8,7 @@ import fs from 'node:fs'
 import opentype from 'opentype.js'
 
 const NAVY = '#0A456D'
+const GREY = '#4A5866'
 const ORANGE = '#ffad00'
 
 const load = (p) => {
@@ -96,8 +97,8 @@ for (const g of word) {
 // 3) cube mark (viewBox 0 0 50 50 → MARK units)
 const s = MARK / 50
 const facet = [
-  ['#FFAD00', 'M2.5 15 15 5.6v26.9L2.5 42z'],
-  ['#FFAD00', 'M2.5 15 15 5.6h28L31 15z'],
+  ['#2798D3', 'M2.5 15 15 5.6v26.9L2.5 42z'],
+  ['#2798D3', 'M2.5 15 15 5.6h28L31 15z'],
   ['#026793', 'M2.5 15 15 5.6V15z'],
   ['#20659F', 'M30 20 43 10.6v26.9L30 47z'],
   ['#20659F', 'M3 47l12-9.5h28L31 47z'],
@@ -117,7 +118,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${r(minX)} ${r(min
   <g transform="scale(${r(s * 1000) / 1000})">${facet.map(([f, d]) => `<path fill="${f}" d="${d}"/>`).join('')}</g>
   <path fill="${NAVY}" d="${toD(wordBody)}"/>
   <path fill="${ORANGE}" d="${toD(dots)}"/>
-  <path fill="${NAVY}" d="${toD(tag.map((g) => g.path))}"/>
+  <path fill="${GREY}" d="${toD(tag.map((g) => g.path))}"/>
 </svg>
 `
 fs.writeFileSync('public/logo.svg', svg)
