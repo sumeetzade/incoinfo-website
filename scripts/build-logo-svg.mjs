@@ -8,7 +8,6 @@ import fs from 'node:fs'
 import opentype from 'opentype.js'
 
 const NAVY = '#0A456D'
-const GREY = '#4A5866'
 const ORANGE = '#ffad00'
 
 const load = (p) => {
@@ -118,7 +117,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${r(minX)} ${r(min
   <g transform="scale(${r(s * 1000) / 1000})">${facet.map(([f, d]) => `<path fill="${f}" d="${d}"/>`).join('')}</g>
   <path fill="${NAVY}" d="${toD(wordBody)}"/>
   <path fill="${ORANGE}" d="${toD(dots)}"/>
-  <path fill="${GREY}" d="${toD(tag.map((g) => g.path))}"/>
+  <path fill="${NAVY}" d="${toD(tag.map((g) => g.path))}"/>
 </svg>
 `
 fs.writeFileSync('public/logo.svg', svg)

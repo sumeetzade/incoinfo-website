@@ -45,7 +45,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 - Always write the brand as **incoinfo**, all lowercase, in copy, titles, meta tags and structured data, including at the start of a sentence. Only code identifiers (for example `INCOINFO_API_KEY`) and the source document title "Incoinfo Website Structure Proposal" keep other casing.
 
 ## Logo
-- The logo is a **vector SVG**, `public/logo.svg`: the cube mark, the lowercase wordmark **incoinfo** (Schibsted Grotesk Bold) and the tagline "Financial Insights" (Inter Medium, grey `#4A5866`). All text is converted to outlines, so it needs no fonts. The dots on both i's are separate orange `#ffad00` shapes; that is the only orange in the logo. `brand/backup-light-blue/` holds a copy of these approved logo files.
+- The logo is a **vector SVG**, `public/logo.svg`: the cube mark, the lowercase wordmark **incoinfo** (Schibsted Grotesk Bold) and the tagline "Financial Insights" (Inter Medium), both in navy `#0A456D`. All text is converted to outlines, so it needs no fonts. The dots on both i's are separate orange `#ffad00` shapes; that is the only orange in the logo. `brand/backup-light-blue/` holds the approved blue-cube files with the earlier grey tagline.
 - `partials/logo.html` shows it with `<img class="logo-img">`, 36px tall in the nav and footer.
 - To change the logo, edit and run `node scripts/build-logo-svg.mjs`. It writes `public/logo.svg` and `brand/logo-incoinfo.svg`, using the static font files from `@fontsource/schibsted-grotesk` and `@fontsource/inter` (dev dependencies) and `opentype.js`.
 - Then run `node scripts/render-logo.mjs` to re-render `public/logo.png` (structured data) and `public/og-image.png` (share preview) from the SVG.
