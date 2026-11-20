@@ -125,8 +125,8 @@ ${s.deliverables.map(([t]) => `              <li>{{icon:check}}<span>${esc(t)}</
             <h2 id="pains-title">What gets in the way today</h2>
           </div>
           <div class="pains" data-reveal-stagger>
-${s.pains.map(([t, d]) => `            <article class="pain">
-              <span class="pain-icon">{{icon:circle-alert}}</span>
+${s.pains.map(([t, d, ic = 'circle-alert']) => `            <article class="pain">
+              <span class="icon-tile pain-icon">{{icon:${ic}}}</span>
               <h3>${esc(t)}</h3>
               <p>${esc(d)}</p>
             </article>`).join('\n')}
