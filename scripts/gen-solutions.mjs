@@ -41,21 +41,6 @@ function solutionPage(s) {
   const related = solutions.filter((x) => x.segment === s.segment && x.slug !== s.slug)
   const url = `/solutions/${s.slug}/`
 
-  const compare = s.compare
-    ? `
-          <div class="compare" data-reveal>
-            <h3>How the report compares</h3>
-            <div class="table-scroll">
-              <table class="fin-table compare-table">
-                <thead><tr>${s.compare.head.map((h, i) => `<th scope="col"${i === 2 ? ' class="is-us"' : ''}>${esc(h)}</th>`).join('')}</tr></thead>
-                <tbody>
-${s.compare.rows.map((r) => `                  <tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td><td class="is-us">${esc(r[2])}</td></tr>`).join('\n')}
-                </tbody>
-              </table>
-            </div>
-          </div>`
-    : ''
-
   const benchmark = s.benchmark
     ? `
           <div class="compare" data-reveal>
@@ -74,19 +59,6 @@ ${s.compare.rows.map((r) => `                  <tr><th scope="row">${esc(r[0])}<
               </table>
             </div>
           </div>`
-    : ''
-
-  const example = s.example
-    ? `
-      <section class="section section-tint" aria-labelledby="example-title">
-        <div class="container-x">
-          <figure class="example card" data-reveal>
-            <p class="example-label" id="example-title">{{icon:file-check-2}} Example order</p>
-            <blockquote>${esc(s.example.text)}</blockquote>
-            <figcaption>${esc(s.example.who)}</figcaption>
-          </figure>
-        </div>
-      </section>`
     : ''
 
   return `${head({
@@ -160,10 +132,10 @@ ${s.deliverables.map(([t, d]) => `            <article class="deliverable">
               <span class="icon-tile">{{icon:file-check-2}}</span>
               <div><h3>${esc(t)}</h3><p>${esc(d)}</p></div>
             </article>`).join('\n')}
-          </div>${compare}${benchmark}
+          </div>${benchmark}
         </div>
       </section>
-${example}
+
       <section class="section related" aria-labelledby="related-title">
         <div class="container-x">
           <h2 id="related-title" class="related-title">More for ${esc(g.long.toLowerCase())}</h2>
