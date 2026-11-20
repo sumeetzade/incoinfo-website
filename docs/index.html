@@ -552,53 +552,8 @@
         </div>
       </section>
 
-      <!-- ============ API / ENTERPRISE ============ -->
-      <section class="section" id="api" aria-labelledby="api-title">
-        <div class="container-x api">
-          <div data-reveal>
-            <h2 id="api-title">Bring company data into your own systems</h2>
-            <p class="lede">
-              Enterprise customers can order reports and pull structured data by API, straight into credit, CRM or ERP
-              workflows.
-            </p>
-            <ul class="checklist api-points">
-              <li><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg><span>JSON for every report section, with the same fields as the Excel export</span></li>
-              <li><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg><span>Webhooks when a company you hold files something new</span></li><!-- TODO: confirm webhooks are planned -->
-              <li><svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg><span>Bulk ordering, consolidated invoicing and a named account manager</span></li>
-            </ul>
-            <div class="api-ctas">
-              <a class="btn btn-primary" href="./company/#contact" data-magnetic>Talk to Sales</a>
-              <!-- TODO: link to API documentation -->
-              <a class="link link-arrow" href="./company/#contact">Request API documentation <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a>
-            </div>
-          </div>
-
-          <figure class="code-card" data-reveal>
-            <figcaption class="code-head">
-              <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span>Fetch a company report</span>
-            </figcaption>
-            <!-- TODO: illustrative endpoint; align with the real API -->
-            <pre tabindex="0"><code><span class="c-cmd">curl</span> https://api.incoinfo.com/v1/companies/<span class="c-str">2012-654321</span>/report \
-  -H <span class="c-str">"Authorization: Bearer $INCOINFO_API_KEY"</span>
-
-<span class="c-com"># 200 OK</span>
-{
-  <span class="c-key">"name"</span>: <span class="c-str">"Apex Logistics &amp; Freight Limited"</span>,
-  <span class="c-key">"status"</span>: <span class="c-str">"active"</span>,
-  <span class="c-key">"latest_filing"</span>: <span class="c-str">"2025-10-28"</span>,
-  <span class="c-key">"financials"</span>: {
-    <span class="c-key">"FY25"</span>: { <span class="c-key">"revenue_m"</span>: <span class="c-num">262.8</span>, <span class="c-key">"ebitda_m"</span>: <span class="c-num">34.7</span> }
-  },
-  <span class="c-key">"open_charges"</span>: <span class="c-num">3</span>,
-  <span class="c-key">"updates_until"</span>: <span class="c-str">"2026-11-04"</span>
-}</code></pre>
-          </figure>
-        </div>
-      </section>
-
       <!-- ============ FAQ ============ -->
-      <section class="section section-tint" id="faq" aria-labelledby="faq-title">
+      <section class="section" id="faq" aria-labelledby="faq-title">
         <div class="container-x faq-grid">
           <div data-reveal>
             <h2 id="faq-title">Questions before you order</h2>
@@ -670,7 +625,7 @@
             <li><a href="https://demodpd.incoinfo.com/" target="_blank" rel="noopener">Product Demo</a></li>
             <li><a href="./pricing/">Pricing &amp; Credit Packs</a></li>
             <li><a href="./database/">Report Contents and Samples</a></li>
-            <li><a href="./#api">API &amp; Enterprise</a></li>
+            <li><a href="./pricing/#ent-title">API &amp; Enterprise</a></li>
           </ul>
         </div>
         <div>
