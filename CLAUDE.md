@@ -37,7 +37,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
   - nav: current-section underline;
   - "How ordering works": progress line and active-step ring;
   - pricing: "Most popular" flag and the calculator's recommended pack;
-  - the orange "Open the Demo" button on the navy closing band (`.btn-accent`, used only there);
+  - the orange "Demo" button on the navy closing band (`.btn-accent`, used only there);
   - link hover underline, text selection, data-flow arrows, API code highlights.
 - **Never use orange for** text, icons or focus rings on white (1.9:1). Navy or ink text **on** orange is fine (5.4:1 and 9:1), and so is orange on navy (5.4:1). Keep orange rare: if a new use doesn't mean new, current or chosen, use blue.
 
@@ -58,7 +58,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 - Radii vary by role: 20px for floating and report cards, 14px for content cards, 10px for buttons and inputs.
 - Shadows are tinted navy in two layers. Numbers use `.num` (tabular figures).
 - The facet mark (the open cube from the logo, `partials/facet.html`) is used only with meaning: the active nav item, the Most Popular pack and step markers.
-- Navigation and buttons use **title case**: menu bar and dropdown labels (desktop and mobile), the footer link lists and every button label (for example "Open the Demo", "View Sample Report", "Talk to Sales"). Examples: "Data Sources & Standards", "Refund Policy for Credit Packs". Small words like "and" and "for" stay lowercase, and the brand stays "incoinfo". Dropdown descriptions, inline text links and all other copy stay in sentence case.
+- Navigation and buttons use **title case**: menu bar and dropdown labels (desktop and mobile), the footer link lists and every button label (for example "Demo", "View Sample Report", "Talk to Sales"). Examples: "Data Sources & Standards", "Refund Policy for Credit Packs". Small words like "and" and "for" stay lowercase, and the brand stays "incoinfo". Dropdown descriptions, inline text links and all other copy stay in sentence case.
 - Copy is plain, specific and in sentence case, with no hype. Follow the content source (the Gemini "Incoinfo Website Structure Proposal"). The "fresh compilation" message lives only on `/data-standards`.
 
 ## Charts
