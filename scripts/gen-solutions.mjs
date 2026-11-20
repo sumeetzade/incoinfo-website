@@ -136,7 +136,7 @@ ${s.deliverables.map(([t, d]) => `            <article class="deliverable">
         </div>
       </section>
 
-      <section class="section related" aria-labelledby="related-title">
+      <section class="section section-tint related" aria-labelledby="related-title">
         <div class="container-x">
           <h2 id="related-title" class="related-title">More for ${esc(g.long.toLowerCase())}</h2>
           <div class="related-grid">
