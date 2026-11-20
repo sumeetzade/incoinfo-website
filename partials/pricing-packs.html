@@ -1,19 +1,13 @@
 <!-- Credit packs in three alternating sections (white / tint / white).
-     Include with: heading="…" headclass="" (or "sr-only") sectionid="…" (optional).
+     Include with: sectionid="…" (id of the first section).
      Prices keep in sync with src/data/pricing.js. Prices exclude GST. -->
-<section class="section" id="{{sectionid}}" aria-labelledby="packs-title">
+<section class="section" id="{{sectionid}}" aria-labelledby="packs-individual">
   <div class="container-x">
     <div class="section-head" data-reveal>
-      <h2 id="packs-title" class="{{headclass}}">{{heading}}</h2>
+      <h2 id="packs-individual">Individual plans</h2>
+      <p class="lede">One user login, for professionals who run their own company checks.</p>
     </div>
-    <div class="pack-group" role="group" aria-labelledby="packs-individual">
-      <div class="pack-group-head">
-        <span class="icon-tile">{{icon:user}}</span>
-        <div>
-          <h3 id="packs-individual">Individual plans</h3>
-          <p>One user login, for professionals who run their own company checks.</p>
-        </div>
-      </div>
+    <div>
       <div class="packs" data-reveal-stagger>
       <article class="pack" data-pack="starter">
         <h4>Starter</h4>
@@ -53,14 +47,11 @@
 
 <section class="section section-tint" aria-labelledby="packs-team">
   <div class="container-x">
-    <div class="pack-group" role="group" aria-labelledby="packs-team">
-      <div class="pack-group-head">
-        <span class="icon-tile">{{icon:users}}</span>
-        <div>
-          <h3 id="packs-team">Team and corporate plans</h3>
-          <p>Several user logins on one account, for departments and whole organisations.</p>
-        </div>
-      </div>
+    <div class="section-head" data-reveal>
+      <h2 id="packs-team">Team and corporate plans</h2>
+      <p class="lede">Several user logins on one account, for departments and whole organisations.</p>
+    </div>
+    <div>
       <div class="packs" data-reveal-stagger>
       <article class="pack" data-pack="business">
         <h4>Business</h4>
