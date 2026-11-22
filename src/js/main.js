@@ -165,13 +165,18 @@ function initTabs() {
       t.addEventListener('click', () => select(t))
       t.addEventListener('keydown', (e) => {
         const k = e.key
-        if (k === 'ArrowRight' || k === 'ArrowLeft' || k === 'Home' || k === 'End') {
+        const next = k === 'ArrowRight' || k === 'ArrowDown'
+        const prev = k === 'ArrowLeft' || k === 'ArrowUp'
+        if (next || prev || k === 'Home' || k === 'End') {
           e.preventDefault()
-          const n = k === 'Home' ? 0 : k === 'End' ? tabs.length - 1 : (i + (k === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length
+          const n = k === 'Home' ? 0 : k === 'End' ? tabs.length - 1 : (i + (next ? 1 : -1) + tabs.length) % tabs.length
           select(tabs[n], true)
         }
       })
     })
+    // Optional first tab per page: <div data-tabs data-start="plans"> selects the tab with data-key="plans"
+    const start = wrap.dataset.start && tabs.find((t) => t.dataset.key === wrap.dataset.start)
+    if (start) select(start)
   })
 }
 
