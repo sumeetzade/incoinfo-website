@@ -157,7 +157,6 @@
     margin-top: 1.5rem; padding-block: 1.25rem 1.5rem; border-top: 1px solid var(--color-line);
     font-size: 0.8125rem; color: var(--color-ink-muted);
   }
-  .footer-ids { display: flex; gap: 1.5rem; }
   @media (min-width: 768px) {
     .footer-cols { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   }
