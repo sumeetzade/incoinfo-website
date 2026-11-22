@@ -1,12 +1,12 @@
 // Credit packs. 1 credit = 1 company unlock (full report + PDF/Excel + 12 months of filing updates).
-// Prices in ₹, excluding GST (confirmed 2026-11-12, single company ₹599).
+// Prices in ₹, excluding GST (updated 2026-11-22, single company ₹599).
 export const singlePrice = 599 // pay-as-you-go, one company
 
 export const packs = [
-  { id: 'professional', name: 'Professional', credits: 100, price: 45000 },
-  { id: 'business', name: 'Business', credits: 250, price: 100000 },
-  { id: 'corporate', name: 'Corporate', credits: 500, price: 175000 },
-  { id: 'enterprise', name: 'Enterprise', credits: 1000, price: 300000 },
+  { id: 'professional', name: 'Professional', credits: 100, price: 50000 },
+  { id: 'business', name: 'Business', credits: 250, price: 120000 },
+  { id: 'corporate', name: 'Corporate', credits: 500, price: 225000 },
+  { id: 'enterprise', name: 'Enterprise', credits: 1000, price: 400000 },
 ]
 
 const single = { id: 'single', name: 'Single company', credits: 1, price: singlePrice }
