@@ -9,7 +9,7 @@ OUT = 'partials/faq.html'
 OUT_ALL = 'partials/faq-all.html'
 
 L_STD = '<a class="link" href="/data-standards/">Read about our data sources and standards</a>.'
-L_SAMPLES = '<a class="link" href="/database/#samples">Report Contents and Samples</a>'
+L_SAMPLES = '<a class="link" href="/database/#samples">Content</a>'
 L_REFUND = '<a class="link" href="/legal/refunds/">refund policy</a>'
 L_PRIVACY = '<a class="link" href="/legal/privacy/">privacy policy</a>'
 L_TERMS = '<a class="link" href="/legal/terms/">terms of service</a>'
