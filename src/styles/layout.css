@@ -144,6 +144,10 @@
   .footer-contact { margin-top: 1.25rem; display: grid; gap: 0.5rem; color: var(--color-ink-muted); }
   .footer-contact li { display: flex; gap: 0.625rem; align-items: center; }
   .footer-contact .icon { width: 1rem; height: 1rem; color: var(--color-brand-700); flex: none; }
+  .footer-contact .footer-address { align-items: flex-start; }
+  .footer-address .icon { margin-top: 0.25rem; }
+  .footer-address address { font-style: normal; line-height: 1.55; }
+  .footer-address-label { color: var(--color-ink); font-weight: 600; }
   .footer-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.5rem; }
   .footer-h { font-family: var(--font-sans); font-size: 0.9375rem; font-weight: 650; margin-bottom: 0.875rem; letter-spacing: 0; }
   .footer-cols ul { display: grid; gap: 0.25rem; }

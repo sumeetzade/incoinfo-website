@@ -165,6 +165,7 @@
   .contact-card { padding: 1.5rem; }
   .contact-card h3 { margin-top: 1rem; font-size: 1.0625rem; }
   .contact-card p { margin-top: 0.375rem; color: var(--color-ink-muted); font-size: 0.9375rem; }
+  .contact-address { margin-top: 0.375rem; margin-bottom: 0.5rem; font-style: normal; line-height: 1.55; color: var(--color-ink-muted); font-size: 0.9375rem; }
   .contact-card a.link { display: inline-block; margin-top: 0.75rem; }
 
   /* ---------- Prose (legal pages) ---------- */
