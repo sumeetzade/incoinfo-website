@@ -195,6 +195,9 @@ function initModules() {
   const steps = document.querySelector('[data-steps]')
   if (steps) import('./steps.js').then((m) => m.default(steps))
 
+  const faqPage = document.querySelector('[data-faq-page]')
+  if (faqPage) import('./faq-page.js').then((m) => m.default(faqPage))
+
   const calc = document.querySelector('[data-calculator]')
   if (calc) import('./pricing.js').then((m) => m.default(calc))
 }

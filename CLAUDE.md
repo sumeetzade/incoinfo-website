@@ -13,6 +13,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 - Shared markup goes in `partials/*.html`, pulled in with `<!-- @include name key="value" -->`. `{{key}}` inside a partial is replaced by the attribute.
 - Icons: `{{icon:lucide-name}}` or `{{icon:lucide-name|extra classes}}`. These are inlined SVG, so no icon JS runs in the browser.
 - The 12 solution pages are **generated** from `src/data/solutions.mjs` by `node scripts/gen-solutions.mjs`. Edit the data, then re-run the script. Do not hand-edit `solutions/*/index.html`.
+- The FAQ (38 questions, 6 topics) is **generated** by `python scripts/gen-faq.py`, which writes `partials/faq.html` (tabbed, homepage and /pricing) and `partials/faq-all.html` (the full `/faq/` page, with search and the only FAQPage JSON-LD). Edit the question list in the script, then re-run it. Do not hand-edit either partial.
 - Chart and sample data live in `src/data/`. Placeholder figures, prices, testimonials and client names are marked `TODO`.
 
 ## Brand tokens (sampled from `brand/logo.png` pixels)

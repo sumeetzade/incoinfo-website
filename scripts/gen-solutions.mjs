@@ -189,7 +189,7 @@ write('solutions/index.html', hubPage())
 
 // sitemap + robots (static pages listed here; keep in sync when adding pages)
 const site = (fs.readFileSync('.env', 'utf8').match(/VITE_SITE_URL=(.*)/) || [])[1]?.trim() || 'https://www.incoinfo.com'
-const pages = ['/', '/solutions/', ...solutions.map((s) => `/solutions/${s.slug}/`), '/pricing/', '/database/', '/macro-view/', '/data-standards/', '/company/', '/legal/privacy/', '/legal/terms/', '/legal/refunds/', '/legal/disclaimer/']
+const pages = ['/', '/solutions/', ...solutions.map((s) => `/solutions/${s.slug}/`), '/pricing/', '/faq/', '/database/', '/macro-view/', '/data-standards/', '/company/', '/legal/privacy/', '/legal/terms/', '/legal/refunds/', '/legal/disclaimer/']
 write('public/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map((p) => `  <url><loc>${site}${p}</loc></url>`).join('\n')}

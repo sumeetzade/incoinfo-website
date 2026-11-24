@@ -183,3 +183,79 @@
 @layer components {
   .principles-stack { grid-template-columns: 1fr !important; }
 }
+
+/* ---------- FAQ page (/faq/) ---------- */
+@layer components {
+  .faqx-search { margin-top: 1.75rem; max-width: 640px; }
+  .faqx-search-label { display: block; margin-bottom: 0.5rem; font-size: 0.9375rem; font-weight: 600; color: var(--color-ink); }
+  .faqx-field { position: relative; }
+  .faqx-field .input { min-height: 52px; padding-inline: 2.875rem; box-shadow: var(--shadow-soft); }
+  .faqx-field .input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+  .faqx-field-icon { position: absolute; left: 1rem; top: 50%; translate: 0 -50%; width: 1.125rem; height: 1.125rem; color: var(--color-brand-700); pointer-events: none; }
+  .faqx-clear {
+    position: absolute; right: 4px; top: 50%; translate: 0 -50%;
+    display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 8px;
+    background: none; color: var(--color-ink-muted); cursor: pointer;
+  }
+  .faqx-clear[hidden] { display: none; }
+  .faqx-clear:hover { color: var(--color-brand-700); }
+  .faqx-clear:focus-visible { outline: 2px solid var(--color-brand-700); outline-offset: -2px; }
+  .faqx-clear .icon { width: 1.125rem; height: 1.125rem; }
+  .faqx-status { margin-top: 0.625rem; font-size: 0.875rem; color: var(--color-ink-muted); }
+
+  .faqx { display: grid; gap: 2rem; }
+  .faqx-main { min-width: 0; }
+
+  /* topic list: wrapping chips on small screens, sticky side list on desktop */
+  .faqx-toc ul { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .faqx-toc a {
+    position: relative; display: flex; align-items: center; gap: 0.625rem;
+    min-height: 44px; padding: 0.5rem 0.875rem;
+    border: 1px solid var(--color-line-strong); border-radius: 999px; background: #fff;
+    font-size: 0.9375rem; font-weight: 550; color: var(--color-ink);
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s, opacity 0.2s;
+  }
+  .faqx-toc a:hover { color: var(--color-brand-700); border-color: var(--color-brand-700); }
+  .faqx-toc a:focus-visible { outline: 2px solid var(--color-brand-700); outline-offset: 2px; }
+  .faqx-toc .icon { width: 1.0625rem; height: 1.0625rem; flex: none; color: var(--color-brand-700); }
+  .faqx-count { margin-left: auto; font-size: 0.8125rem; font-weight: 500; color: var(--color-ink-muted); }
+  .faqx-toc a.is-empty { opacity: 0.5; }
+  @media (max-width: 639px) {
+    .faqx-toc ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .faqx-toc a { gap: 0.5rem; padding-inline: 0.875rem; border-radius: var(--radius-ui); font-size: 0.875rem; line-height: 1.3; }
+    .faqx-toc a .icon { display: none; }
+  }
+
+  @media (min-width: 1080px) {
+    .faqx { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: 4rem; align-items: start; }
+    .faqx-side { position: sticky; top: calc(var(--nav-h) + 24px); }
+    .faqx-toc ul { display: grid; gap: 2px; }
+    .faqx-toc a { border: 0; border-radius: var(--radius-ui); padding: 0.625rem 0.875rem 0.625rem 1rem; color: var(--color-ink-muted); background: none; }
+    .faqx-toc a:hover { background: var(--color-surface-tint); }
+    /* current topic: orange marker (orange = current) */
+    .faqx-toc a[aria-current="true"] { color: var(--color-ink); background: var(--color-surface-tint); }
+    .faqx-toc a[aria-current="true"]::before {
+      content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; border-radius: 3px; background: var(--color-accent);
+    }
+  }
+
+  .faqx-group { scroll-margin-top: calc(var(--nav-h) + 24px); }
+  .faqx-group[hidden], .faqx-empty[hidden], .acc-item[hidden] { display: none; }
+  .faqx-group:not([hidden]) ~ .faqx-group:not([hidden]) { margin-top: clamp(40px, 5vw, 64px); }
+  .faqx-group-head { display: flex; align-items: center; gap: 0.875rem; margin-bottom: 0.75rem; }
+  .faqx-group-head h2 { font-size: clamp(1.375rem, 2vw, 1.625rem); }
+
+  .faqx-empty {
+    display: flex; gap: 1rem; align-items: flex-start;
+    padding: 1.5rem; border: 1px solid var(--color-line); border-radius: var(--radius-card); background: var(--color-surface-tint);
+  }
+  .faqx-empty .icon-tile { flex: none; }
+  .faqx-empty-title { font-size: 1.125rem; }
+  .faqx-empty p { margin-top: 0.375rem; color: var(--color-ink-muted); max-width: 60ch; }
+  .faqx-try {
+    padding: 0; border: 0; background: none; cursor: pointer;
+    font: inherit; font-weight: 600; color: var(--color-brand-700); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .faqx-try:hover { text-decoration-color: var(--color-accent); }
+  .faqx-try:focus-visible { outline: 2px solid var(--color-brand-700); outline-offset: 2px; border-radius: 2px; }
+}

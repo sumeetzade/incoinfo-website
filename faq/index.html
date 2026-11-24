@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head title="Frequently asked questions | incoinfo" description="Answers about incoinfo data and coverage, reports and delivery, plans and credits, billing, accounts and support." path="/faq/" -->
+  </head>
+  <body>
+    <!-- @include nav -->
+    <main id="main">
+      <section class="page-hero page-hero-simple" aria-labelledby="page-title">
+        <div class="container-x">
+          <h1 id="page-title">Frequently asked questions</h1>
+          <p class="lede">
+            Answers about our data, reports, plans, billing and accounts. Search for a word, or browse by topic.
+          </p>
+          <div class="faqx-search" role="search">
+            <label class="faqx-search-label" for="faq-q">Search questions</label>
+            <div class="faqx-field">
+              {{icon:search|faqx-field-icon}}
+              <input class="input" id="faq-q" type="search" autocomplete="off" spellcheck="false" placeholder="For example: credits, refund, GST invoice" data-faq-input />
+              <button class="faqx-clear" type="button" aria-label="Clear search" data-faq-clear hidden>{{icon:x}}</button>
+            </div>
+            <p class="faqx-status" aria-live="polite" data-faq-status>38 questions in 6 topics</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Questions and answers">
+        <div class="container-x">
+          <!-- @include faq-all -->
+        </div>
+      </section>
+
+      <section class="section section-tint" aria-labelledby="ask-title">
+        <div class="container-x">
+          <div class="section-head" data-reveal>
+            <h2 id="ask-title">Still have a question?</h2>
+            <p class="lede">Ask us directly. We answer every message.</p>
+          </div>
+          <div class="contact-grid" data-reveal-stagger>
+            <article class="contact-card card">
+              <span class="icon-tile">{{icon:mail}}</span>
+              <h3>Email support</h3>
+              <p>Questions about data, reports, credits or your account.</p>
+              <a class="link" href="mailto:support@incoinfo.com">support@incoinfo.com</a>
+            </article>
+            <article class="contact-card card">
+              <span class="icon-tile">{{icon:phone}}</span>
+              <h3>Call us</h3>
+              <p>Speak to the team at our Navi Mumbai office.</p>
+              <a class="link" href="tel:+912262829000">+91-22-6282-9000</a>
+            </article>
+            <article class="contact-card card">
+              <span class="icon-tile">{{icon:briefcase-business}}</span>
+              <h3>Sales and enterprise</h3>
+              <p>Large volumes, invoicing and API access for teams.</p>
+              <a class="link" href="/company/#contact">Talk to sales</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @include final-cta -->
+    <!-- @include footer -->
+  </body>
+</html>
