@@ -1,4 +1,5 @@
-<!-- Credit packs: the plans (white) and what every plan includes + calculator (tint).
+<!-- Credit packs: the four plan cards (white section).
+     What every plan includes + calculator is in pricing-includes.html (tint, pricing page only).
      Include with: sectionid="…" (id of the first section).
      Prices keep in sync with src/data/pricing.js. Prices exclude GST. -->
 <section class="section" id="{{sectionid}}" aria-labelledby="packs-title">
@@ -56,44 +57,5 @@
         </ul>
       </article>
     </div>
-  </div>
-</section>
-
-<section class="section section-tint" aria-labelledby="packs-included">
-  <div class="container-x">
-    <div class="section-head" data-reveal>
-      <h2 id="packs-included">What every plan includes</h2>
-      <p class="lede">Every plan unlocks the same full report. Use the calculator to find the lowest cost for your volume.</p>
-    </div>
-    <div class="pack-includes" data-reveal>
-      <ul class="checklist">
-        <li>{{icon:check}}<span>Full multi-year company profile</span></li>
-        <li>{{icon:check}}<span>Charge and loan records</span></li>
-        <li>{{icon:check}}<span>Director network map</span></li>
-        <li>{{icon:check}}<span>PDF and Excel exports</span></li>
-        <li>{{icon:check}}<span>12 months of filing updates per company</span></li>
-        <li>{{icon:check}}<span>Credits valid for 12 months</span></li>
-      </ul>
-    </div>
-
-    <div class="calc" data-calculator data-reveal>
-      <div class="calc-input">
-        <label for="calc-n">How many companies do you need to check this year?</label>
-        <div class="calc-row">
-          <input id="calc-n" type="range" min="1" max="1200" step="1" value="500" aria-describedby="calc-out" />
-          <output class="calc-n num" for="calc-n" data-calc-n>500</output>
-        </div>
-      </div>
-      <div class="calc-result" id="calc-out" aria-live="polite">
-        <p class="calc-best">Best value: <strong data-calc-label>Corporate</strong></p>
-        <p class="calc-total">₹<span data-calc-total>2,25,000</span></p>
-        <p class="calc-detail num" data-calc-detail>₹450 per company</p>
-      </div>
-    </div>
-
-    <p class="packs-note">
-      Need only one company? Buy it on its own for <span class="num">₹599</span>. Prices exclude taxes.
-      Payments are processed securely by our payment partner. <!-- TODO: name gateway -->
-    </p>
   </div>
 </section>
