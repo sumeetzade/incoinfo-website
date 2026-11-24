@@ -153,12 +153,9 @@
   .footer-cols ul { display: grid; gap: 0.25rem; }
   .footer-cols a { display: inline-block; padding: 0.25rem 0; color: var(--color-ink-muted); transition: color 0.2s; }
   .footer-cols a:hover { color: var(--color-brand-700); }
-  .footer-trust { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
-  .footer-trust .badge { background: #fff; border: 1px solid var(--color-line); }
-  .footer-disclaimer { margin-top: 1.5rem; font-size: 0.8125rem; line-height: 1.6; color: var(--color-ink-muted); max-width: 110ch; }
   .footer-bottom {
     display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem;
-    margin-top: 1.5rem; padding-block: 1.25rem 1.5rem; border-top: 1px solid var(--color-line);
+    margin-top: 2.5rem; padding-block: 1.25rem 1.5rem; border-top: 1px solid var(--color-line);
     font-size: 0.8125rem; color: var(--color-ink-muted);
   }
   @media (min-width: 768px) {
