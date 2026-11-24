@@ -4,7 +4,7 @@ export const singlePrice = 599 // pay-as-you-go, one company
 
 export const packs = [
   { id: 'professional', name: 'Professional', credits: 100, price: 50000 },
-  { id: 'business', name: 'Business', credits: 250, price: 125000 },
+  { id: 'business', name: 'Business', credits: 250, price: 120000 },
   { id: 'corporate', name: 'Corporate', credits: 500, price: 225000 },
   { id: 'enterprise', name: 'Enterprise', credits: 1000, price: 400000 },
 ]
