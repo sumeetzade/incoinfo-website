@@ -43,7 +43,7 @@ G = [
   ('Is there a subscription or auto-renewal?', 'No. You buy credits when you need them, and nothing renews or charges automatically.', False),
   ('Can I top up or upgrade later?', 'Yes. Buy another plan at any time and the credits are added to your balance. Each purchase keeps its own 12-month validity.', True),
   ('Does opening the same company again cost another credit?', 'No. During your 12 months of access you can open and download the company as often as you like. A new credit is needed only to extend access beyond 12 months, or to get the company updated before the next scheduled refresh.', False),
-  ('Do you offer custom pricing for larger volumes?', f'Yes. If you need more than 1,000 companies a year, {L_SALES}.', False),
+  ('Do you offer custom pricing for larger volumes?', f'Yes. If you need more than 1,000 companies a year, or more than 10 users, {L_SALES}. We can put together a custom plan covering the number of companies, users, invoicing terms and API access.', False),
  ]),
  ('billing', 'Billing and Payments', [
   ('Which payment methods do you accept?', 'Credit and debit cards, UPI and net banking, processed by our payment partner.', True),
