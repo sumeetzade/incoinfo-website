@@ -18,7 +18,7 @@ L_SUPPORT = '<a class="link" href="mailto:support@incoinfo.com">support@incoinfo
 
 G = [
  ('data', 'Data and Coverage', [
-  ('Where does the data come from?', f'From official company registries and filings in each country we cover. For India, our current coverage, that means filings with the Ministry of Corporate Affairs and Registrar of Companies, statutory charge records and GST registration data. {L_STD}', False),
+  ('Where does the data come from?', f'From official company registries and filings in each country we cover. For India, our current coverage, that means filings with the Ministry of Corporate Affairs and Registrar of Companies, statutory charge records and GST registration data.', False),
   ('Which companies can I find?', 'Companies and LLPs registered in India, including active, struck-off and under-liquidation entities. More countries are planned.', True),
   ('How current is the data?', 'We refresh company data twice a year, in January to March and July to September. Your report shows the data from the most recent refresh, and if a refresh happens during your 12 months of access, you get the updated data automatically. Companies usually file the previous year’s financial statements in time for the January to March refresh.', False),
   ('What if a company has not filed recent data?', 'Reports reflect the latest filings on record. If a company has delayed its statutory filings, your report contains the complete verified data up to its most recent filing. If it files later, the new data is added at the next scheduled refresh, at no extra cost while your 12 months of access last. If a company is newly incorporated and has not completed its first annual filing, we tell you before you spend a credit.', False),
