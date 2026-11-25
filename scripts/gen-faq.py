@@ -28,7 +28,7 @@ G = [
  ]),
  ('reports', 'Reports and Delivery', [
   ('What do I get when I unlock a company?', '12 months of access to the company’s compiled data: multi-year financial statements, directors and shareholding, registered charges, compliance status and related companies. You can download the statutory filings based on your package, and you get refreshed data whenever a scheduled refresh happens during those 12 months.', False),
-  ('How fast are orders processed?', 'Our standard processing time is 7 days. Bulk orders of more than 500 companies take up to 14 days. We compile up to 50 companies a week for each client, depending on workload, and your account panel shows the projected delivery date for each order.', False),
+  ('How fast are orders processed?', 'Our delivery norms depend on the compilation level in your plan: Standard (Professional) is up to 25 companies a week per client, Expedited (Business and Corporate) is up to 50 companies a week per client, and Priority (Enterprise) is up to 100 companies a week per client. Depending on workload, our standard terms allow these norms to vary. Our delivery team will confirm the timeline when we receive your order.', False),
   ('Can I see a sample before buying?', f'Yes. Sample reports are on the {L_SAMPLES} page, and the demo shows the full workflow from search to report.', False),
   ('Which formats can I download?', 'PDF for reading and sharing, and Excel for analysis. Every report uses the same fields and layout, so companies are easy to compare. You can also download the original filings the report is built from.', False),
   ('How many years of financials are included?', 'Up to five years, where the company has filed them.', True),
