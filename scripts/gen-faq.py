@@ -54,7 +54,7 @@ G = [
   ('Is payment secure?', 'Payments are handled by a PCI-DSS compliant payment partner. We do not see or store your card details.', True),
  ]),
  ('accounts', 'Accounts and Users', [
-  ('Do I need an account to search?', 'No. Searching is free. You need an account to buy credits and unlock reports.', True),
+  ('Do I need an account to search?', 'Yes. You need an account (a login) to search the company database. You can buy a plan whenever you are ready to unlock companies.', False),
   ('How many users are included?', 'Professional is for a single user. Business includes 2 users, Corporate 5 users and Enterprise 10 users, all on one account.', False),
   ('Can team members share credits?', 'Yes. On team plans, all users draw from one shared credit balance.', True),
   ('Can I add or remove users later?', 'Yes. The account administrator can add or remove users at any time.', True),
