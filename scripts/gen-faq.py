@@ -27,7 +27,7 @@ G = [
   ('Can I request a company I can’t find?', f'Yes. Write to {L_SUPPORT} with the company name or registration number and we will check whether it can be added.', True),
  ]),
  ('reports', 'Reports and Delivery', [
-  ('What do I get when I unlock a company?', '12 months of access to the company’s compiled data: multi-year financial statements, directors and shareholding, registered charges, compliance status and related companies. You can download the report as PDF and Excel and the original filings as often as you like, and you get refreshed data whenever a scheduled refresh happens during those 12 months.', False),
+  ('What do I get when I unlock a company?', '12 months of access to the company’s compiled data: multi-year financial statements, directors and shareholding, registered charges, compliance status and related companies. You can download the statutory filings based on your package, and you get refreshed data whenever a scheduled refresh happens during those 12 months.', False),
   ('How fast are orders processed?', 'Our standard processing time is 7 days. Bulk orders of more than 500 companies take up to 14 days. We compile up to 50 companies a week for each client, depending on workload, and your account panel shows the projected delivery date for each order.', False),
   ('Can I see a sample before buying?', f'Yes. Sample reports are on the {L_SAMPLES} page, and the demo shows the full workflow from search to report.', False),
   ('Which formats can I download?', 'PDF for reading and sharing, and Excel for analysis. Every report uses the same fields and layout, so companies are easy to compare. You can also download the original filings the report is built from.', False),
