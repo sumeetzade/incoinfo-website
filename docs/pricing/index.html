@@ -32,8 +32,8 @@
   })();
 </script>
 
-    <script type="module" crossorigin src="../assets/main-BqZTFu-8.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/main-DWOawrvJ.css">
+    <script type="module" crossorigin src="../assets/main-C5CvS7MO.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/main-Bfs2EOXE.css">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -177,9 +177,9 @@
       </section>
 
       <!-- Credit packs: the four plan cards (white section).
-     What every plan includes + calculator is in pricing-includes.html (tint, pricing page only).
+     What every plan includes is in pricing-includes.html (tint, pricing page only).
      Include with: sectionid="…" (id of the first section).
-     Prices keep in sync with src/data/pricing.js. Prices exclude GST. -->
+     Prices exclude GST. -->
 <section class="section" id="packs" aria-labelledby="packs-title">
   <div class="container-x">
     <div class="section-head" data-reveal>
@@ -238,12 +238,12 @@
   </div>
 </section>
 
-      <!-- What every plan includes + calculator (tint section). Prices keep in sync with src/data/pricing.js. -->
+      <!-- What every plan includes (tint section, pricing page only). -->
 <section class="section section-tint" aria-labelledby="packs-included">
   <div class="container-x">
     <div class="section-head" data-reveal>
       <h2 id="packs-included">What every plan includes</h2>
-      <p class="lede">Every plan unlocks the same full report. Use the calculator to find the lowest cost for your volume.</p>
+      <p class="lede">Every plan unlocks the same full report. Plans differ in the number of company credits, users and compilation speed.</p>
     </div>
     <div class="pack-includes" data-reveal>
       <ul class="checklist">
@@ -256,23 +256,8 @@
       </ul>
     </div>
 
-    <div class="calc" data-calculator data-reveal>
-      <div class="calc-input">
-        <label for="calc-n">How many companies do you need to check this year?</label>
-        <div class="calc-row">
-          <input id="calc-n" type="range" min="1" max="1200" step="1" value="500" aria-describedby="calc-out" />
-          <output class="calc-n num" for="calc-n" data-calc-n>500</output>
-        </div>
-      </div>
-      <div class="calc-result" id="calc-out" aria-live="polite">
-        <p class="calc-best">Best value: <strong data-calc-label>Corporate</strong></p>
-        <p class="calc-total">₹<span data-calc-total>2,25,000</span></p>
-        <p class="calc-detail num" data-calc-detail>₹450 per company</p>
-      </div>
-    </div>
-
     <p class="packs-note">
-      Need only one company? Buy it on its own for <span class="num">₹599</span>. Prices exclude taxes.
+      Prices exclude taxes.
       Payments are processed securely by our payment partner. <!-- TODO: name gateway -->
     </p>
   </div>
@@ -407,11 +392,11 @@
     </div>
     <div class="acc-item">
       <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-plans-2" id="faq-plans-2-btn">Which plan should I choose? <svg class="icon acc-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></button></h3>
-      <div class="acc-panel" id="faq-plans-2" role="region" aria-labelledby="faq-plans-2-btn"><div class="acc-inner"><p>Professional is a single-user plan for individual consultants and analysts. Business, Corporate and Enterprise give 2, 5 and 10 users one account. The calculator on this page shows the lowest cost for the number of companies you need.</p></div></div>
+      <div class="acc-panel" id="faq-plans-2" role="region" aria-labelledby="faq-plans-2-btn"><div class="acc-inner"><p>Choose by how many companies you need to unlock in a year and how many people will use the account. Professional gives 1 user and 100 company credits, with standard compilation. Business gives 2 users and 250 credits, with expedited compilation. Corporate gives 5 users and 500 credits, and adds bulk download. Enterprise gives 10 users and 1,000 credits, with priority compilation and API access. Larger plans cost less per company, from ₹500 down to ₹400.</p></div></div>
     </div>
     <div class="acc-item">
       <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-plans-3" id="faq-plans-3-btn">Can I buy a single company without a plan? <svg class="icon acc-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></button></h3>
-      <div class="acc-panel" id="faq-plans-3" role="region" aria-labelledby="faq-plans-3-btn"><div class="acc-inner"><p>Yes. A single company costs ₹599 plus taxes.</p></div></div>
+      <div class="acc-panel" id="faq-plans-3" role="region" aria-labelledby="faq-plans-3-btn"><div class="acc-inner"><p>No. Companies are unlocked with plan credits. Buy a plan, and you can unlock companies up to its credit limit: 100 on Professional, up to 1,000 on Enterprise. Each unlock uses one credit.</p></div></div>
     </div>
     <div class="acc-item">
       <h3><button class="acc-trigger" type="button" aria-expanded="false" aria-controls="faq-plans-4" id="faq-plans-4-btn">Do credits expire? <svg class="icon acc-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></button></h3>

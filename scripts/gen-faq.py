@@ -37,8 +37,8 @@ G = [
  ]),
  ('plans', 'Plans and Credits', [
   ('How do credits work?', 'One credit gives you 12 months of access to one company’s data, including any scheduled refreshes in that period.', False),
-  ('Which plan should I choose?', 'Professional is a single-user plan for individual consultants and analysts. Business, Corporate and Enterprise give 2, 5 and 10 users one account. The calculator on this page shows the lowest cost for the number of companies you need.', False),
-  ('Can I buy a single company without a plan?', 'Yes. A single company costs ₹599 plus taxes.', False),
+  ('Which plan should I choose?', 'Choose by how many companies you need to unlock in a year and how many people will use the account. Professional gives 1 user and 100 company credits, with standard compilation. Business gives 2 users and 250 credits, with expedited compilation. Corporate gives 5 users and 500 credits, and adds bulk download. Enterprise gives 10 users and 1,000 credits, with priority compilation and API access. Larger plans cost less per company, from ₹500 down to ₹400.', False),
+  ('Can I buy a single company without a plan?', 'No. Companies are unlocked with plan credits. Buy a plan, and you can unlock companies up to its credit limit: 100 on Professional, up to 1,000 on Enterprise. Each unlock uses one credit.', False),
   ('Do credits expire?', 'Credits are valid for 12 months from the date of purchase. Once a company is unlocked, you have access to its data for 12 months. When you renew, you choose which companies to keep, and only those stay accessible.', False),
   ('Is there a subscription or auto-renewal?', 'No. You buy credits when you need them, and nothing renews or charges automatically.', False),
   ('Can I top up or upgrade later?', 'Yes. Buy another plan at any time and the credits are added to your balance. Each purchase keeps its own 12-month validity.', True),

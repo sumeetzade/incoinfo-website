@@ -37,7 +37,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
   - charts: the latest-year bar and the second series;
   - nav: current-section underline;
   - "How ordering works": progress line and active-step ring;
-  - pricing: "Most popular" flag and the calculator's recommended pack;
+  - pricing: "Most popular" flag;
   - the orange "Demo" button on the navy closing band (`.btn-accent`, used only there);
   - link hover underline, text selection, data-flow arrows, API code highlights.
 - **Never use orange for** text, icons or focus rings on white (1.9:1). Navy or ink text **on** orange is fine (5.4:1 and 9:1), and so is orange on navy (5.4:1). Keep orange rare: if a new use doesn't mean new, current or chosen, use blue.
