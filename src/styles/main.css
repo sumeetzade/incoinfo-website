@@ -17,8 +17,8 @@
    ------------------------------------------------------------------ */
 @theme {
   --color-brand-900: #0a456d;
-  --color-brand-800: #155586;
-  --color-brand-700: #20659f;
+  --color-brand-800: #073655; /* primary hover */
+  --color-brand-700: #0a456d; /* primary = logo navy (was #20659f, still used for chart marks) */
   /* orange from the logo's i-dots: marks what is new, current or chosen (never text on white: 1.9:1) */
   --color-accent: #ffad00;
   --color-accent-hover: #ffbe3d;

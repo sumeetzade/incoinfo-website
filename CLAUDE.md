@@ -20,7 +20,8 @@ A static marketing site for incoinfo (company reports on registered companies). 
 | Token | Hex | Use |
 |---|---|---|
 | `brand-900` | `#0A456D` | Navy. Key figures, gradient start (the footer is light: `surface-tint`) |
-| `brand-700` | `#20659F` | **Primary**: CTAs, links, key numbers, focus rings (6.1:1 on white) |
+| `brand-700` | `#0A456D` | **Primary**: CTAs, links, key numbers, focus rings (10.1:1 on white). Set to the logo navy on 2026-11-27; hover `brand-800` `#073655` |
+| chart blue | `#20659F` | Charts and the hero sparkline only (navy fails the chart checks) |
 | `accent` | `#ffad00` | **Orange from the logo's i-dots.** Marks what is new, current or chosen (see rules below) |
 | `accent-soft` | `#fff4da` | Orange tint: text selection, the hero's updated-row flash and incoming filing |
 | `accent-data` | `#E59A00` | Charts only: deeper step of the orange that passes the chart legibility check |
@@ -30,7 +31,7 @@ A static marketing site for incoinfo (company reports on registered companies). 
 | `line` | `#DCE6EF` | 1px borders |
 | success / warn / danger | `#1F7A4D` / `#A15C00` / `#B42318` | Status chips only |
 
-- **No gradients.** Use plain colours only: primary buttons are `brand-700` (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
+- **No gradients.** Use plain colours only: primary buttons are `brand-700`, the logo navy (hover `brand-800`), the final CTA band and the data-flow card are `brand-900`, and section backgrounds are white or `surface-tint`. Do not add glows or gradient washes to backgrounds.
 - **White base, blue and orange from the logo.** No colours from outside the logo, apart from the status chips. The light blue `#2798D3` appears only inside the logo cube (and the facet mark). An orange-cube variant was tried on 2026-11-11 and not approved: keep the cube blue.
 - **Orange means "new, current or chosen"**, and nothing else. Its uses:
   - hero animation: wires, dots, the latest revenue point, the incoming filing;
