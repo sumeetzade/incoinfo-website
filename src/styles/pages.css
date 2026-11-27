@@ -276,7 +276,7 @@
   .section-head .lx-kicker { margin-bottom: 0.625rem; }
 
   .lx-stats {
-    display: grid; gap: 1px; margin-top: clamp(2.5rem, 5vw, 3.5rem);
+    display: grid; gap: 1px; margin-top: 2rem;
     background: var(--color-line); border: 1px solid var(--color-line); border-radius: var(--radius-float); overflow: hidden;
   }
   @media (min-width: 640px) { .lx-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -285,11 +285,11 @@
   .lx-stats dt { font-family: var(--font-display); font-size: clamp(1.625rem, 1.3rem + 1vw, 2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; color: var(--color-brand-700); }
   .lx-stats dd { margin-top: 0.5rem; font-size: 0.9375rem; color: var(--color-ink-muted); }
 
-  .lx-story { padding-top: 0; }
-  .lx-row { display: grid; gap: 2.5rem; padding-block: clamp(3rem, 6vw, 4rem); border-top: 1px solid var(--color-line); }
+  .lx-story { padding-block: 0; }
+  .lx-row { display: grid; gap: 1.5rem; padding-block: clamp(16px, 2vw, 20px); border-top: 1px solid var(--color-line); }
   .lx-row:first-child { border-top: 0; }
   .lx-row > * { min-width: 0; }
-  @media (min-width: 1080px) { .lx-row { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4rem; } }
+  @media (min-width: 1080px) { .lx-row { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3rem; } }
   .lx-copy h2 { margin-top: 0.625rem; }
   .lx-copy > p:not(.lx-kicker) { margin-top: 1rem; color: var(--color-ink-muted); line-height: 1.65; max-width: 60ch; }
   .lx-copy b { color: var(--color-ink); font-weight: 600; }
@@ -361,10 +361,10 @@
   [aria-expanded="true"] .lx-more-icon { transform: rotate(180deg); }
 
   /* Regional view: the one navy band on the page */
-  .lx-regional { background: var(--color-brand-900); color: #fff; padding-block: clamp(4rem, 8vw, 5.5rem); }
-  .lx-regional-grid { display: grid; gap: 2.5rem; }
+  .lx-regional { background: var(--color-brand-900); color: #fff; padding-block: clamp(16px, 2vw, 20px); }
+  .lx-regional-grid { display: grid; gap: 1.5rem; }
   .lx-regional-grid > * { min-width: 0; }
-  @media (min-width: 1080px) { .lx-regional-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4rem; } }
+  @media (min-width: 1080px) { .lx-regional-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem; } }
   .lx-regional .lx-kicker { color: var(--color-accent); }
   .lx-regional h2 { color: #fff; }
   .lx-regional .lx-copy > p:not(.lx-kicker) { color: rgb(255 255 255 / 0.82); }
