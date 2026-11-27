@@ -197,6 +197,9 @@ function initModules() {
 
   const faqPage = document.querySelector('[data-faq-page]')
   if (faqPage) import('./faq-page.js').then((m) => m.default(faqPage))
+
+  const landscape = document.querySelector('[data-landscape]')
+  if (landscape) import('./landscape-page.js').then((m) => m.default(landscape))
 }
 
 document.querySelectorAll('[data-year]').forEach((el) => (el.textContent = String(new Date().getFullYear())))

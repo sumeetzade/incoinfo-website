@@ -1,77 +1,335 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- @include head title="Indian corporate landscape | incoinfo" description="A high-level view of registered Indian companies: distribution by state, industry sector and paid-up capital, and new registrations over time." path="/macro-view/" -->
+    <!-- @include head title="Indian corporate landscape | incoinfo" description="Every MCA-registered company in India: 31,92,605 records by operating status, structure, listing, legal form, government ownership, sector, state and Registrar of Companies." path="/macro-view/" -->
   </head>
   <body>
     <!-- @include nav -->
-    <main id="main">
-      <section class="page-hero page-hero-simple" aria-labelledby="page-title">
+    <main id="main" data-landscape>
+      <section class="page-hero lx-hero" aria-labelledby="page-title">
         <div class="container-x">
+          <p class="lx-kicker">Landscape · Macro view</p>
           <h1 id="page-title">A high-level view of registered Indian companies</h1>
-          <p class="lede">
-            Explore how companies are spread across states, industry sectors and capital sizes before choosing specific
-            companies to analyse.
-          </p>
-          <!-- TODO: figures below are illustrative; replace with MCA master-data aggregates -->
-          <p class="todo-note">Figures on this page are illustrative and will be replaced with live aggregates.</p>
+          <p class="lede">Explore how companies are spread across states, industry sectors and capital sizes before choosing specific companies to analyse.</p>
+          <div class="page-hero-ctas">
+            <a class="btn btn-primary btn-lg" href="%PORTAL_URL%/" data-magnetic>Explore the Full Universe</a>
+            <a class="btn btn-secondary btn-lg" href="#coverage">See Our Coverage</a>
+          </div>
+          <dl class="lx-stats">
+            <div><dt>31,92,605</dt><dd>registered companies — every one in the MCA master</dd></div>
+            <div><dt>21.55 L</dt><dd>active companies, tracked alongside all 19 statuses</dd></div>
+            <div><dt>26 · 36</dt><dd>Registrars of Companies · states and UTs</dd></div>
+            <div><dt>100%</dt><dd>capital coverage — authorised and paid-up in every record</dd></div>
+          </dl>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="charts-title">
+      <section class="section lx-story" aria-label="The registered company universe">
         <div class="container-x">
-          <h2 id="charts-title" class="sr-only">Distribution charts</h2>
-          <div class="chart-grid">
-            <article class="chart-card card" data-reveal>
-              <h3>Active companies by state</h3>
-              <p>Maharashtra, Delhi NCR, Tamil Nadu, Karnataka and Gujarat hold two-thirds of active companies.</p>
-              <div class="chart-box"><canvas data-chart="states" role="img" aria-label="Share of active companies by state: Maharashtra 21%, Delhi NCR 17%, Tamil Nadu 11%, Karnataka 10%, Gujarat 8%, others 33%"></canvas></div>
-              <details>
-                <summary>Show as table</summary>
-                <table class="fin-table"><thead><tr><th scope="col">State</th><th scope="col">Share</th></tr></thead>
-                  <tbody><tr><th scope="row">Maharashtra</th><td>21%</td></tr><tr><th scope="row">Delhi NCR</th><td>17%</td></tr><tr><th scope="row">Tamil Nadu</th><td>11%</td></tr><tr><th scope="row">Karnataka</th><td>10%</td></tr><tr><th scope="row">Gujarat</th><td>8%</td></tr><tr><th scope="row">Others</th><td>33%</td></tr></tbody>
-                </table>
-              </details>
-            </article>
-
-            <article class="chart-card card" data-reveal>
-              <h3>Companies by paid-up capital</h3>
-              <p>Most registered companies are small. Fewer than one in ten has paid-up capital above ₹1 crore.</p>
-              <div class="chart-box"><canvas data-chart="capital" role="img" aria-label="Share of companies by paid-up capital: under ₹10 lakh 71%, ₹10 lakh to ₹1 crore 21%, ₹1 to 10 crore 6%, above ₹10 crore 2%"></canvas></div>
-              <details>
-                <summary>Show as table</summary>
-                <table class="fin-table"><thead><tr><th scope="col">Paid-up capital</th><th scope="col">Share</th></tr></thead>
-                  <tbody><tr><th scope="row">Micro: under ₹10 lakh</th><td>71%</td></tr><tr><th scope="row">Small: ₹10 lakh to ₹1 crore</th><td>21%</td></tr><tr><th scope="row">Mid-market: ₹1 to 10 crore</th><td>6%</td></tr><tr><th scope="row">Large: above ₹10 crore</th><td>2%</td></tr></tbody>
-                </table>
-              </details>
-            </article>
-
-            <article class="chart-card card chart-wide" data-reveal>
-              <h3>New companies registered each year</h3>
-              <p>Track incorporation activity year by year to gauge economic activity across states and sectors.</p>
-              <div class="chart-box"><canvas data-chart="registrations" role="img" aria-label="New company registrations per year, rising from about 96,000 in FY16 to about 192,000 in FY25"></canvas></div>
-            </article>
+          <div class="lx-row" data-reveal>
+            <div class="lx-copy">
+              <p class="lx-kicker">01 · The whole universe</p>
+              <h2>Not a sample. Every company ever registered with the MCA.</h2>
+              <p>Most databases start and end with active firms. incoinfo covers all <b>31,92,605</b> registered companies — including the <b>9,01,936</b> struck off and <b>40,869</b> amalgamated — so your history and due diligence never hit a gap.</p>
+              <p>Two in every three registered companies, <b>21.55 lakh</b>, are active today.</p>
+            </div>
+            <figure class="lx-fig" data-lx-fig>
+              <div class="lx-fig-head"><div><h3>Operating Status Across Registered Companies</h3><p>Every one of the 19 operating statuses in the master.</p></div><div class="lx-toggle" role="group" aria-label="Operating status view"><button type="button" data-view="chart" aria-pressed="true">Chart</button><button type="button" data-view="table" aria-pressed="false">Table</button></div></div>
+              <ul class="lx-bars" data-panel-view="chart">
+<li><span class="lx-bar-label">Active</span><span class="lx-bar-track"><span class="lx-bar" style="--w:1.0000"></span><span class="lx-bar-value num">67.5%</span></span></li>
+<li><span class="lx-bar-label">Strike Off</span><span class="lx-bar-track"><span class="lx-bar" style="--w:0.4186"></span><span class="lx-bar-value num">28.3%</span></span></li>
+<li><span class="lx-bar-label">Amalgamated</span><span class="lx-bar-track"><span class="lx-bar" style="--w:0.0190"></span><span class="lx-bar-value num">1.3%</span></span></li>
+<li><span class="lx-bar-label">16 other statuses</span><span class="lx-bar-track"><span class="lx-bar" style="--w:0.0441"></span><span class="lx-bar-value num">3.0%</span></span></li>
+              </ul>
+              <div data-panel-view="table" hidden>
+                <table class="fin-table lx-table"><thead><tr><th scope="col">Status</th><th scope="col">Company records</th><th scope="col">Share</th></tr></thead><tbody>
+<tr><td>Active</td><td>21,54,810</td><td>67.5%</td></tr>
+<tr><td>Strike Off</td><td>9,01,936</td><td>28.3%</td></tr>
+<tr><td>Amalgamated</td><td>40,869</td><td>1.3%</td></tr>
+<tr><td>16 other statuses</td><td>94,990</td><td>3.0%</td></tr>
+                </tbody></table>
+              </div>
+            </figure>
+          </div>
+          <div class="lx-row" data-reveal>
+            <div class="lx-copy">
+              <p class="lx-kicker">02 · Structure</p>
+              <h2>Private enterprise is the backbone of corporate India.</h2>
+              <p>Over <b>92%</b> of registered companies are private. Public companies number <b>1,54,313</b>, and <b>1,00,447</b> One Person Companies show the rise of the solo founder.</p>
+              <p>Combine structure with state, sector and capital to answer questions like <i>how many active private companies in Gujarat have paid-up capital above ₹10 crore?</i></p>
+            </div>
+            <figure class="lx-fig">
+              <h3>Corporate Structure: Private, Public &amp; OPC</h3>
+              <div class="lx-scroll"><table class="fin-table lx-table"><thead><tr><th scope="col">Entity structure</th><th scope="col">Company records</th><th scope="col">Share of total</th></tr></thead><tbody>
+<tr><td>Private</td><td>29,37,845</td><td>92.02%</td></tr>
+<tr><td>Public</td><td>1,54,313</td><td>4.83%</td></tr>
+<tr><td>One Person Company (OPC)</td><td>1,00,447</td><td>3.15%</td></tr>
+<tr class="lx-total"><td>Total across all statuses</td><td>31,92,605</td><td>100.00%</td></tr></tbody></table></div>
+              <p class="lx-note">Within the <b>1,54,313</b> public companies, <b>9,372</b> are listed (6.07%) and <b>1,44,941</b> are unlisted (93.93%).</p>
+            </figure>
+          </div>
+          <div class="lx-row" data-reveal>
+            <div class="lx-copy">
+              <p class="lx-kicker">03 · Markets</p>
+              <h2>Nine in ten active public companies are unlisted.</h2>
+              <p>Of the <b>75,056</b> public companies active today, just <b>7,385</b> (9.8%) are listed and <b>67,671</b> (90.2%) are unlisted — outside exchange disclosures, exactly where incoinfo's coverage matters most.</p>
+              <p>Across all statuses, <b>1,54,313</b> public companies are on record: <b>9,372</b> listed and <b>1,44,941</b> unlisted.</p>
+            </div>
+            <figure class="lx-fig" data-lx-fig data-set-default="active">
+              <div class="lx-fig-head"><div><h3>Market Access: Listed vs Unlisted Public Firms</h3><p class="lx-caption" data-panel-set="all" hidden>Every public company in the master, whatever its status.</p>
+<p class="lx-caption" data-panel-set="active">Public companies active today, split by listing status.</p></div><div class="lx-toggle" role="group" aria-label="Market access view"><button type="button" data-view="chart" aria-pressed="true">Chart</button><button type="button" data-view="table" aria-pressed="false">Table</button></div></div>
+              <div class="lx-chips" role="group" aria-label="Companies shown"><button type="button" data-set="all" aria-pressed="false">All registered</button><button type="button" data-set="active" aria-pressed="true">Active companies</button></div>
+              <ul class="lx-bars" data-panel-view="chart" data-panel-set="all" hidden>
+<li class="lx-bar-strong"><span class="lx-bar-label">Public</span><span class="lx-bar-track"><span class="lx-bar" style="--w:1"></span><span class="lx-bar-value num">1,54,313</span></span></li>
+<li class="lx-bar-sub"><span class="lx-bar-label">Listed</span><span class="lx-bar-track"><span class="lx-bar lx-bar-2" style="--w:0.0607"></span><span class="lx-bar-value num">9,372 · 6.1%</span></span></li>
+<li class="lx-bar-sub"><span class="lx-bar-label">Unlisted</span><span class="lx-bar-track"><span class="lx-bar lx-bar-2" style="--w:0.9393"></span><span class="lx-bar-value num">1,44,941 · 93.9%</span></span></li>
+</ul>
+<div data-panel-view="table" data-panel-set="all" hidden><table class="fin-table lx-table"><thead><tr><th scope="col">Listing status</th><th scope="col">Company records</th><th scope="col">Share</th></tr></thead><tbody><tr class="lx-total"><td>Public</td><td>1,54,313</td><td>100%</td></tr>
+<tr class="lx-sub"><td>Listed</td><td>9,372</td><td>6.1%</td></tr>
+<tr class="lx-sub"><td>Unlisted</td><td>1,44,941</td><td>93.9%</td></tr></tbody></table></div>
+<ul class="lx-bars" data-panel-view="chart" data-panel-set="active">
+<li class="lx-bar-strong"><span class="lx-bar-label">Public</span><span class="lx-bar-track"><span class="lx-bar" style="--w:1"></span><span class="lx-bar-value num">75,056</span></span></li>
+<li class="lx-bar-sub"><span class="lx-bar-label">Listed</span><span class="lx-bar-track"><span class="lx-bar lx-bar-2" style="--w:0.0984"></span><span class="lx-bar-value num">7,385 · 9.8%</span></span></li>
+<li class="lx-bar-sub"><span class="lx-bar-label">Unlisted</span><span class="lx-bar-track"><span class="lx-bar lx-bar-2" style="--w:0.9016"></span><span class="lx-bar-value num">67,671 · 90.2%</span></span></li>
+</ul>
+<div data-panel-view="table" data-panel-set="active" hidden><table class="fin-table lx-table"><thead><tr><th scope="col">Listing status</th><th scope="col">Company records</th><th scope="col">Share</th></tr></thead><tbody><tr class="lx-total"><td>Public</td><td>75,056</td><td>100%</td></tr>
+<tr class="lx-sub"><td>Listed</td><td>7,385</td><td>9.8%</td></tr>
+<tr class="lx-sub"><td>Unlisted</td><td>67,671</td><td>90.2%</td></tr></tbody></table></div>
+            </figure>
+          </div>
+          <div class="lx-row" data-reveal>
+            <div class="lx-copy">
+              <p class="lx-kicker">04 · Legal form</p>
+              <h2>Every legal structure, on record.</h2>
+              <p>Beyond <b>31,55,090</b> companies limited by shares, we cover <b>36,524</b> limited by guarantee and <b>991</b> unlimited companies.</p>
+              <p>Liability framework travels with structure, status and capital, so a guarantee company is never mistaken for a company limited by shares.</p>
+            </div>
+            <figure class="lx-fig">
+              <h3>Legal Liability Structure</h3>
+              <div class="lx-scroll"><table class="fin-table lx-table"><thead><tr><th scope="col">Liability framework</th><th scope="col">Company records</th><th scope="col">Share of total</th></tr></thead><tbody>
+<tr><td>Limited by shares</td><td>31,55,090</td><td>98.82%</td></tr>
+<tr><td>Limited by guarantee</td><td>36,524</td><td>1.14%</td></tr>
+<tr><td>Unlimited</td><td>991</td><td>0.03%</td></tr>
+<tr class="lx-total"><td>Total across all statuses</td><td>31,92,605</td><td>100.00%</td></tr></tbody></table></div>
+              <p class="lx-note">Every company carries one of the three liability frameworks.</p>
+            </figure>
+          </div>
+          <div class="lx-row" data-reveal>
+            <div class="lx-copy">
+              <p class="lx-kicker">05 · Government ownership</p>
+              <h2>Every State and Union Government company, findable.</h2>
+              <p>In the MCA master, <b>3,065</b> company records are classified as government companies, representing <b>0.096%</b> of all <b>31,92,605</b> records.</p>
+              <p>Find all <b>2,243</b> State government and <b>822</b> Union government companies by state, industry and capital.</p>
+            </div>
+            <figure class="lx-fig">
+              <h3>State vs Union Government Ownership</h3>
+              <div class="lx-scroll"><table class="fin-table lx-table"><thead><tr><th scope="col">Government level</th><th scope="col">Company records</th><th scope="col">Share of government companies</th></tr></thead><tbody>
+<tr><td>State government company</td><td>2,243</td><td>73.18%</td></tr>
+<tr><td>Union government company</td><td>822</td><td>26.82%</td></tr>
+<tr class="lx-total"><td>Total government companies</td><td>3,065</td><td>100.00%</td></tr></tbody></table></div>
+              <p class="lx-note">These counts include all company statuses.</p>
+            </figure>
+          </div>
+          <div class="lx-row" data-reveal>
+            <div class="lx-copy">
+              <p class="lx-kicker">06 · Sectors</p>
+              <h2>Nine in ten companies sit in just ten sectors.</h2>
+              <p><b>Business Services</b> is the largest of the 20 industry sectors, with <b>8,05,050</b> companies — <b>25.22%</b> of all <b>31,92,605</b> records. The top ten sectors together cover <b>89.09%</b> of the register, across all company statuses.</p>
+              <p>Manufacturing arrives split across two classifications, and agriculture and allied activities number <b>1,26,977</b> — so a sector filter is rarely one click, and incoinfo resolves it for you.</p>
+            </div>
+            <figure class="lx-fig" data-lx-fig>
+              <h3>The Ten Largest Industry Sectors</h3>
+              <p class="lx-caption">Across all company statuses · 31,92,605 records.</p>
+              <div class="lx-split" aria-hidden="true"><span style="width:89.09%"></span><span class="lx-split-2" style="width:10.91%"></span></div>
+              <div class="lx-split-legend"><span>Top ten sectors · 89.09%</span><span>Remaining ten · 10.91%</span></div>
+              <div class="lx-scroll">
+              <table class="fin-table lx-table lx-sectors" id="industry-sectors"><thead><tr><th scope="col">Rank</th><th scope="col">Industry sector</th><th scope="col">Company records</th><th scope="col">Share of total</th></tr></thead><tbody>
+<tr><td class="lx-rank">1</td><td>Business Services</td><td>8,05,050</td><td>25.22%</td></tr>
+<tr><td class="lx-rank">2</td><td>Trading</td><td>4,45,937</td><td>13.97%</td></tr>
+<tr><td class="lx-rank">3</td><td>Community, personal and Social Services</td><td>4,28,262</td><td>13.41%</td></tr>
+<tr><td class="lx-rank">4</td><td>Construction</td><td>2,41,028</td><td>7.55%</td></tr>
+<tr><td class="lx-rank">5</td><td>Manufacturing (Metals and Chemicals, and products thereof)</td><td>2,12,133</td><td>6.64%</td></tr>
+<tr data-extra hidden><td class="lx-rank">6</td><td>Real Estate and Renting</td><td>1,58,446</td><td>4.96%</td></tr>
+<tr data-extra hidden><td class="lx-rank">7</td><td>Finance</td><td>1,57,192</td><td>4.92%</td></tr>
+<tr data-extra hidden><td class="lx-rank">8</td><td>Manufacturing (Machinery and Equipments)</td><td>1,45,464</td><td>4.56%</td></tr>
+<tr data-extra hidden><td class="lx-rank">9</td><td>Agriculture and Allied Activities</td><td>1,26,977</td><td>3.98%</td></tr>
+<tr data-extra hidden><td class="lx-rank">10</td><td>Transport, storage and Communications</td><td>1,23,648</td><td>3.87%</td></tr>
+<tr class="lx-total lx-band"><td></td><td>Top ten sectors combined</td><td>28,44,137</td><td>89.09%</td></tr>
+<tr class="lx-muted"><td></td><td>Remaining ten sectors</td><td>3,48,468</td><td>10.91%</td></tr>
+<tr class="lx-total"><td></td><td>All 20 industry sectors</td><td>31,92,605</td><td>100.00%</td></tr>
+              </tbody></table>
+              </div>
+              <div class="lx-more"><button class="btn btn-secondary btn-sm" type="button" aria-expanded="false" aria-controls="industry-sectors" data-more><span data-more-label>More</span>{{icon:chevron-down|lx-more-icon}}</button></div>
+              <p class="lx-note">Every company sits in one of the 20 industry sectors, so sector filters alongside state, structure and capital.</p>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="section section-tint" aria-labelledby="sectors-title">
+      <section class="lx-regional" aria-labelledby="regional-title">
+        <div class="container-x lx-regional-grid">
+          <div class="lx-copy" data-reveal>
+            <p class="lx-kicker">07 · Regional view</p>
+            <h2 id="regional-title">Navigate India by state or by Registrar.</h2>
+            <p>All <b>36</b> states and UTs and all <b>26</b> Registrars of Companies. Maharashtra leads with <b>6,06,348</b> companies; ROC Delhi registers the most, at <b>5,68,262</b>.</p>
+            <p>The two lenses are not the same. <b>2,74,958</b> active companies have a Delhi registered office, while <b>3,63,553</b> active companies fall under ROC Delhi — incoinfo keeps both, so you can filter by where a company sits or by who regulates it.</p>
+          </div>
+          <div class="lx-region" data-lx-region data-total="3192605" data-active-total="2154810" data-reveal>
+            <div class="lx-region-controls">
+              <div class="lx-lens" role="group" aria-label="View by">
+                <button type="button" data-lens-btn="state" aria-pressed="true">Registered-office state / UT</button>
+                <button type="button" data-lens-btn="roc" aria-pressed="false">Registrar of Companies</button>
+              </div>
+              <select class="lx-select" aria-label="Registered-office state / UT" data-lens-select>
+                <option value="">Choose a state / UT</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Delhi">Delhi</option>
+<option value="West Bengal">West Bengal</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Telangana">Telangana</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Kerala">Kerala</option>
+<option value="Bihar">Bihar</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Punjab">Punjab</option>
+<option value="Odisha">Odisha</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Assam">Assam</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+<option value="Goa">Goa</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Manipur">Manipur</option>
+<option value="Tripura">Tripura</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Ladakh">Ladakh</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Sikkim">Sikkim</option>
+              </select>
+            </div>
+            <div class="lx-region-stats" data-lens-stats hidden>
+              <div><p class="num" data-stat-all></p><p data-stat-all-label></p></div>
+              <div><p class="num" data-stat-active></p><p data-stat-active-label></p></div>
+            </div>
+            <div class="lx-scroll">
+            <table class="lx-region-table" data-lens="state"><thead><tr><th scope="col">Registered-office state / UT</th><th scope="col">All records</th><th scope="col">Active</th></tr></thead><tbody>
+<tr data-name="Maharashtra" data-all="606348" data-active="401886"><td>Maharashtra</td><td>6,06,348</td><td>4,01,886</td></tr>
+<tr data-name="Delhi" data-all="454761" data-active="274958"><td>Delhi</td><td>4,54,761</td><td>2,74,958</td></tr>
+<tr data-name="West Bengal" data-all="261316" data-active="158010"><td>West Bengal</td><td>2,61,316</td><td>1,58,010</td></tr>
+<tr data-name="Uttar Pradesh" data-all="248004" data-active="190342"><td>Uttar Pradesh</td><td>2,48,004</td><td>1,90,342</td></tr>
+<tr data-name="Tamil Nadu" data-all="231763" data-active="143958"><td>Tamil Nadu</td><td>2,31,763</td><td>1,43,958</td></tr>
+<tr data-name="Karnataka" data-all="217745" data-active="150806"><td>Karnataka</td><td>2,17,745</td><td>1,50,806</td></tr>
+<tr data-name="Telangana" data-all="193693" data-active="132010"><td>Telangana</td><td>1,93,693</td><td>1,32,010</td></tr>
+<tr data-name="Gujarat" data-all="174242" data-active="121419"><td>Gujarat</td><td>1,74,242</td><td>1,21,419</td></tr>
+<tr data-name="Haryana" data-all="113501" data-active="88595"><td>Haryana</td><td>1,13,501</td><td>88,595</td></tr>
+<tr data-name="Rajasthan" data-all="109747" data-active="78662"><td>Rajasthan</td><td>1,09,747</td><td>78,662</td></tr>
+<tr data-name="Kerala" data-all="99805" data-active="71346" data-extra hidden><td>Kerala</td><td>99,805</td><td>71,346</td></tr>
+<tr data-name="Bihar" data-all="77591" data-active="59080" data-extra hidden><td>Bihar</td><td>77,591</td><td>59,080</td></tr>
+<tr data-name="Madhya Pradesh" data-all="76189" data-active="54383" data-extra hidden><td>Madhya Pradesh</td><td>76,189</td><td>54,383</td></tr>
+<tr data-name="Andhra Pradesh" data-all="59708" data-active="42259" data-extra hidden><td>Andhra Pradesh</td><td>59,708</td><td>42,259</td></tr>
+<tr data-name="Punjab" data-all="50815" data-active="32190" data-extra hidden><td>Punjab</td><td>50,815</td><td>32,190</td></tr>
+<tr data-name="Odisha" data-all="49184" data-active="35521" data-extra hidden><td>Odisha</td><td>49,184</td><td>35,521</td></tr>
+<tr data-name="Jharkhand" data-all="29727" data-active="22838" data-extra hidden><td>Jharkhand</td><td>29,727</td><td>22,838</td></tr>
+<tr data-name="Assam" data-all="23088" data-active="17621" data-extra hidden><td>Assam</td><td>23,088</td><td>17,621</td></tr>
+<tr data-name="Chhattisgarh" data-all="21465" data-active="16825" data-extra hidden><td>Chhattisgarh</td><td>21,465</td><td>16,825</td></tr>
+<tr data-name="Uttarakhand" data-all="20119" data-active="15777" data-extra hidden><td>Uttarakhand</td><td>20,119</td><td>15,777</td></tr>
+<tr data-name="Chandigarh" data-all="18913" data-active="9737" data-extra hidden><td>Chandigarh</td><td>18,913</td><td>9,737</td></tr>
+<tr data-name="Jammu &amp; Kashmir" data-all="14259" data-active="10548" data-extra hidden><td>Jammu &amp; Kashmir</td><td>14,259</td><td>10,548</td></tr>
+<tr data-name="Goa" data-all="12811" data-active="7447" data-extra hidden><td>Goa</td><td>12,811</td><td>7,447</td></tr>
+<tr data-name="Himachal Pradesh" data-all="11598" data-active="7684" data-extra hidden><td>Himachal Pradesh</td><td>11,598</td><td>7,684</td></tr>
+<tr data-name="Puducherry" data-all="4695" data-active="2344" data-extra hidden><td>Puducherry</td><td>4,695</td><td>2,344</td></tr>
+<tr data-name="Manipur" data-all="2629" data-active="2146" data-extra hidden><td>Manipur</td><td>2,629</td><td>2,146</td></tr>
+<tr data-name="Tripura" data-all="1713" data-active="1404" data-extra hidden><td>Tripura</td><td>1,713</td><td>1,404</td></tr>
+<tr data-name="Meghalaya" data-all="1615" data-active="1008" data-extra hidden><td>Meghalaya</td><td>1,615</td><td>1,008</td></tr>
+<tr data-name="Arunachal Pradesh" data-all="1415" data-active="1024" data-extra hidden><td>Arunachal Pradesh</td><td>1,415</td><td>1,024</td></tr>
+<tr data-name="Dadra and Nagar Haveli and Daman and Diu" data-all="1344" data-active="933" data-extra hidden><td>Dadra and Nagar Haveli and Daman and Diu</td><td>1,344</td><td>933</td></tr>
+<tr data-name="Nagaland" data-all="1197" data-active="789" data-extra hidden><td>Nagaland</td><td>1,197</td><td>789</td></tr>
+<tr data-name="Andaman and Nicobar Islands" data-all="897" data-active="698" data-extra hidden><td>Andaman and Nicobar Islands</td><td>897</td><td>698</td></tr>
+<tr data-name="Mizoram" data-all="541" data-active="436" data-extra hidden><td>Mizoram</td><td>541</td><td>436</td></tr>
+<tr data-name="Ladakh" data-all="102" data-active="71" data-extra hidden><td>Ladakh</td><td>102</td><td>71</td></tr>
+<tr data-name="Lakshadweep" data-all="61" data-active="52" data-extra hidden><td>Lakshadweep</td><td>61</td><td>52</td></tr>
+<tr data-name="Sikkim" data-all="4" data-active="3" data-extra hidden><td>Sikkim</td><td>4</td><td>3</td></tr>
+<tr class="lx-region-total"><td>All of India</td><td>31,92,605</td><td>21,54,810</td></tr></tbody></table>
+            <table class="lx-region-table" data-lens="roc" hidden><thead><tr><th scope="col">Registrar of Companies</th><th scope="col">All records</th><th scope="col">Active</th></tr></thead><tbody>
+<tr data-name="ROC Delhi" data-all="568262" data-active="363553"><td>ROC Delhi</td><td>5,68,262</td><td>3,63,553</td></tr>
+<tr data-name="ROC Mumbai" data-all="461196" data-active="294279"><td>ROC Mumbai</td><td>4,61,196</td><td>2,94,279</td></tr>
+<tr data-name="ROC Kolkata" data-all="261316" data-active="158010"><td>ROC Kolkata</td><td>2,61,316</td><td>1,58,010</td></tr>
+<tr data-name="ROC Kanpur" data-all="248004" data-active="190342"><td>ROC Kanpur</td><td>2,48,004</td><td>1,90,342</td></tr>
+<tr data-name="ROC Bangalore" data-all="217745" data-active="150806"><td>ROC Bangalore</td><td>2,17,745</td><td>1,50,806</td></tr>
+<tr data-name="ROC Hyderabad" data-all="193693" data-active="132010"><td>ROC Hyderabad</td><td>1,93,693</td><td>1,32,010</td></tr>
+<tr data-name="ROC Chennai" data-all="183847" data-active="111280"><td>ROC Chennai</td><td>1,83,847</td><td>1,11,280</td></tr>
+<tr data-name="ROC Ahmedabad" data-all="175020" data-active="121984"><td>ROC Ahmedabad</td><td>1,75,020</td><td>1,21,984</td></tr>
+<tr data-name="ROC Pune" data-all="145152" data-active="107607"><td>ROC Pune</td><td>1,45,152</td><td>1,07,607</td></tr>
+<tr data-name="ROC Jaipur" data-all="109747" data-active="78662"><td>ROC Jaipur</td><td>1,09,747</td><td>78,662</td></tr>
+<tr data-name="ROC Ernakulam" data-all="99866" data-active="71398" data-extra hidden><td>ROC Ernakulam</td><td>99,866</td><td>71,398</td></tr>
+<tr data-name="ROC Patna" data-all="77591" data-active="59080" data-extra hidden><td>ROC Patna</td><td>77,591</td><td>59,080</td></tr>
+<tr data-name="ROC Gwalior" data-all="76189" data-active="54383" data-extra hidden><td>ROC Gwalior</td><td>76,189</td><td>54,383</td></tr>
+<tr data-name="ROC Chandigarh" data-all="69728" data-active="41927" data-extra hidden><td>ROC Chandigarh</td><td>69,728</td><td>41,927</td></tr>
+<tr data-name="ROC Vijayawada" data-all="59708" data-active="42259" data-extra hidden><td>ROC Vijayawada</td><td>59,708</td><td>42,259</td></tr>
+<tr data-name="ROC Cuttack" data-all="49184" data-active="35521" data-extra hidden><td>ROC Cuttack</td><td>49,184</td><td>35,521</td></tr>
+<tr data-name="ROC Coimbatore" data-all="47916" data-active="32678" data-extra hidden><td>ROC Coimbatore</td><td>47,916</td><td>32,678</td></tr>
+<tr data-name="ROC Guwahati" data-all="32202" data-active="24431" data-extra hidden><td>ROC Guwahati</td><td>32,202</td><td>24,431</td></tr>
+<tr data-name="ROC Ranchi" data-all="29727" data-active="22838" data-extra hidden><td>ROC Ranchi</td><td>29,727</td><td>22,838</td></tr>
+<tr data-name="ROC Chhattisgarh" data-all="21465" data-active="16825" data-extra hidden><td>ROC Chhattisgarh</td><td>21,465</td><td>16,825</td></tr>
+<tr data-name="ROC Uttarakhand" data-all="20119" data-active="15777" data-extra hidden><td>ROC Uttarakhand</td><td>20,119</td><td>15,777</td></tr>
+<tr data-name="ROC Jammu" data-all="14361" data-active="10619" data-extra hidden><td>ROC Jammu</td><td>14,361</td><td>10,619</td></tr>
+<tr data-name="ROC Goa" data-all="13377" data-active="7815" data-extra hidden><td>ROC Goa</td><td>13,377</td><td>7,815</td></tr>
+<tr data-name="ROC Himachal Pradesh" data-all="11598" data-active="7684" data-extra hidden><td>ROC Himachal Pradesh</td><td>11,598</td><td>7,684</td></tr>
+<tr data-name="ROC Pondicherry" data-all="4695" data-active="2344" data-extra hidden><td>ROC Pondicherry</td><td>4,695</td><td>2,344</td></tr>
+<tr data-name="ROC Andaman" data-all="897" data-active="698" data-extra hidden><td>ROC Andaman</td><td>897</td><td>698</td></tr>
+<tr class="lx-region-total"><td>All of India</td><td>31,92,605</td><td>21,54,810</td></tr></tbody></table>
+            </div>
+            <button class="lx-showall" type="button" data-showall>Show all 36 states and UTs</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="coverage" aria-labelledby="coverage-title">
         <div class="container-x">
           <div class="section-head" data-reveal>
-            <h2 id="sectors-title">Companies by sector</h2>
-            <p class="lede">Company counts are grouped by National Industrial Classification (NIC) sector.</p>
+            <p class="lx-kicker">08 · Data completeness</p>
+            <h2 id="coverage-title">Field by field, near-complete coverage.</h2>
+            <p class="lede">Capital is recorded for 100% of companies and registered-office addresses for 99.59%. Here's exactly what's populated.</p>
           </div>
-          <div class="sector-list" data-reveal-stagger>
-            <article class="sector card"><h3>{{icon:code-xml}} Services and IT</h3><p>Software, consulting, financial services, business support.</p></article>
-            <article class="sector card"><h3>{{icon:building-2}} Manufacturing and industry</h3><p>Chemicals, textiles, metals, heavy machinery, automotive.</p></article>
-            <article class="sector card"><h3>{{icon:shopping-basket}} Trading and distribution</h3><p>Wholesale trade, retail distribution, import and export.</p></article>
-            <article class="sector card"><h3>{{icon:landmark}} Infrastructure and real estate</h3><p>Residential and commercial developers, civil engineering, energy and power.</p></article>
-            <article class="sector card"><h3>{{icon:sparkles}} Agriculture and allied</h3><p>Processing units, agri-logistics, farm produce trading.</p></article>
+          <ul class="lx-coverage" data-reveal>
+<li><span class="lx-cov-field">Company identification number</span><span class="lx-cov-detail">Every record · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Registered company name</span><span class="lx-cov-detail">2 records unnamed · 31,92,603 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Date of incorporation</span><span class="lx-cov-detail">Every record · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Legal form, structure &amp; ownership</span><span class="lx-cov-detail">Every record · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Listed or unlisted</span><span class="lx-cov-detail">Every record · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Authorised &amp; paid-up capital</span><span class="lx-cov-detail">Recorded for every company, incl. zero · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Registrar &amp; state</span><span class="lx-cov-detail">26 registrars · 36 states and UTs · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Operating status</span><span class="lx-cov-detail">All 19 statuses · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Industry classification</span><span class="lx-cov-detail">20 classifications · 31,92,605 records</span><span class="lx-cov-pct num">100.00%</span></li>
+<li><span class="lx-cov-field">Registered-office address</span><span class="lx-cov-detail">13,162 missing · 31,79,443 records</span><span class="lx-cov-pct num">99.59%</span></li>
+          </ul>
+          <p class="lx-source">Source: Ministry of Corporate Affairs company master.</p>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-cta-title">
+        <div class="container-x final-cta-inner" data-reveal>
+          <h2 id="final-cta-title">From the macro view to the company you need.</h2>
+          <p>Filter 31.9 lakh companies by state, registrar, sector, structure and capital — then dive into any profile.</p>
+          <div class="final-cta-actions">
+            <a class="btn btn-accent btn-lg" href="%PORTAL_URL%/" data-magnetic>Book a Demo {{icon:arrow-right}}</a>
           </div>
         </div>
       </section>
     </main>
-    <!-- @include final-cta -->
     <!-- @include footer -->
   </body>
 </html>
