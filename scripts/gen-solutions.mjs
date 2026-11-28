@@ -3,6 +3,14 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { segments, solutions } from '../src/data/solutions.mjs'
+// Title case for card headings: small words stay lowercase, all-caps words (GST, MCA) stay as written
+const SMALL = new Set(['a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'from', 'in', 'into', 'nor', 'of', 'on', 'or', 'over', 'per', 'the', 'to', 'vs', 'via', 'with'])
+const titleCase = (t) => {
+  const ws = t.split(' ')
+  return ws.map((w, i) => (i > 0 && i < ws.length - 1 && SMALL.has(w) ? w
+    : w.split('-').map((x) => (x && x !== x.toUpperCase() ? x[0].toUpperCase() + x.slice(1) : x)).join('-'))).join(' ')
+}
+
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const write = (file, html) => {
@@ -130,7 +138,7 @@ ${s.steps.map(([t, d], i) => `            <li class="step">
           <div class="deliverables" data-reveal-stagger>
 ${s.deliverables.map(([t, d]) => `            <article class="deliverable">
               <span class="icon-tile">{{icon:file-check-2}}</span>
-              <div><h3>${esc(t)}</h3><p>${esc(d)}</p></div>
+              <div><h3>${esc(titleCase(t))}</h3><p>${esc(d)}</p></div>
             </article>`).join('\n')}
           </div>${benchmark}
         </div>
